@@ -44,7 +44,7 @@
     padding-bottom: 0px;
   }
 
-  #map{
+  #mapdiv{
     position: absolute;
     top:0px;
     left: 0px;
@@ -53,8 +53,8 @@
     margin-top:60px;
   }
   #sliderholder #slider2 .ui-slider-handle{
-    width: 40px;
-    height: 40px;
+    width: 15px;
+    height: 38px;
     background: #55c3eb;
     border-radius: 10px;
   }
@@ -70,10 +70,15 @@
   }
 
   #slider2{
-    height: 100%;
-    width: 30px;
+    position: absolute;
     margin: auto;
     background: transparent;
+    width: 97%;
+  }
+
+  .epochholder{
+    overflow: auto;
+    width: 100%;
   }
 
   .ui-widget-header{
@@ -81,26 +86,12 @@
   }
 
   .btn-info.btn-fill{
-    background-color: #55c3eb;
-    border-color: #55c3eb;
+    background-color: #41C6EB;
+    border-color: #41C6EB;
   }
 
   .btn-info{
-    border-color: #55c3eb;
-  }
-
-  .ui-slider-pips .ui-slider-pip-selected-initial{
-    font-weight: normal;
-    color: #999;
-  }
-
-  .ui-slider-pips .ui-slider-pip-selected{
-    color: #55c3eb;
-    font-weight: normal;
-  }
-
-  .ui-slider-pip:hover .ui-slider-label{
-    font-weight: normal;
+    border-color: #41C6EB;
   }
 
   #sliderholder .spantitle{
@@ -114,19 +105,71 @@
 
   #sliderholder{
     position: absolute;
-/*    background: url('../img/coring-background.png');
-*/    width: 80px;
-    left: 50px;
+    width: 90%;
+    left: 5%;
     z-index: 1;
-    top: 20px;
-    bottom: 20px;
-    background: #fff;
-    border: 2px solid #444;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 50px 10px 80px 10px;
+    bottom: 5%;
+    background: #41C6EB;
+    border: 3px solid #fff;
+    padding: 10px 10px 10px 10px;
     display: none;
   }
+
+  .wide-popup .leaflet-popup-content{
+    width: 401px!important;
+  }
+
+  #slidertitle{
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  #sliderholder .epochholder div {
+    height: 25px;
+    border: 1px solid;
+    float: left;
+  }
+
+  #sliderholder .epochholder div.el0{
+    background: #eee;
+  }
+  #sliderholder .epochholder div.el1{
+    background: #ddd;
+  }
+  #sliderholder .epochholder div.el2{
+    background: #ccc;
+  }
+  #sliderholder .epochholder div.el3{
+    background: #bbb;
+  }
+  #sliderholder .epochholder div.el4{
+    background: #aaa;
+  }
+  #sliderholder .epochholder div.el5{
+    background: #999;
+  }
+  #sliderholder .epochholder div.el6{
+    background: #888;
+  }
+
+  #sliderholder .epochholder div.el7{
+    background: #777;
+  }
+  #sliderholder .epochholder div.el8{
+    background: #666;
+  }
+  #sliderholder .epochholder div.el9{
+    background: #555;
+  }
+  #sliderholder .epochholder div.el10{
+    background: #444;
+  }
+  #sliderholder .epochholder div.el11{
+    background: #333;
+  }
+
+
 
   .logoholder{
     margin-top: -5px;
@@ -168,12 +211,14 @@
 
   #walkholder p{
     font-size:14px;
+    font-weight: bold;
   }
 
   span.infotitle {
     float: left;
     clear: left;
     margin-right: 5px;
+    font-weight: bold;
   }
 
   span.info {
@@ -181,8 +226,21 @@
     margin-bottom: 10px;
   }
 
-  .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info{
+  .btn-info:hover, .btn-info:focus, .btn-info:active, .open .dropdown-toggle.btn-info{
     border-color: #55c3eb;
+  }
+
+  .btn-info{
+    color: #55c3eb;
+  }
+
+  .btn-info.btn-fill{
+    color: #fff;
+  }
+
+  .btn-info.btn-fill:hover{
+    background: #E3D438;
+    border-color: #E3D438;
   }
 
   .btn:focus{
