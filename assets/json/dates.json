@@ -1,0 +1,74 @@
+window.epochData = [
+    {
+        "name": "21st century",
+        "dateStart": 2000,
+        "dateEnd": 2015,
+        "description": "Modern day when concerns about the future of our planet became more real. In 2014 the Cornish were recognised as national minority group for the first time"
+    },
+    {
+        "name": "20th century",
+        "dateStart": 1901,
+        "dateEnd": 2000,
+        "description": "After the death of Queen Victoria two world wars occupied the first half of this century. Innovation and abundant technical progress occupied the second half, together with a relaxation of 'Victorian' values. 1928 - First Gorsedh Kernow was held at Boscawen un, symbolising the resurgent interest in Cornwall's Celtic cultural and linguistic heritage"
+    },
+    {
+        "name": "Victorian",
+        "dateStart": 1837,
+        "dateEnd": 1901,
+        "description": "Environmental and health standards rose throughout the Victorian era. In 1859 the Brunel Bridge was opened. The main line of the Cornwall Railway was then opened giving access to Cornwall from the railways of Devon"
+    },
+    {
+        "name": "Georgian",
+        "dateStart": 1714,
+        "dateEnd": 1837,
+        "description": "This period covered the reigns of Georges 1-4 .The Industrial Revolution started around 1760.  In1801 Richard Trevithick built a full-size steam road carriage. In 1777  Dolly Pentreath died, probably the last fluent, native speaker of the Cornish language, prior to its revival in 1904"
+    },
+    {
+        "name": "Post Medieval",
+        "dateStart": 1540,
+        "dateEnd": 1714,
+        "description": "Including landscapes, artefact studies, vernacular architecture and industrial archaeology."
+    },
+    {
+        "name": "Medieval",
+        "dateStart": 1066,
+        "dateEnd": 1540,
+        "description": "the Middle Ages, or Medieval period, lasted from the 11th to the 15th century. merged into the Renaissance and the Age of Discovery. In 1099 Mount's Bay was inundated by the sea, making St Michaels Mount an island. In 1497 there was a Cornish Rebellion. The leaders were executed at Tyburn"
+    },
+    {
+        "name": "Early Medieval",
+        "dateStart": 1066,
+        "dateEnd": 1410,
+        "description": "This period began with the collapse of the Western Roman Empire. There is  evidence for Late antiquity or 'Dark Ages' trading contacts at the stronghold of Tintagel in Cornwall"
+    },
+    {
+        "name": "Vikings and Anglo Saxons",
+        "dateStart": 410,
+        "dateEnd": 1066,
+        "description": "This period included Early Medieval time from 1410–1066AD"
+    },
+    {
+        "name": "Roman",
+        "dateStart": -43,
+        "dateEnd": 410,
+        "description": "During Roman times in Britain, Cornwall was remote from the main centres of Romanisation. Their road system extended into Cornwall, and A Roman style villa was found at Magor Farm near Camborne"
+    },
+    {
+        "name": "Iron Age",
+        "dateStart": -800,
+        "dateEnd": -43,
+        "description": "The beginning of the Iron Age is characterized by implements, weapons, personal ornaments, and pottery, and systems of decorative design, which are altogether different from those of the preceding age of bronze"
+    },
+    {
+        "name": "Bronze Age",
+        "dateStart": -2500,
+        "dateEnd": -800,
+        "description": "Around 4,000 years ago the Bronze Age came to Britain. This was the period that linked the Stone Age with the Iron Age, and during which it seems new people came in from continental Europe. True bronze is a combination of 10% tin and 90% copper. Both materials were readily available in Cornwall at this time. Late Bronze Age. Textile production had also got under way by this time as had advanced pottery-making techniques, and more sophisticated weapon-making"
+    },
+    {
+        "name": "Neolithic",
+        "dateStart": -4000,
+        "dateEnd": -2500,
+        "description": "The term Neolithic refers to the last stage of the Stone Age. The period is significant for its megalithic architecture, spread of agricultural practices, and use of polished stone tools. It is most frequently used  to describe the time when cereal cultivation and  domestication  was introduced"
+    }
+];
