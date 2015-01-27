@@ -1,8 +1,38 @@
 (function(){
 	var expo = {};
-	expo.map = L.map('map', '', {zoomControl: false}).setView([50.188214, -5.293300], 18);
-    expo.oms = new OverlappingMarkerSpiderfier(map);
 
+    function init(){
+        expo.map = L.map('mapdiv', '', {zoomControl: false}).setView([50.188214, -5.293300], 18);
+        expo.oms = new OverlappingMarkerSpiderfier(expo.map);
+
+        expo.layers.satellite = L.tileLayer('http://{s}.tiles.mapbox.com/v3/paperclipmonkey.kggafd49/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 18
+        }).addTo(expo.map);
+
+        expo.layers.road = L.tileLayer('http://{s}.tiles.mapbox.com/v3/paperclipmonkey.kgon2gjp/{z}/{x}/{y}.png', {
+            attribution: 'Road map &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'});
+
+        expo.layers.old = L.tileLayer('http://nls-1.tileserver.com/nls/{z}/{x}/{y}.jpg', {
+            attribution: 'OS Map provided by; <a href="http://maps.nls.uk/os/6inch-england-and-wales/index.html">NLS</a>'});
+
+
+        var quoitIcon = L.icon({
+            iconUrl: 'assets/img/quoit-shape.png',
+            // iconRetinaUrl: 'my-icon@2x.png',
+            iconSize: [75, 38],
+            iconAnchor: [50, 25],
+            popupAnchor: [-3, -50],
+            // shadowUrl: 'my-icon-shadow.png',
+            // shadowRetinaUrl: 'my-icon-shadow@2x.png',
+            // shadowSize: [68, 95],
+            // shadowAnchor: [22, 94]
+        });
+
+        var m = L.marker([50.188214, -5.293300], {icon: quoitIcon}).addTo(expo.map);
+    }
+
+    expo.init = init;
 
 	expo.switchModes = function(mode){
         //Hide all of the things
@@ -10,10 +40,13 @@
         $("#walkholder").hide();
         //Hide overlays
         mapm.map.removeLayer(mapm.layers.walks);
-        console.log(mode + 'Modehere');
         if(mode == "dig"){
-          $("#sliderholder").show();
-          //Show timebar
+          $("#sliderholder").show();//Show timebar
+          //Init timebar
+
+          
+          renderTimeLine("#sliderholder .epochholder", epochData);
+          console.log(epochData);
           //Add dig data
         } else if (mode == "explore"){
           //$("#walkholder").show();//Only show when clicked on
@@ -25,30 +58,8 @@
     };
 
     expo.layers = {};
-    expo.layers.satellite = L.tileLayer('http://{s}.tiles.mapbox.com/v3/paperclipmonkey.kggafd49/{z}/{x}/{y}.png', {
-        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-        maxZoom: 18
-    }).addTo(expo.map);
-
-    expo.layers.road = L.tileLayer('http://{s}.tiles.mapbox.com/v3/paperclipmonkey.kgon2gjp/{z}/{x}/{y}.png', {
-        attribution: 'My road map &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'});
-
+    
     expo.layers.current = "satellite";
 
-    var myIcon = L.icon({
-        iconUrl: 'assets/img/quoit-shape.png',
-        // iconRetinaUrl: 'my-icon@2x.png',
-        iconSize: [75, 38],
-        iconAnchor: [50, 25],
-        popupAnchor: [-3, -50],
-        // shadowUrl: 'my-icon-shadow.png',
-        // shadowRetinaUrl: 'my-icon-shadow@2x.png',
-        // shadowSize: [68, 95],
-        // shadowAnchor: [22, 94]
-    });
-
-
-
-    var m = L.marker([50.188214, -5.293300], {icon: myIcon}).addTo(expo.map);
     window.mapm = expo;
 })();

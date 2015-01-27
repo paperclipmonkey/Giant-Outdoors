@@ -16,8 +16,10 @@
 
   <!--    Leaflet     -->
   <link rel="stylesheet" href="assets/css/leaflet.css" />
+  <link rel="stylesheet" href="assets/css/leaflet.label.css" />
   <script src="assets/js/leaflet-src.js"></script>
   <script src="assets/js/leaflet.markercluster.js"></script>
+  <script src="assets/js/leaflet.label.js"></script>
   <script src="assets/js/oms.min.js"></script>
 
 </head>
@@ -46,13 +48,19 @@
       <div class="maplayerbuttons btn-group">
           <button href="#fakelink" class="btn-tilelayer btn btn-info btn-fill">Map</button>
           <button href="#fakelink" class="btn-tilelayer btn btn-info">Satellite</button>
+          <button href="#fakelink" class="btn-tilelayer btn btn-info btn-fill">Old OS</button>
       </div>
   </div>
   <div id="contentholder">
     
-    <div id="map">
+    <div id="mapdiv">
       <div id="sliderholder">
-        <div id="slider2"  data-toggle="tooltip" data-placement="right" title="Display date whilst dragging or hovering"></div>
+        <div id="slidertitle">Victorian &copy; 1800 - 1900</div>
+        <div id="slider2" data-toggle="popover" data-placement="top" ></div>
+        <!-- title="Date" data-content="And here's some amazing content. It's very engaging. Right?" -->
+        <!-- data-toggle="tooltip" data-placement="top" title="Display date whilst dragging or hovering" -->
+        <div class="epochholder">
+        </div>
       </div>
     </div>
 
@@ -66,6 +74,8 @@
       <span class="infotitle">End: </span><span class="end info"></span>
       <span class="infotitle">Parking: </span><span class="parking info"></span>
       <span class="infotitle">Difficulty: </span><span class="difficulty info"></span>
+      <span class="infotitle">KML: </span><span class="info"> <a class="info kml" href="">Download</a></span>
+      <span class="infotitle">GPX: </span><span class="info"> <a class="info gpx" href="">Download</a></span>
     </div>
 
   </div>
@@ -83,9 +93,12 @@
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/intro.js"></script>
   <script src="assets/js/map.js"></script>
+  <script src="assets/js/timeline.js"></script>
 
 
+  <script src="assets/json/dates.json"></script>
   <script src="assets/geojson/walk1.geojson"></script>
+  <script src="assets/geojson/walk2.geojson"></script>
   <script src="assets/geojson/data.geojson"></script>
 
   <script type="text/javascript">
@@ -95,8 +108,11 @@
         $("#walkholder").hide();
       });
 
+      $(function () {
+        $('[data-toggle="popover"]').popover('show')
+      })
+
       $("#btndig, #btnexplore").click(function(){
-        console.log($(this).text());
         $(".btnswitch").addClass("btn-fill");
         $(this).removeClass("btn-fill");
         if($(this).attr('id') == "btndig"){
@@ -107,51 +123,166 @@
         }
       });
 
-      mapm.switchModes('dig');//Set up default page
-
-
-      var hanziNums = ["2014 AD", "2013 AD", "2010 AD", "2008 AD", "2000 AD", "1968 AD", "1900 AD", "1840 AD", "1700 AD", "1400 AD", "0 BC", "1000 BC", "2000 BC", "3000 BC"];
-
       $("#slider2").slider({
-        orientation: "vertical",
+        orientation: "horizontal",
         range: "min",
         min: 0,
         max: 100,
         value: 100,
         slide: function( event, ui ) {
-          var maxDate = 2015;
-          var minDate = -3000;
+          // var maxDate = 2015;
+          // var minDate = -3000;
+          
+          //Lookup in epochData
+          var epoch = getEpochFromPercent(ui.value, epochData);
 
-          var modPercentage = EasingFunctions.easeOutCubic(ui.value/100)
-          var onepercent = 5015 / 100;
-          var range = [];
-          range.push(minDate + ((modPercentage * 100 * onepercent) - 1 * onepercent));
-          range.push(minDate + ((modPercentage * 100 * onepercent) + 1 * onepercent));
-          console.log(range[0], range[1]);
+          $("#slidertitle").text(epoch['name'] + ' ' + epoch.dateStart + ' - ' + epoch.dateEnd);
+          var range = [epoch.dateStart, epoch.dateEnd];
+          //Get epoch from lookup
+          console.log(range);
 
           //Range needs to be from +1 to -1
           showHideMarkers(range);
         }
       });
 
+      function getEpochFromPercent(perc, epochs){
+        var epochi = 0;
+          while(epochi < epochs.length){
+            if(perc <= epochs[epochi].percentageStart && perc >= epochs[epochi].percentageEnd){
+              return epochs[epochi];
+            }
+            epochi++;
+          }
+        return epochs[0];
+      }
+
       $('#sliderholder').mousedown(function(e){
         return false;
       });
-    });
+
+    });//Jquery ready function
          
-    // - - - - - - - Surround with logic - - - - - - - - - - -
-    // introVideo.play();
-    // introVideo.onEnd(function(){
-    //   initMap();
-    // });
+    //- - - - - - - Surround with logic - - - - - - - - - - -
+    //introVideo.play();
+    //introVideo.onEnd(function(){
+    initMap();
+    //});
 
+    var markers;
     function initMap(){
+      mapm.init();
+      loadMarkers();
+      showHideMarkers();
 
+      mapm.oms.addListener('click', omsClickHandler);
+
+      //Add walks layer
+      mapm.layers.walks = L.layerGroup();
+      addWalkLayers(mapm.layers.walks);
+
+      mapm.switchModes('dig');//Set up default page
+    }
+
+    function addWalkLayers (walkLGrp) {
+      function walkClicked(marker){
+        var props = marker.target.feature.properties;
+        $("#walkholder").show();
+        $("#walkholder .title").text(props.title);
+        $("#walkholder .subtitle").text(props.subtitle);
+        $("#walkholder .description").text(props.description);
+        $("#walkholder .start").text(props.start);
+        $("#walkholder .end").text(props.end);
+        $("#walkholder .parking").text(props.parking);
+        $("#walkholder .photo").attr("src", "assets/content/" + props.photo);
+        $("#walkholder .difficulty").text(props.difficulty);
+        $("#walkholder .gpx").attr("href","assets/geojson/" + props.gpx);
+        $("#walkholder .kml").attr("href", "assets/geojson/" + props.kml);
+        this.feature.properties;
+      }
+
+      function onEachWalk(feature, layer) {
+          layer.bindLabel(feature.properties.title);
+          layer.on('click', walkClicked);
+      }
+
+      walkLGrp.addLayer(
+       L.geoJson(walk1, {
+        style: {
+          color: '#f00',
+          weight: 10,
+          opacity: 0.1
+        },
+        onEachFeature: onEachWalk
+      }));
+
+      walkLGrp.addLayer(
+       L.geoJson(walk1, {
+        style: {
+          color: '#f00',
+          weight: 2,
+          opacity: 1
+        },
+        onEachFeature: onEachWalk
+      }));
+
+      walkLGrp.addLayer(
+       L.geoJson(walk2, {
+        style: {
+          color: '#f00',
+          weight: 10,
+          opacity: 0.1
+        },
+        onEachFeature: onEachWalk
+      }));
+
+      walkLGrp.addLayer(
+       L.geoJson(walk2, {
+        style: {
+          color: '#f00',
+          weight: 2,
+          opacity: 1
+        },
+        onEachFeature: onEachWalk
+      }));
+    }
+
+    function omsClickHandler(marker) {
+      //Show element
+      if (marker.feature.properties) {
+        var props = marker.feature.properties;
+        var htmlString = "";
+        var extraProps = {};
+        if(props.Sketchfab){
+          htmlString += "<iframe width=\"400\" height=\"300\" src=\"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6/embed\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" onmousewheel=\"\"></iframe>\
+            <p style=\"font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;\">\
+                <a href=\"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6\" target=\"_blank\" style=\"font-weight: bold; color: #1CAAD9;\">View on Sketchfab</a>\
+            </p>";
+          extraProps.className = "wide-popup"
+        } else if(props.Image && props.Image != undefined){
+          htmlString += "<img class='width100' src='assets/content/" + props.Image + "'/>";
+        }
+        htmlString += "<h4>" + props.Title + "</h4>" +
+            "<p>" + props.Description + "</p>";
+            console.log(!props.URL);
+        if(props.URL){
+          htmlString += "<a href=" + props.URL + " target=\"_BLANK\">find out more...</a>";
+        }
+        var popup = new L.popup(extraProps);
+        popup.setContent(htmlString);
+        popup.setLatLng(marker.getLatLng());
+        mapm.map.openPopup(popup);
+        // layer.bindPopup(
+        //   htmlString,
+        //   extraProps
+        //   //feature.properties.popupContent
+        // );
+      }
     }
 
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
-    })
+    });
 
     $('.btn-tooltip').tooltip();
     $('.label-tooltip').tooltip();
@@ -165,66 +296,7 @@
           display_buttons.addClass(new_class);
           display_div.attr('data-class', new_class);
         }
-    });
-    $( "#slider-range" ).slider({
-  		range: true,
-  		min: 0,
-  		max: 500,
-  		values: [ 75, 300 ],
-    });
-  	$( "#slider-default" ).slider({
-  			value: 70,
-  			orientation: "horizontal",
-  			range: "min",
-  			animate: true
-  	});
-  	$('.carousel').carousel({
-      interval: 4000
-    });
-
-    function walkClicked(marker){
-      var props = marker.feature.properties;
-      $("#walkholder").show();
-      $("#walkholder .title").text(props.title);
-      $("#walkholder .subtitle").text(props.subtitle);
-      $("#walkholder .description").text(props.description);
-      $("#walkholder .start").text(props.start);
-      $("#walkholder .end").text(props.end);
-      $("#walkholder .parking").text(props.parking);
-      $("#walkholder .photo").attr("src", "assets/content/" + props.photo);
-      $("#walkholder .difficulty").text(props.difficulty);
-      this.feature.properties;
-    }
-
-
-    mapm.oms.addListener('click', function(marker) {
-      //Show element
-      var props = marker.feature.properties;
-      popup.setContent(props.Description);
-      popup.setLatLng(marker.getLatLng());
-      mapm.map.openPopup(popup);
-    });
-
-    function onEachWalk(feature, layer) {
-        // does this feature have a property named popupContent?
-        
-
-        /*layer.on('click', onClick);
-        */
-
-        // if (feature.properties && feature.properties.popupContent) {
-        //     layer.bindPopup(feature.properties.popupContent);
-        // }
-    }
-
-    mapm.layers.walks = L.geoJson(walk1, {
-      style: {
-        color: '#f00',
-        weight: 3,
-        opacity: 0.7
-      },
-      onEachFeature: onEachWalk
-    });
+    });    
 
     function onEachFeatureFun(feature, layer) {
         // does this feature have a property named popupContent?
@@ -232,33 +304,29 @@
         if (feature.properties) {
           var props = feature.properties;
           var htmlString = "";
-          if(props.Image && props.Image != undefined){
+          var extraProps = {};
+          if(props.Sketchfab){
+            htmlString += "<iframe width=\"400\" height=\"300\" src=\"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6/embed\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" onmousewheel=\"\"></iframe>\
+              <p style=\"font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;\">\
+                  <a href=\"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6\" target=\"_blank\" style=\"font-weight: bold; color: #1CAAD9;\">View on Sketchfab</a>\
+              </p>";
+            extraProps.className = "wide-popup"
+          } else if(props.Image && props.Image != undefined){
             htmlString += "<img class='width100' src='assets/content/" + props.Image + "'/>";
           }
           htmlString += "<h4>" + props.Title + "</h4>" +
               "<p>" + props.Description + "</p>";
-            layer.bindPopup(
-              htmlString
-              //feature.properties.popupContent
-            );
+              console.log(!props.URL);
+          if(props.URL){
+            htmlString += "<a href=" + props.URL + " target=\"_BLANK\">find out more...</a>";
+          }
+          // layer.bindPopup(
+          //   htmlString,
+          //   extraProps
+          //   //feature.properties.popupContent
+          // );
         }
     }
-
-    var baseballIcon = L.icon({
-      iconUrl: 'assets/img/marker-icon-orange-2x.png',
-      iconSize: [25, 41],
-      iconAnchor: [12, 0],
-      popupAnchor: [0, 0]
-    });
-
-    var markers;
-
-    var popup = new L.Popup();
-    mapm.oms.addListener('click', function(marker) {
-      popup.setContent(marker.desc);
-      popup.setLatLng(marker.getLatLng());
-      mapm.map.openPopup(popup);
-    });
 
   // var loc = new L.LatLng(50.188214, -5.293300);
   // var marker = new L.Marker(loc);
@@ -271,13 +339,54 @@
   // oms.addMarker(marker2);
 
     function loadMarkers(){
+
+      //Define marker icons that can be used
+      var markerIcons = {};
+      markerIcons.orange = L.icon({
+        iconUrl: 'assets/img/marker-orange.png',
+        iconRetinaUrl: 'assets/img/marker-orange-2x.png',
+        shadowUrl: 'assets/img/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [0, 0]
+      });
+
+      markerIcons.brown = L.icon({
+        iconUrl: 'assets/img/marker-brown.png',
+        iconRetinaUrl: 'assets/img/marker-brown-2x.png',
+        shadowUrl: 'assets/img/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [0, 0]
+      });
+
+      markerIcons.green = L.icon({
+        iconUrl: 'assets/img/marker-green.png',
+        iconRetinaUrl: 'assets/img/marker-green-2x.png',
+        shadowUrl: 'assets/img/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [0, 0]
+      });
+
       markers = L.geoJson(data, {
         //onEachFeature: onEachFeatureFun,
         pointToLayer: function (feature, latlng) {
           switch (feature.properties["Marker Type"]) {
-            case 'other site, orange': return L.marker(latlng, {icon: baseballIcon});
+            //find
+            //other site
+            //
+            case 'other site':
+              return L.marker(latlng, {icon: markerIcons.orange});
+            case 'find':
+              return L.marker(latlng, {icon: markerIcons.brown});
+            case 'plant' :
+              return L.marker(latlng, {icon: markerIcons.green});
+            case 'key site' :
+              return L.marker(latlng, {icon: markerIcons.brown});
           }
-            return L.marker(latlng);
+          return L.marker(latlng, {icon: markerIcons.orange});
+
         },
         // pointToLayer: function (feature, latlng) {
         //   return;// L.marker(latlng, {icon: baseballIcon});
@@ -285,7 +394,6 @@
       });
     }
 
-    loadMarkers();
 
     function showHideMarkers(dates){
       mapm.oms.clearMarkers();
@@ -301,27 +409,28 @@
 
     function filterMarker(dates, feature){
       feature = feature.feature;
+      var props = feature.properties
       if(typeof dates != 'object'){
         return true;
       }
-      if(feature.properties.StartDate > dates[0] && feature.properties.StartDate < dates[1]){
-        console.log(feature.properties.StartDate + " is between: " + dates[0] + " and " + dates[1]);
+      if(props.StartDate <= dates[1] && dates[0] <= props.EndDate){
+        //console.log(props.StartDate + " is between: " + dates[0] + " and " + dates[1]);
         return true;
       } else {
         return false;
       }
     }
 
-    showHideMarkers();
-
     $(".btn-tilelayer").click(function(){
       mapm.map.removeLayer(mapm.layers["satellite"]);
       mapm.map.removeLayer(mapm.layers["road"]);
-      console.log($(this)[0].textContent);
+      mapm.map.removeLayer(mapm.layers["old"]);
       if($(this)[0].textContent == "Satellite"){
         mapm.map.addLayer(mapm.layers["satellite"]);
-      } else {
+      } else if($(this)[0].textContent == "Map") {
         mapm.map.addLayer(mapm.layers["road"]);
+      } else {
+        mapm.map.addLayer(mapm.layers["old"]);
       }
 
       $(".btn-tilelayer").addClass("btn-fill");//Add class to all buttons
