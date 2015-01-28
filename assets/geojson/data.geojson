@@ -1436,7 +1436,7 @@ var data = {
       "type": "Feature",
       "properties": {
         "Title": "Burnt flint tools",
-        "Lat": 50.140178,
+        "Lat": 50.188257,
         "Lng": -6.69004,
         "StartDate": -2500,
         "EndDate": -2000,
@@ -1454,8 +1454,8 @@ var data = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.69004,
-          50.140178
+          -5.293359,
+          50.188257
         ]
       }
     },
