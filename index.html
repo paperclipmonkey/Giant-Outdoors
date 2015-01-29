@@ -169,7 +169,6 @@
     //- - - - - - - Surround with logic - - - - - - - - - - -
     //introVideo.play();
     //introVideo.onEnd(function(){
-    initMap();
     //});
 
     var markers;
@@ -403,5 +402,9 @@
       $(".btn-tilelayer").addClass("btn-fill");//Add class to all buttons
       $(this).removeClass('btn-fill');//Remove class from this button
     });
+
+
+    //Start it all off
+    window.setTimeout(initMap, 0);
 </script>
 </html>
