@@ -73,12 +73,16 @@
     position: absolute;
     margin: auto;
     background: transparent;
-    width: 97%;
+    width: 99%;
   }
 
   .epochholder{
     overflow: auto;
     width: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    text-shadow: 0 0 1px #000;
   }
 
   .ui-widget-header{
@@ -109,10 +113,22 @@
     left: 5%;
     z-index: 1;
     bottom: 5%;
+    background: #fff;
+    border-radius: 5px;
+    border: 3px solid #41C6EB;
+    padding: 3px;
+  }
+
+  .tags{
+    margin: 10px 0;
+  }
+
+  .tags span{
+    border-radius: 7px;
+    margin-right: 5px;
+    padding: 5px;
     background: #41C6EB;
-    border: 3px solid #fff;
-    padding: 10px 10px 10px 10px;
-    display: none;
+    color: #fff;
   }
 
   .wide-popup .leaflet-popup-content{
@@ -122,7 +138,18 @@
   #slidertitle{
     text-align: center;
     font-size: 18px;
-    color: #fff;
+    color: #55c3eb;
+    position: absolute;
+    width: 100%;
+    top: -40px;
+  }
+
+  #slidertitle .inner{
+    background: #fff;
+    display: inline;
+    padding: 7px;
+    border-radius: 5px;
+    border: 3px solid #41C6EB;
   }
 
   #sliderholder .epochholder div {
