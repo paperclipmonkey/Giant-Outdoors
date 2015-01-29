@@ -124,22 +124,34 @@
         min: 0,
         max: 100,
         value: 100,
+        change: function( event, ui ) {
+          sliderUpdater(ui.value);
+        },
         slide: function( event, ui ) {
-          // var maxDate = 2015;
-          // var minDate = -3000;
-          
-          //Lookup in epochData
-          var epoch = getEpochFromPercent(ui.value, epochData);
+          sliderUpdater(ui.value);
+        }
+      });
 
-          $("#slidertitle").text(epoch['name'] + ' ' + epoch.dateStart + ' - ' + epoch.dateEnd);
+      // $("#slider2").slider(
+      //   'value',
+      //   $("#slider2").slider('value')
+      // );
+
+      function sliderUpdater(val){
+          var epoch = getEpochFromPercent(val, epochData);
+
+          $("#slidertitle .inner").html(epoch['name'] + ' ' + epoch.dateStart + ' - ' + epoch.dateEnd + " <i data-original-title class=\"fa fa-info-circle\" data-toggle=\"popover\" data-trigger=\"hover\" title=\"" + epoch.name + "\" data-content=\"" + epoch.description + "\" data-placement=\"top\"></i>");
+          //$('i').popover();
+
           var range = [epoch.dateStart, epoch.dateEnd];
           //Get epoch from lookup
           console.log(range);
 
           //Range needs to be from +1 to -1
           showHideMarkers(range);
-        }
-      });
+      }
+
+      window.sliderUpdater = sliderUpdater;
 
       function getEpochFromPercent(perc, epochs){
         var epochi = 0;
@@ -168,7 +180,7 @@
     function initMap(){
       mapm.init();
       loadMarkers();
-      showHideMarkers();
+      //showHideMarkers();
 
       mapm.oms.addListener('click', omsClickHandler);
 
@@ -176,7 +188,11 @@
       mapm.layers.walks = L.layerGroup();
       addWalkLayers(mapm.layers.walks);
 
-      mapm.switchModes('dig');//Set up default page
+      //setTimeout(function(){
+        mapm.switchModes('explore');//Set up default page
+        showHideMarkers();
+      //},0)
+
     }
 
     function addWalkLayers (walkLGrp) {
@@ -262,6 +278,13 @@
             console.log(!props.URL);
         if(props.URL){
           htmlString += "<a href=" + props.URL + " target=\"_BLANK\">find out more...</a>";
+        }
+        if(props.Tags){
+          htmlString += "<div class=\"tags\">";
+            for (var i = props.Tags.length - 1; i >= 0; i--) {
+              htmlString += "<span>" + props.Tags[i] + "</span>";
+            };
+          htmlString += "</div>";
         }
         var popup = new L.popup(extraProps);
         popup.setContent(htmlString);
