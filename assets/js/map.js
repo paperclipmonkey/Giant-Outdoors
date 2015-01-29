@@ -13,7 +13,7 @@
         expo.layers.road = L.tileLayer('http://{s}.tiles.mapbox.com/v3/paperclipmonkey.kgon2gjp/{z}/{x}/{y}.png', {
             attribution: 'Road map &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'});
 
-        expo.layers.old = L.tileLayer('http://nls-1.tileserver.com/nls/{z}/{x}/{y}.jpg', {
+        expo.layers.old = L.tileLayer('http://nls-1.tileserver.com/os_6_inch_gb/{z}/{x}/{y}.jpg', {
             attribution: 'OS Map provided by; <a href="http://maps.nls.uk/os/6inch-england-and-wales/index.html">NLS</a>'});
 
 
@@ -34,7 +34,13 @@
 
     expo.init = init;
 
+    expo.closePopups = function(){
+        mapm.map.closePopup();
+        $("#walkholder").hide();
+    }
+
 	expo.switchModes = function(mode){
+        mapm.closePopups();
         //Hide all of the things
         $("#sliderholder").hide();
         $("#walkholder").hide();
@@ -43,10 +49,9 @@
         if(mode == "dig"){
           $("#sliderholder").show();//Show timebar
           //Init timebar
-
-          
+          $("#slider2").slider('value', $("#slider2").slider('value'));
+          //sliderUpdater($("#slider2").slider('value'));
           renderTimeLine("#sliderholder .epochholder", epochData);
-          console.log(epochData);
           //Add dig data
         } else if (mode == "explore"){
           //$("#walkholder").show();//Only show when clicked on
