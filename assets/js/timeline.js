@@ -53,7 +53,6 @@ function renderTimeLine(elSel, arr){
 	// })
 
 	// $('.ui-slider-handle').on('show.bs.tooltip', function () {
-	// 	console.log('hiding');
 	// 	$('.ui-slider-handle').tooltip('destroy');
 	// });
 	// $('.ui-slider-handle').tooltip({

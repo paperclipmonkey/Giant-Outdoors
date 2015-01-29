@@ -145,7 +145,6 @@
 
           var range = [epoch.dateStart, epoch.dateEnd];
           //Get epoch from lookup
-          console.log(range);
 
           //Range needs to be from +1 to -1
           showHideMarkers(range);
@@ -275,7 +274,6 @@
         }
         htmlString += "<h4>" + props.Title + "</h4>" +
             "<p>" + props.Description + "</p>";
-            console.log(!props.URL);
         if(props.URL){
           htmlString += "<a href=" + props.URL + " target=\"_BLANK\">find out more...</a>";
         }
@@ -316,48 +314,7 @@
         }
     });    
 
-    function onEachFeatureFun(feature, layer) {
-        // does this feature have a property named popupContent?
-        //&& feature.properties.popupContent
-        if (feature.properties) {
-          var props = feature.properties;
-          var htmlString = "";
-          var extraProps = {};
-          if(props.Sketchfab){
-            htmlString += "<iframe width=\"400\" height=\"300\" src=\"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6/embed\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" onmousewheel=\"\"></iframe>\
-              <p style=\"font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;\">\
-                  <a href=\"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6\" target=\"_blank\" style=\"font-weight: bold; color: #1CAAD9;\">View on Sketchfab</a>\
-              </p>";
-            extraProps.className = "wide-popup"
-          } else if(props.Image && props.Image != undefined){
-            htmlString += "<img class='width100' src='assets/content/" + props.Image + "'/>";
-          }
-          htmlString += "<h4>" + props.Title + "</h4>" +
-              "<p>" + props.Description + "</p>";
-              console.log(!props.URL);
-          if(props.URL){
-            htmlString += "<a href=" + props.URL + " target=\"_BLANK\">find out more...</a>";
-          }
-          // layer.bindPopup(
-          //   htmlString,
-          //   extraProps
-          //   //feature.properties.popupContent
-          // );
-        }
-    }
-
-  // var loc = new L.LatLng(50.188214, -5.293300);
-  // var marker = new L.Marker(loc);
-  // map.addLayer(marker);
-  // oms.addMarker(marker);
-
-  // var marker2 = new L.Marker(loc);
-
-  //   map.addLayer(marker2);
-  // oms.addMarker(marker2);
-
     function loadMarkers(){
-
       //Define marker icons that can be used
       var markerIcons = {};
       markerIcons.orange = L.icon({
@@ -388,7 +345,6 @@
       });
 
       markers = L.geoJson(data, {
-        //onEachFeature: onEachFeatureFun,
         pointToLayer: function (feature, latlng) {
           switch (feature.properties["Marker Type"]) {
             //find
@@ -405,10 +361,7 @@
           }
           return L.marker(latlng, {icon: markerIcons.orange});
 
-        },
-        // pointToLayer: function (feature, latlng) {
-        //   return;// L.marker(latlng, {icon: baseballIcon});
-        // }
+        }
       });
     }
 
@@ -432,7 +385,6 @@
         return true;
       }
       if(props.StartDate <= dates[1] && dates[0] <= props.EndDate){
-        //console.log(props.StartDate + " is between: " + dates[0] + " and " + dates[1]);
         return true;
       } else {
         return false;
