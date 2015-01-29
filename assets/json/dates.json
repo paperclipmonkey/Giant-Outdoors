@@ -35,12 +35,12 @@ window.epochData = [
         "dateEnd": 1540,
         "description": "the Middle Ages, or Medieval period, lasted from the 11th to the 15th century. merged into the Renaissance and the Age of Discovery. In 1099 Mount's Bay was inundated by the sea, making St Michaels Mount an island. In 1497 there was a Cornish Rebellion. The leaders were executed at Tyburn"
     },
-    {
-        "name": "Early Medieval",
-        "dateStart": 1066,
-        "dateEnd": 1410,
-        "description": "This period began with the collapse of the Western Roman Empire. There is  evidence for Late antiquity or 'Dark Ages' trading contacts at the stronghold of Tintagel in Cornwall"
-    },
+    // {
+    //     "name": "Early Medieval",
+    //     "dateStart": 1066,
+    //     "dateEnd": 1410,
+    //     "description": "This period began with the collapse of the Western Roman Empire. There is  evidence for Late antiquity or 'Dark Ages' trading contacts at the stronghold of Tintagel in Cornwall"
+    // },
     {
         "name": "Vikings and Anglo Saxons",
         "dateStart": 410,
