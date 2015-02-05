@@ -211,7 +211,7 @@
       }
 
       function onEachWalk(feature, layer) {
-          layer.bindLabel(feature.properties.title);
+          layer.bindLabel("Click to view " + feature.properties.title);
           layer.on('click', walkClicked);
       }
 
