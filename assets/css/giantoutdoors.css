@@ -5,8 +5,58 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 100;
     background: #000;
+  }
+
+  /* Mode buttons */
+  .btnswitch{
+    background: transparent;
+  }
+
+  .btnswitch:focus{
+    background: transparent;
+  }
+
+  .btnswitch:active{
+    background: transparent;
+  }
+
+  .btnswitch.btnfill{
+    background-color: #41C6EB;
+  }
+
+  .btnswitch.btnfill:focus{
+    background-color: #41C6EB;
+  }
+
+  .btnswitch.btnfill:active{
+    background-color: #41C6EB;
+  }
+
+  /* Layer buttons */
+  .btn-tilelayer{
+    background: transparent;
+  }
+
+  .btn-tilelayer:focus{
+    background: transparent;
+  }
+
+  .btn-tilelayer:active{
+    background: transparent;
+  }
+
+  .btn-tilelayer.btnfill{
+    background-color: #41C6EB;
+  }
+
+  .btn-tilelayer.btnfill:focus{
+    background-color: #41C6EB;
+  }
+
+  .btn-tilelayer.btnfill:active{
+    background-color: #41C6EB;
   }
 
   .modebuttons img{
@@ -57,6 +107,7 @@
     height: 38px;
     background: #55c3eb;
     border-radius: 10px;
+    filter: none !important;
   }
 
   .maplayerbuttons{
@@ -77,7 +128,7 @@
   }
 
   .epochholder{
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     color: #fff;
     text-align: center;
@@ -111,7 +162,7 @@
     position: absolute;
     width: 90%;
     left: 5%;
-    z-index: 1;
+    z-index: 100;
     bottom: 5%;
     background: #fff;
     border-radius: 5px;
@@ -222,7 +273,7 @@
     right: 0px;
     background: #fff;
     width: 320px;
-    z-index: 1;
+    z-index: 100;
     overflow: scroll;
     padding: 10px;
     -webkit-font-smoothing: antialiased;
