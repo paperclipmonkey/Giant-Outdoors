@@ -226,43 +226,40 @@
           layer.on('click', walkClicked);
       }
 
-      walkLGrp.addLayer(
-       L.geoJson(walk1, {
-        style: {
+      var walkStyle1 = {
           color: '#f00',
           weight: 10,
           opacity: 0.1
-        },
+      };
+
+      var walkStyle2 = {
+          color: '#f00',
+          weight: 2,
+          opacity: 1,
+          dashArray: '10, 5'
+      };
+
+      walkLGrp.addLayer(
+       L.geoJson(walk1, {
+        style: walkStyle1,
         onEachFeature: onEachWalk
       }));
 
       walkLGrp.addLayer(
        L.geoJson(walk1, {
-        style: {
-          color: '#f00',
-          weight: 2,
-          opacity: 1
-        },
+        style: walkStyle2,
         onEachFeature: onEachWalk
       }));
 
       walkLGrp.addLayer(
        L.geoJson(walk2, {
-        style: {
-          color: '#f00',
-          weight: 10,
-          opacity: 0.1
-        },
+        style: walkStyle1,
         onEachFeature: onEachWalk
       }));
 
       walkLGrp.addLayer(
        L.geoJson(walk2, {
-        style: {
-          color: '#f00',
-          weight: 2,
-          opacity: 1
-        },
+        style: walkStyle2,
         onEachFeature: onEachWalk
       }));
     }
