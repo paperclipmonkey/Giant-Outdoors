@@ -1,23 +1,28 @@
 (function(){
       var endFun; 
+      var el;
+      var myPlayer;
       $(function(){
         $('.intro .close').click(function(){
           end();
         });
+
+        videojs("intro_video").ready(function(){
+          myPlayer = this;
+
+          // Start playing the video.
+          $('.intro').show();
+          myPlayer.play();
+
+          myPlayer.on('ended', function() {
+              end();
+          });
+        });
+
       });
 
-      function play(){
-        $('.intro').show();//show intro
-        var vid = document.getElementById("video");
-        vid.play();
-        vid.onended = function() {
-            end();
-        };
-      }
-
       function end(){
-        var vid = document.getElementById("video");
-        vid.pause();
+        myPlayer.pause();
         $('.intro').hide();//Hide video element
         if(endFun && typeof endFun == 'function'){
           endFun();
@@ -29,7 +34,7 @@
       }
 
       window.introVideo = {
-        play: play,
+        // play: play,//Autoplay instead
         end: end,
         onEnd: onEnd
       }

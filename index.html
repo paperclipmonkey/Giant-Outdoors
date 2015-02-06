@@ -12,6 +12,13 @@
   <!--     Font Awesome     -->
   <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
 
+  <!--     Modernizr     -->
+  <script src="assets/js/modernizr.custom.44710.js"></script>
+
+  <!--     Video.js     -->
+  <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/4.11/video.js"></script>
+
   <!--    Leaflet     -->
   <link rel="stylesheet" href="assets/css/leaflet.css" />
   <link rel="stylesheet" href="assets/css/leaflet.label.css" />
@@ -22,13 +29,22 @@
   <script src="assets/js/leaflet.edgemarker.js"></script>
   <script src="assets/js/oms.min.js"></script>
 
+  <!--     Custom CSS     -->
   <link href="assets/css/giantoutdoors.css" rel="stylesheet" />
 
 </head>
 <body>
   <div class="intro">
-<!--     <video id="video" src="assets/video/intro.mp4"></video>
- -->    <a class="close btn btn-info btn-fill">Skip</a>
+      <video id="intro_video" class="video-js vjs-default-skin"
+            controls preload="auto" width="auto" height="auto"
+            poster="assets/img/splash.jpg"
+            data-setup='{}'>
+           <source src="assets/video/giants_export_xld.mp4" type='video/mp4' />
+           <source src="assets/video/giants_export_xld.webm" type='video/webm' />
+           <source src="assets/video/giants_export_xld.ogv" type='video/ogg' />
+           <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+      </video>
+      <a id="skipvideo" class="close btn btn-info btn-fill">Skip</a>
   </div>
   <div class="row1">
       <div class="logoholder">
@@ -168,11 +184,6 @@
       });
 
     });//Jquery ready function
-         
-    //- - - - - - - Surround with logic - - - - - - - - - - -
-    //introVideo.play();
-    //introVideo.onEnd(function(){
-    //});
 
     var markers;
     function initMap(){
@@ -406,8 +417,14 @@
       $(this).removeClass('btn-fill');//Remove class from this button
     });
 
+    $(function(){
+        //Start it all off
+        // $('skipvideo').click(introVideo.end());
+        introVideo.onEnd(function(){
+          initMap();
+        });
+    });
 
-    //Start it all off
-    window.setTimeout(initMap, 0);
+
 </script>
 </html>
