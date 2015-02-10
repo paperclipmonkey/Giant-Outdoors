@@ -1,0 +1,226 @@
+var keysites = {  
+  "type":"FeatureCollection",
+  "features": [  
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Quoit",
+        "StartDate":-3500,
+        "EndDate":1833,
+        "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
+        "Image":"standing_quoit.eps",
+        "Description":"Carwynnen quoit is a Neolithic chambered tomb. The Giant's Quoit tomb was first recorded in 1700 and is marked as 'Cromlech' on the 1839 OS map. In 1950 the monument consisted of three uprights supporting a capstone, having been re-erected after the collapse of the chamber just before 1872. The chamber collapsed again in 1966. In 2014 it was re-erected by Sustrust.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28406&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"1",
+        "Tags":[  
+          "quoit",
+          "neolithic"
+        ],
+        "Marker Type":"key site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293354,
+          50.188185
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Quoit",
+        "StartDate":1834,
+        "EndDate":1842,
+        "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
+        "Image":"fallen_quoit_1834_1967.jpg",
+        "Description":"The Cromlech fell down before 1834, the late EWW Pendarves re-erected it. The tomb  beneath the cromlech does not seem to have been excavated, perhaps due to the state of the capstone, which  weighs 10 tons. A long narrow pit sunk by the cromlech was discovered in the early hours of the morning. It was supposed that someone had a dream or vision of buried treasure. Reference: Johnny Arthur (1860-1940)",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28406&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"1",
+        "Tags":[  
+          "quoit",
+          "neolithic"
+        ],
+        "Marker Type":"key site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293354,
+          50.188185
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Quoit",
+        "StartDate":1843,
+        "EndDate":1966,
+        "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
+        "Image":"standing_quoit.jpg",
+        "Description":"",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          ""
+        ],
+        "Marker Type":"key site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293354,
+          50.188185
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Quoit",
+        "StartDate":1967,
+        "EndDate":2013,
+        "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
+        "Image":"fallen_quoit_1834_1967.jpg",
+        "Description":"In 1966 the quoit collapsed for a second time after an earthquake was recorded on 23rd July with an intensity of force 5 on the international scale. It was felt in all the major towns in Cornwall and there were reports of houses shaking and heavy pots and pans rattling. Crockery fell from dressers. An off-duty policeman in Falmouth thought that a mine had exploded on the beach. ",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          ""
+        ],
+        "Marker Type":"key site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293354,
+          50.188185
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Quoit",
+        "StartDate":2014,
+        "EndDate":2015,
+        "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
+        "Image":"standing_quoit.jpg",
+        "Description":"Carwynnen quoit is a Neolithic chambered tomb. The Giant's Quoit tomb was first recorded in 1700 and is marked as 'Cromlech' on the 1839 OS map. In 1950 the monument consisted of three uprights supporting a capstone, having been re-erected after the collapse of the chamber just before 1872. The chamber collapsed again in 1966. In 2014 it was re-erected by Sustrust.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          ""
+        ],
+        "Marker Type":"key site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293354,
+          50.188185
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Coffin stone'",
+        "StartDate":0,
+        "EndDate":0,
+        "Sketchfab":"https://sketchfab.com/models/94df00f68661472e80c1ae24fe13ed34",
+        "Image":[  
+          "coffin_stone_1.jpg",
+          "coffin_stone_interpretation.jpg"
+        ],
+        "Description":"This stone was found in a test pit in 2014. At rst glance, the Cofn Stone appears to have a complex latticework of lines reminiscent of neolithic and Bronze Age lozenge designs carved into it. Close examination has led to the opinion the markings are unintentional and are the result of the stone being dragged in several different directions across rough ground.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"",
+        "Tags":[  
+          ""
+        ],
+        "Marker Type":"key site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.292831,
+          50.187903
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Pasty stone'",
+        "StartDate":0,
+        "EndDate":0,
+        "Sketchfab":"",
+        "Image":"pasty_stone.jpg",
+        "Description":"The 'pasty stone' was so called because it displayed neatly parallel deep grooves and had the shape and appearance of a large stone pasty! It was uncovered in 2014.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"",
+        "Tags":[  
+          ""
+        ],
+        "Marker Type":"key site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293001,
+          50.187934
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Shield stone'",
+        "StartDate":0,
+        "EndDate":0,
+        "Sketchfab":"",
+        "Image":"[shield stone 1.jpg, shield_stone_interpretation.jpg]",
+        "Description":"The 'shield stone' has interesting marks on its surface. It is likely that these lines are made by human hand. Many factors could have caused the markings, and they may not have been part of a single considered act. The stone may have been used to polish a stone axe over a number of years, or the groove marks are the result of an agricultural process.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"",
+        "Tags":[  
+          ""
+        ],
+        "Marker Type":"key site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293442,
+          50.188185
+        ]
+      }
+    }
+  ]
+}

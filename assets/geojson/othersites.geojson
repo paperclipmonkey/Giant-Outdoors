@@ -1,0 +1,1071 @@
+var other = {  
+  "type":"FeatureCollection",
+  "features": [  
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Field system and hut circle settlement",
+        "StartDate":-800,
+        "EndDate":42,
+        "Sketchfab":"",
+        "Image":"hut_circles_cooper_hill_ct.jpg",
+        "Description":"This prehistoric settlement at Carwynnen is first recorded in 1897. The site consists of two hut circles and lynchets to the east. Pottery from partial excavation in 1933 and 1951 indicates an Iron Age date.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO20781&resourceID=1020",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "ironage"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.280094,
+          50.182803
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"School",
+        "StartDate":1842,
+        "EndDate":1842,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"Part demolished in 1870. Associated with Schoolmaster's house to the east and part of 'model' village including a church, buiral ground and cottages constructed by EWW Pendarves.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO52973&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293343,
+          50.194123
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Teachers house",
+        "StartDate":1842,
+        "EndDate":1842,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"Schoolmaster's house in Tudor style by George Whightwick of Plymouth for the Pendarves estate. Part of wider 'model' village and built for now ruined school to the west on opposite side of the road. Granite ashlar, slate roof.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO52974&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.292358,
+          50.194061
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Church",
+        "StartDate":1841,
+        "EndDate":1841,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The church of St John was built as the parish church of Treslothan. Restoration took place in 1880. The structure consists of a chancel, nave, porch, and bell gable. It is alleged to stand on the site of the medieval chapel of Treslothan and contains a medieval marble mortar and an C10 or C11 inscribed stone slab, found in the ruins in 1840, now mounted as an altar mensa in the lady chapel. ",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28448&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293166,
+          50.193588
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Cross",
+        "StartDate":1066,
+        "EndDate":1539,
+        "Sketchfab":"",
+        "Image":"med_cross_dw.jpg",
+        "Description":"A wheel-headed cross found at Killivose and moved from there to Pendarves, now stands outside the east end of the C19 church at Treslothan. The scheduling document describes the cross as 0.79m high, 0.48m wide across the head and 0.2m across the shaft, and 0.15m thick. The front has a figure of Christ in high relief. On the back is a long shafted cross in relief. It appears retouched.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO6076&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "medieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293166,
+          50.193596
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Mausoleum",
+        "StartDate":1801,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The Pendarves family mausoleum is next to the church at Treslothan. It is Early English style with diagonal buttresses to all corners, with 2 offsets, and matching side-wall buttresses; the gabled east front is almost filled by a large 2-centred arch with roll-moulded surround. The roof is made of solid slabs of granite. Acoustics are marvellous here, try singing a simple round in front of the mausoleum. ",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO46872&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "medieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.29302,
+          50.193502
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Chapel",
+        "StartDate":1427,
+        "EndDate":1427,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"According to Thomas the site of St James chapel at Treslothan, licensed in 1427, may be beneath the present church. Henderson however states that the medieval chapel at Treslothan was not on the site of the present church. A font now in Treslothan church is said to have been found on the site of this chapel, as was the altar slab.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO10322&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "medieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.292594,
+          50.193425
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"War memorial",
+        "StartDate":1801,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"A dressed granite war memorial at Treslothan is recorded on the 1st Edition 1:2500 OS map c1880. The memorial was donated by the Pendarves family.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO56335&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "19thcentury"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.292765,
+          50.193869
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Settlement",
+        "StartDate":1282,
+        "EndDate":1282,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The settlement of Treslothan is first recorded in 1282. The name is Cornish and contains the element tre, 'estate, farmstead' (which implies a settlement of early medieval origin), and a personal name.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO17719&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "earlymedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.292485,
+          50.193877
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Vicarage",
+        "StartDate":1843,
+        "EndDate":1843,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The Vicarage, now private dwelling was built by EWW Pendarves, designed by George Wightwick of Plymouth. It has snecked granite with quoins, slate roof. Tudor style, with mullioned windows under hoodmoulds, steeply pitched roofs, suggesting it was originally thatched, gable copings with kneelers, and chimneys with tall coupled octagonal flues. It consists of two storeys with an asymmetrical entrance facade to the road (architecturally the rear) with gabled porch offset to the right of centre. There is a Tudor arched doorway with a recessed door.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO56336&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "19thcentury"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.292193,
+          50.193706
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Pair of cottages",
+        "StartDate":1845,
+        "EndDate":1845,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"A pair of cottages, now one dwelling, built by EWW Pendarves, designed by George Wightwick of Plymouth. It has snecked granite ashlar, slate roof. H-plan formed by short central range with cross-wings. Tudor style. The set-back single-storey centre has a 6-light chamfered mullion- and-transom window with diamond leaded glazing. Over the centre of this a datestone with raised lettering: E.W.W.P. 1845. ",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO56337&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "19thcentury"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.291463,
+          50.193277
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Well",
+        "StartDate":1845,
+        "EndDate":1845,
+        "Sketchfab":"",
+        "Image":"treslothan_well_ss.jpg",
+        "Description":"Treslothan well is recorded by Thomas. \"Circa 1845, probably by George Wightwick of Plymouth for the Pendarves estate. Set into stone \"hedge\", protecting a small rectangular trough. Granite ashlar. Designed as a gabled porch, in Gothic style. History: part of small model village built by E.W.W.Pendarves on site of former hamlet of Treslothan.\" (EH Listing Description, 1989). Drawing: Suzy Sharpe for Sustrust",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28420&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.291926,
+          50.193893
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Chingwith Settlement",
+        "StartDate":1583,
+        "EndDate":1653,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"First recorded in 1583 according to Thomas or 1653 by the ICS index. The name is Cornish and contains the elements chy 'house, cottage', an 'the', and gwyth 'trees'. Thomas lists this as a medieval settlement, at SW 6535 3838, and notes possible remains of a ruined farmstead. Padel states that the settlement is last recorded in 1838.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO13955&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "medieval",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.289322,
+          50.198825
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Tolcarne stamping mill",
+        "StartDate":1540,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The tithe map of 1842 shows tolcarne stamps at sw 6550 3838 and a second stamping mill at sw 6544 3838, occupied by j. Eva.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28829&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.287224,
+          50.198885
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Tolcarne Mine",
+        "StartDate":1860,
+        "EndDate":1880,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"Tolcarne and South Tolcarne Mine were tinworks in 1584, working in about 1849-52 then abandoned, but reopened again in 1855 as West Wheal Grenville, reverting to the name Tolcarne in 1858 under which it continued until 1867. In 1872 a mine called South Tolcarne was working in the same ground, continuing until 1886 when it changed to West Condurrow. The company was wound up in 1888.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO12598&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.285838,
+          50.199104
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Iron Age Round",
+        "StartDate":-800,
+        "EndDate":409,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The field-name 'The Round' is recorded on the Tithe Map at this location, Thomas lists this as the possible site of a round or Iron Age/Romano-British enclosed settlement, but notes no extant remains.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO8541&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "ironage"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.28526,
+          50.19885
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"School",
+        "StartDate":1890,
+        "EndDate":1890,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The Board School, Tolcarne Road is recorded on the 2nd Edition 1:2500 1907 OS map. Still extant and in use as a Playgroup.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO53010&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.28599,
+          50.205397
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Sunday school",
+        "StartDate":1800,
+        "EndDate":1845,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"Wesleyan Sunday school, recorded on the 2nd Edition 1907 OS Map, now used as Methodist chapel. Granite rubble and stucco. Gothic style. 2-storey front gable end has cross finial and cruciform capped stuccoed buttresses. Central tripartite windows, the upper window with stepped lights under a linked hoodmould and with Y-tracery to the central light. Entrance porch to right-hand return.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO33086&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "19thcentury"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.285231,
+          50.206588
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Shaft",
+        "StartDate":1540,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"A mine shaft 'opened up' in the garden of No 2 Bekelege Drive Beacon in 2006. The remedial works resulted in the bungalow being demolished to enable the shaft to be capped.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO52028&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.28304,
+          50.2053
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Condurrow Mine",
+        "StartDate":1540,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"An advert for shares for Great Condurrow was published in 1815. 29 tons of copper ore, were sold three years later. Condurrow improved in the 1820s, but closed by 1830. It reopened in 1844. After a long history under different companies in 1910 this mine became Cundurrow Mines Ltd., but was unsuccessful closing in 1914",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO39003&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.278631,
+          50.206414
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Iron Age round",
+        "StartDate":-800,
+        "EndDate":409,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The field-name 'Round Field' is recorded on the Tithe Map at this location. Thomas lists this as the possible site of a round or Iron Age/Romano-British enclosed settlement, but notes no extant remains.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO7874&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "ironage"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.277876,
+          50.205626
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Carnemouth settlement",
+        "StartDate":1066,
+        "EndDate":1539,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The settlement of Carnemough is first recorded in 1380. The name is Cornish and contains the elements carn, 'rock-pile, tor', and mogh, 'pigs, swine' (b3). Carnemough is no longer occupied; this may be the settlement named as \"Carn Moan\" on the 1813 OS map at SW 661 389 (b1). Carne Moan is recorded on the Tithe Map c1840 and on later maps 1st and 2nd Edition 1:2500 OS maps c1880 and c1907 (4&5). The 1st Edition 1:2500 OS map c1880 records two settlements consisting of two semi-detached cottages and associated gardens. The present field boundaries respect the earlier settlements.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO13831&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "medieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.279151,
+          50.203791
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"King Edward Mine",
+        "StartDate":1540,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"King Edward was a part of South Condurrow, and was given to Camborne School of Mines in 1897. It now comprises a museum with all the buildings, count house and  blacksmiths workshop, dry house and carpenters shop, timber-cutting building and office, stamps engine house and attached stamps together with dressing plant, assay office, calciner, survey office, grade II Listed buildings.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO39009&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.275514,
+          50.203894
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Wheal Grenville engine house",
+        "StartDate":1845,
+        "EndDate":1921,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"New Stamps at Wheal Grenville is one of three Scheduled engine houses on this mine, which worked between 1845 and 1921. The southern engine house was built 1890-91 when it worked 112 head of stamps and two rock crushers. The plant was extended in 1892, and  again in 1893 and 1894. It was out of use by 1921 when the mine closed. ",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28488&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.271401,
+          50.201131
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Prehistoric artefact scatter",
+        "StartDate":-500000,
+        "EndDate":42,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"A flint flake/blade was found in a drystone wall at 4 Boscean close, Troon.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO40340&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "neolithic"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.27524,
+          50.195805
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Bolenowe Mine",
+        "StartDate":1801,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"Bolenowe mine was in operation in about 1780, but closed and was reopened again in the early 1820s. In 1824 a small steam engine was installed. It then closed again and was reopened in 1850 when a 30'' engine was installed. The mine was abandoned again in 1856 or 57. It was reopened yet again in 1863 by the Wheal Grenville adventurers.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO11859&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.271727,
+          50.197703
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Nonconformist chapel",
+        "StartDate":1540,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"A Free United Methodist chapel is recorded on the 1st and 2nd Edition 1:2500 1880 and 1907 OS Map at this position in Troon. On the 1880 map a probable attached Sunday school to the rear is shown, but has disappeared by 1907. The chapel has been demolished and houses constructed on the site.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO52204&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.277455,
+          50.197452
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Troon settlement",
+        "StartDate":410,
+        "EndDate":1539,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The settlement of Troon is first recorded in 1327. The name is Cornish and contains the elements tre 'estate, farmstead', and goon 'downland, unenclosed pasture'. The element tre implies a settlement of early medieval origin. Troon is still occupied, a village is recorded at this location on the 1981 OS map.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO18143&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "earlymedieval",
+          "medieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.277351,
+          50.195925
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Blacksmiths workshop",
+        "StartDate":1540,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The smithy is recorded at this location in Troon on the 2nd Edition 1:2500 OS map c1907 and on the 1966 OS map (b1). The modern Mastermap (2006) does not record a building at this location, suggesting that the smithy has been demolished.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO9418&resourceID=1020",
+        "Walk 1":"1",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.276791,
+          50.195941
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Stone circle",
+        "StartDate":-2500,
+        "EndDate":-801,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The fieldname 'Bowling Green Croft' is recorded on the Tithe Map at this location. Thomas lists this as the possible site of a stone circle, stating that nine or ten stones were seen here in 1950. Reference: Thomas, AC. 1970. Camborne Checklist. CA No 9. VOL 9, 137.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO18445&resourceID=1020",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "bronzeage"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.29071,
+          50.18844
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Hull",
+        "StartDate":1540,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"A hull survives in a wood on the north side of the Carwynnen to Stennack road. Hulls are Underground passages with storage chambers found in South West England. This hull consists of two small chambers. Reference: Thomas, AC. 1970. Camborne Checklist. CA No 9. VOL 9, 143.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28407&resourceID=1020",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.291197,
+          50.189416
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Well",
+        "StartDate":1066,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"Thomas records the tradition that silverwell, which was choked by brushwood, was a lucky well into which pins were thrown. The location has been re-discovered by The West Cornwall Dowsers in November 2014. Reference: Bibliographic reference: Thomas, AC. 1967. Christian Antiquities of Camborne. 121-122, 126.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28423&resourceID=1020",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "medieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.29014,
+          50.190345
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Carvolth Iron Age round",
+        "StartDate":-800,
+        "EndDate":409,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The place-name of the settlement of Carvolth contains the Cornish element ker, 'fort, a round'. Henderson suggests that this may be the site of an Iron Age/Romano-British settlement in this area. The Tithe Map records the field-name 'Round Field', and this is listed as the possible location of the round though no remains were visible in 1975. Reference: Henderson, C, 1915, Topography of Cornwall (Unpublished document).",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO7813&resourceID=1020",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "ironage"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.28268,
+          50.177602
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Blowing house",
+        "StartDate":1540,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"A blowing house is a building containing a small stone cylindrical furnace, eg. used for tin smelting in Cornwall. Padel gives the Cornish elements contained in the name Park Vorn as park, 'field enclosure', and forn, `kiln, oven' (rather than fok, `blowing house, furnace'). Reference: Padel, OJ. 1985. Cornish Place-Name Elements. 98, 99, 175-176.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28417&resourceID=1020",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.281561,
+          50.177634
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Pelue settlement",
+        "StartDate":1066,
+        "EndDate":1539,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The settlement of Pelue is first recorded in 1400. The name is Cornish and contains the elements Pol, \"pool\", and Ieu, \"yoke\", or Huin, `yew(s)'.The OS records the placename as Lower Pelu on the c1880 map and as Lower Peloe on the 2nd Edition c1907. On these maps it is accompanied by Higher Pelu/Peloe, 300m to the south. ",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO16028&resourceID=1020",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "medieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.288336,
+          50.180411
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Mine",
+        "StartDate":1801,
+        "EndDate":1900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"New frances mine, also known as wheal top, was in operation between 1861 and 1862 ",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO12293&resourceID=1020",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "postmedieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.294454,
+          50.181767
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Carwynnen settlement",
+        "StartDate":1066,
+        "EndDate":1539,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The settlement of Carwynnen is first recorded in 1430. Originally part of the Pendarves Estate, the place-name contains the Cornish element 'carn', meaning 'rock-pile, tor' and a personal name (b1). Carwynnen is still occupied; a small hamlet is shown at this location on the 1981 OS map (b2) ,and the River Connor runs through it.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO13897&resourceID=1020",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "medieval"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.292805,
+          50.186312
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Carwynnen field system",
+        "StartDate":-800,
+        "EndDate":42,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"A field system is associated with two Iron Age round houses at Carwynnen. The site is recorded by Thomas who describes it as consisting of lynchets incorporated into modern fields. The site was visited in 1971 but the lynchets were not then identifiable. Several references exist on the Heritage Gateway.",
+        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO20782&resourceID=1020",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "othersite",
+          "ironage"
+        ],
+        "Marker Type":"other site"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.280051,
+          50.182175
+        ]
+      }
+    }
+  ]
+}
