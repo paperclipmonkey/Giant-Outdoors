@@ -271,20 +271,6 @@
     margin-left: -27px;
   }
 
-  #walkholder{
-    position: absolute;
-    top: 60px;
-    bottom: 0%;
-    right: 0px;
-    background: #fff;
-    width: 320px;
-    z-index: 100;
-    overflow: scroll;
-    padding: 10px;
-    -webkit-font-smoothing: antialiased;
-    display: none;
-  }
-
   .width100{
     width: 100%;
   }

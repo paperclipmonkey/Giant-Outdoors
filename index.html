@@ -22,11 +22,15 @@
   <!--    Leaflet     -->
   <link rel="stylesheet" href="assets/css/leaflet.css" />
   <link rel="stylesheet" href="assets/css/leaflet.label.css" />
+  <link rel="stylesheet" href="assets/css/leaflet.panel.css" />
+  <link rel="stylesheet" href="assets/css/leaflet.sidebar.css" />
 
   <script src="assets/js/leaflet-src.js"></script>
   <script src="assets/js/leaflet.label.js"></script>
   <script src="assets/js/leaflet.restoreview.js"></script>
   <script src="assets/js/leaflet.edgemarker.js"></script>
+  <script src="assets/js/leaflet.panel.js"></script>
+  <script src="assets/js/leaflet.sidebar.js"></script>
   <script src="assets/js/oms.min.js"></script>
 
   <!--     Custom CSS     -->
@@ -63,11 +67,6 @@
 -->                    Add
               </a>
       </div>
-      <div class="maplayerbuttons btn-group">
-          <button href="#fakelink" class="btn-tilelayer btn btn-info btn-fill">Map</button>
-          <button href="#fakelink" class="btn-tilelayer btn btn-info">Satellite</button>
-          <button href="#fakelink" class="btn-tilelayer btn btn-info btn-fill" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="1888-1913 OS map">Old OS</button>
-      </div>
   </div>
   <div id="contentholder">
     
@@ -83,13 +82,13 @@
     </div>
 
     <div id="walkholder">
-      <a class="leaflet-popup-close-button" href="#close">×</a>
       <h3 class="title"></h3>
       <img class="photo"/>
       <h4 class="subtitle"></h4>
       <p class="description"></p>
       <span class="infotitle">Start: </span><span class="start info"></span>
       <span class="infotitle">End: </span><span class="end info"></span>
+      <span class="infotitle">Length: </span><span class="length info"></span>
       <span class="infotitle">Parking: </span><span class="parking info"></span>
       <span class="infotitle">Difficulty: </span><span class="difficulty info"></span>
       <span class="infotitle">KML: </span><span class="info"> <a class="info kml" href="">Download</a></span>
@@ -114,12 +113,12 @@
   <script src="assets/geojson/walk2.geojson"></script>
   <script src="assets/geojson/data.geojson"></script>
 
+  <script src="assets/geojson/finds.geojson"></script>
+  <script src="assets/geojson/othersites.geojson"></script>
+  <script src="assets/geojson/keysites.geojson"></script>
+
   <script type="text/javascript">
     $(function(){
-
-      $("#walkholder .leaflet-popup-close-button").click(function(){
-        $("#walkholder").hide();
-      });
 
       //$('[data-toggle="popover"]').popover('show');
 
@@ -130,7 +129,7 @@
           mapm.switchModes("dig");
         } else {//Explore
           mapm.switchModes("explore");
-          showHideMarkers();
+          //showHideMarkers();
         }
       });
 
@@ -197,22 +196,21 @@
       mapm.layers.walks = L.layerGroup();
       addWalkLayers(mapm.layers.walks);
 
-      //setTimeout(function(){
-        mapm.switchModes('explore');//Set up default page
-        showHideMarkers();
-      //},0)
-
+      mapm.switchModes('explore');//Set up default page
+      //showHideMarkers();
     }
 
     function addWalkLayers (walkLGrp) {
       function walkClicked(marker){
         var props = marker.target.feature.properties;
+        mapm.sidebar.show();
         $("#walkholder").show();
         $("#walkholder .title").text(props.title);
         $("#walkholder .subtitle").text(props.subtitle);
         $("#walkholder .description").text(props.description);
         $("#walkholder .start").text(props.start);
         $("#walkholder .end").text(props.end);
+        $("#walkholder .length").text(props.length);
         $("#walkholder .parking").text(props.parking);
         $("#walkholder .photo").attr("src", "assets/content/" + props.photo);
         $("#walkholder .difficulty").text(props.difficulty);
@@ -271,9 +269,8 @@
         var htmlString = "";
         var extraProps = {};
         if(props.Sketchfab){
-          htmlString += "<iframe width=\"400\" height=\"300\" src=\"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6/embed\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" onmousewheel=\"\"></iframe>\
+          htmlString += "<iframe width=\"400\" height=\"300\" src=\""+ Sketchfab + "/embed\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" onmousewheel=\"\"></iframe>\
             <p style=\"font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;\">\
-                <a href=\"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6\" target=\"_blank\" style=\"font-weight: bold; color: #1CAAD9;\">View on Sketchfab</a>\
             </p>";
           extraProps.className = "wide-popup"
         } else if(props.Image && props.Image != undefined){
@@ -351,68 +348,78 @@
         popupAnchor: [0, 0]
       });
 
-      markers = L.geoJson(data, {
+      mapm.layers.markers.find.addLayer(L.geoJson(finds, {
         pointToLayer: function (feature, latlng) {
-          switch (feature.properties["Marker Type"]) {
-            //find
-            //other site
-            //
-            case 'other site':
-              return L.marker(latlng, {icon: markerIcons.orange});
-            case 'find':
-              return L.marker(latlng, {icon: markerIcons.brown});
-            case 'plant' :
-              return L.marker(latlng, {icon: markerIcons.green});
-            case 'key site' :
-              return L.marker(latlng, {icon: markerIcons.brown});
-          }
+          return L.marker(latlng, {icon: markerIcons.brown});
+        }
+      }));
+
+      mapm.layers.markers.other.addLayer(L.geoJson(other, {
+        pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: markerIcons.orange});
-
         }
-      });
-    }
+      }));
 
-
-    function showHideMarkers(dates){
-      mapm.oms.clearMarkers();
-      for (var ma in markers._layers) {
-        mapm.map.removeLayer(markers._layers[ma]);//Remove stale markers
-        //Filter
-        if(filterMarker(dates, markers._layers[ma])){
-          markers._layers[ma].addTo(mapm.map);
-          mapm.oms.addMarker(markers._layers[ma]);
+      mapm.layers.markers.keysite.addLayer(L.geoJson(keysites, {
+        pointToLayer: function (feature, latlng) {
+          return L.marker(latlng, {icon: markerIcons.brown});
         }
-      }
+      }));
+
+      mapm.layers.markers
+
+      // markers = L.geoJson({}, {
+      //   pointToLayer: function (feature, latlng) {
+      //     switch (feature.properties["Marker Type"]) {
+      //       //find
+      //       //other site
+      //       //
+      //       case 'other site':
+      //         //mapm.layers.markers.other.addLayer(L.marker(latlng, {icon: markerIcons.orange}));
+      //         //return;
+      //         return L.marker(latlng, {icon: markerIcons.orange});
+      //       case 'find':
+      //         //mapm.layers.markers.find.addLayer(L.marker(latlng, {icon: markerIcons.brown}));
+      //         //return;
+      //         return L.marker(latlng, {icon: markerIcons.brown});
+      //       case 'plant' :
+      //         //mapm.layers.markers.plant.addLayer(L.marker(latlng, {icon: markerIcons.brown}));
+      //         return L.marker(latlng, {icon: markerIcons.green});
+      //       case 'key site' :
+      //         //mapm.layers.markers.keysite.addLayer(L.marker(latlng, {icon: markerIcons.brown}));
+      //         return L.marker(latlng, {icon: markerIcons.brown});
+      //     }
+      //     return L.marker(latlng, {icon: markerIcons.orange});
+
+      //   }
+      // });
     }
 
-    function filterMarker(dates, feature){
-      feature = feature.feature;
-      var props = feature.properties
-      if(typeof dates != 'object'){
-        return true;
-      }
-      if(props.StartDate <= dates[1] && dates[0] <= props.EndDate){
-        return true;
-      } else {
-        return false;
-      }
-    }
 
-    $(".btn-tilelayer").click(function(){
-      mapm.map.removeLayer(mapm.layers["satellite"]);
-      mapm.map.removeLayer(mapm.layers["road"]);
-      mapm.map.removeLayer(mapm.layers["old"]);
-      if($(this).first().text() == "Satellite"){
-        mapm.map.addLayer(mapm.layers["satellite"]);
-      } else if($(this).first().text() == "Map") {
-        mapm.map.addLayer(mapm.layers["road"]);
-      } else {
-        mapm.map.addLayer(mapm.layers["old"]);
-      }
+    // function showHideMarkers(dates){
+    //   mapm.oms.clearMarkers();
+    //   for (var ma in markers._layers) {
+    //     mapm.map.removeLayer(markers._layers[ma]);//Remove stale markers
+    //     //Filter
+    //     if(filterMarker(dates, markers._layers[ma])){
+    //       markers._layers[ma].addTo(mapm.map);
+    //       mapm.oms.addMarker(markers._layers[ma]);
+    //     }
+    //   }
+    // }
 
-      $(".btn-tilelayer").addClass("btn-fill");//Add class to all buttons
-      $(this).removeClass('btn-fill');//Remove class from this button
-    });
+    // function filterMarker(dates, feature){
+    //   feature = feature.feature;
+    //   var props = feature.properties
+    //   if(typeof dates != 'object'){
+    //     return true;
+    //   }
+    //   if(props.StartDate <= dates[1] && dates[0] <= props.EndDate){
+    //     return true;
+    //   } else {
+    //     return false;
+    //   }
+    // }
 
     $(function(){
         //Start it all off
