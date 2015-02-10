@@ -113,7 +113,6 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 		L.DomEvent.on(input, 'click', this._onInputClick, this);
 		label.appendChild(input);
 
-		console.log(obj);
 		if(obj.opacity){
 			slider = document.createElement('input');
 			slider.type = 'range';
@@ -203,9 +202,7 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 			opacitySlider = input.getElementsByClassName('leaflet-control-layers-opacity');
 			if(opacitySlider.length){
 				obj = this._layers[opacitySlider[0].layerId];
-				console.log(obj);
 				if(obj.layer.setOpacity){
-					console.log('setting setOpacity')
 					obj.layer.setOpacity(opacitySlider[0].value);
 				}
 			}
