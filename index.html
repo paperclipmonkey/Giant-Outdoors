@@ -316,7 +316,26 @@
           display_buttons.addClass(new_class);
           display_div.attr('data-class', new_class);
         }
-    });    
+    });   
+
+    function addLayerMarkersToOms(layers){
+      //console.log(layers);
+      //var layer;
+      for(x in layers){
+        drillOverlay(layers[x]);
+      }
+    } 
+
+    function drillOverlay(layer){
+      if(layer.eachLayer){//It's an LayerGroup - Drill!
+        layer.eachLayer(function(eLayer){
+          drillOverlay(eLayer);
+        });
+      }
+      else{
+        mapm.oms.addMarker(layer);
+      }
+    }
 
     function loadMarkers(){
       //Define marker icons that can be used
@@ -366,7 +385,7 @@
         }
       }));
 
-      mapm.layers.markers
+      addLayerMarkersToOms(mapm.layers.markers);
 
       // markers = L.geoJson({}, {
       //   pointToLayer: function (feature, latlng) {
