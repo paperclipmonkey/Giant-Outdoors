@@ -334,3 +334,37 @@
 
   .video-js {padding-top: 56.25%}
 .vjs-fullscreen {padding-top: 0px}
+
+
+.marker-icon{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+}
+
+.marker-icon.marker-brown{
+  background-image: url('../img/marker-brown.png');
+}
+
+.marker-icon.marker-orange{
+  background-image: url('../img/marker-orange.png');
+}
+
+.marker-icon.marker-green{
+  background-image: url('../img/marker-green.png');
+}
+
+.leaflet-panel-layers-group{
+  background: transparent;
+  border: none;
+}
+
+legend.leaflet-panel-layers-grouplabel{
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+
+.leaflet-panel-layers-overlays label.leaflet-panel-layers-item{
+  height: 27px;
+}
