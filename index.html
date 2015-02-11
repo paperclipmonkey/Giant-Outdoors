@@ -198,6 +198,18 @@
 
       mapm.switchModes('explore');//Set up default page
       //showHideMarkers();
+
+      showIntroMenuHover(0);
+    }
+
+    function showIntroMenuHover(num){
+      $($('.modebuttons a').get(num)).tooltip('show');
+      setTimeout(function() {
+        $($('.modebuttons a').get(num)).tooltip('hide');
+        if(num < $('.modebuttons a').length){
+          showIntroMenuHover(num + 1);
+        }
+      }, 2500);//2.5 seconds
     }
 
     function addWalkLayers (walkLGrp) {
