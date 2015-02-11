@@ -404,63 +404,53 @@
       }));
 
       addLayerMarkersToOms(mapm.layers.markers);
-
-      // markers = L.geoJson({}, {
-      //   pointToLayer: function (feature, latlng) {
-      //     switch (feature.properties["Marker Type"]) {
-      //       //find
-      //       //other site
-      //       //
-      //       case 'other site':
-      //         //mapm.layers.markers.other.addLayer(L.marker(latlng, {icon: markerIcons.orange}));
-      //         //return;
-      //         return L.marker(latlng, {icon: markerIcons.orange});
-      //       case 'find':
-      //         //mapm.layers.markers.find.addLayer(L.marker(latlng, {icon: markerIcons.brown}));
-      //         //return;
-      //         return L.marker(latlng, {icon: markerIcons.brown});
-      //       case 'plant' :
-      //         //mapm.layers.markers.plant.addLayer(L.marker(latlng, {icon: markerIcons.brown}));
-      //         return L.marker(latlng, {icon: markerIcons.green});
-      //       case 'key site' :
-      //         //mapm.layers.markers.keysite.addLayer(L.marker(latlng, {icon: markerIcons.brown}));
-      //         return L.marker(latlng, {icon: markerIcons.brown});
-      //     }
-      //     return L.marker(latlng, {icon: markerIcons.orange});
-
-      //   }
-      // });
     }
 
 
-    // function showHideMarkers(dates){
-    //   mapm.oms.clearMarkers();
-    //   for (var ma in markers._layers) {
-    //     mapm.map.removeLayer(markers._layers[ma]);//Remove stale markers
-    //     //Filter
-    //     if(filterMarker(dates, markers._layers[ma])){
-    //       markers._layers[ma].addTo(mapm.map);
-    //       mapm.oms.addMarker(markers._layers[ma]);
-    //     }
-    //   }
-    // }
+    function showHideMarkers(dates){
+      mapm.oms.clearMarkers();
+      //Remove all markers from display layer
+      for(x in  mapm.layers.markers){
+        var layer = mapm.layers.markers[x];
+        layer.clearLayers();//Clears LayerGroup
+      }
 
-    // function filterMarker(dates, feature){
-    //   feature = feature.feature;
-    //   var props = feature.properties
-    //   if(typeof dates != 'object'){
-    //     return true;
-    //   }
-    //   if(props.StartDate <= dates[1] && dates[0] <= props.EndDate){
-    //     return true;
-    //   } else {
-    //     return false;
-    //   }
-    // }
+      //Go through all data layers and add correct data to display layers
+      for(x in mapm.layers.markers){
+        var layer = mapm.layers.markers[x];
+        //Filter
+        layer.eachLayer(function(mark){
+          if(filterMarker(dates, mark)){
+            markers._layers[ma].addTo(mapm.map);
+          }
+        });
+      }
+
+      //Re-add all displayed markers to OMS
+      for(x in mapm.layers.markers){
+        var layer = mapm.layers.markers[x];
+        layer.eachLayer(function(mark){
+          mapm.oms.addMarker(mark);
+        });
+      }
+
+    }
+
+    function filterMarker(dates, feature){
+      feature = feature.feature;
+      var props = feature.properties
+      if(typeof dates != 'object'){
+        return true;
+      }
+      if(props.StartDate <= dates[1] && dates[0] <= props.EndDate){
+        return true;
+      } else {
+        return false;
+      }
+    }
 
     $(function(){
         //Start it all off
-        // $('skipvideo').click(introVideo.end());
         introVideo.onEnd(function(){
           initMap();
         });
