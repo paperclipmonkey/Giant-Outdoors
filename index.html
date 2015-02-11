@@ -300,10 +300,16 @@
             };
           htmlString += "</div>";
         }
+        htmlString += "<div class=\"share\">";
+        htmlString += "<a href='#' class=\"share facebook\><i class=\"button share facebook\"></i></a>";
+        htmlString += "<a href='#' class=\"share twitter\><i class=\"button share twitter\"></i></a>";
+        htmlString += "</div>";
+
         var popup = new L.popup(extraProps);
         popup.setContent(htmlString);
         popup.setLatLng(marker.getLatLng());
         mapm.map.openPopup(popup);
+
         // layer.bindPopup(
         //   htmlString,
         //   extraProps
