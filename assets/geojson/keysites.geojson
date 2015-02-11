@@ -9,7 +9,7 @@ var keysites = {
         "EndDate":1833,
         "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
         "Image":"standing_quoit.eps",
-        "Description":"Carwynnen quoit is a Neolithic chambered tomb. The Giant's Quoit tomb was first recorded in 1700 and is marked as 'Cromlech' on the 1839 OS map. In 1950 the monument consisted of three uprights supporting a capstone, having been re-erected after the collapse of the chamber just before 1872. The chamber collapsed again in 1966. In 2014 it was re-erected by Sustrust.",
+        "Description":"Carwynnen Quoit, the Giant's Quoit, is a Neolithic cromlech, a stone monument with a chambered tomb beneath. It was first recorded in 1700 and marked as 'cromlech' on the 1839 OS map. The quoit first collapsed around 1842, was subsequently re-erected, and we know that in 1950 the monument consisted of three uprights supporting a capstone. It collapsed again in 1966 and was re-erected by Sustrust in summer, 2014.",
         "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28406&resourceID=1020",
         "Walk 1":"1",
         "Walk 2":"1",
@@ -37,7 +37,7 @@ var keysites = {
         "EndDate":1842,
         "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
         "Image":"fallen_quoit_1834_1967.jpg",
-        "Description":"The Cromlech fell down before 1834, the late EWW Pendarves re-erected it. The tomb  beneath the cromlech does not seem to have been excavated, perhaps due to the state of the capstone, which  weighs 10 tons. A long narrow pit sunk by the cromlech was discovered in the early hours of the morning. It was supposed that someone had a dream or vision of buried treasure. Reference: Johnny Arthur (1860-1940)",
+        "Description":"The cromlech fell down, the late EWW Pendarves re-erected it… The tomb  beneath the cromlech does not seem to have been excavated, perhaps due to the dangerous state of the capstone, which must weigh at least 10 tons… Mr Tripp, a farmhand, discovered a long narrow pit sunk by the cromlech in the early hours of the morning. It was supposed that someone had a dream or vision of buried treasure. Reference: As related to Gladys King by Johnny Arthur (1860-1940)",
         "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28406&resourceID=1020",
         "Walk 1":"1",
         "Walk 2":"1",
@@ -92,34 +92,7 @@ var keysites = {
         "EndDate":2013,
         "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
         "Image":"fallen_quoit_1834_1967.jpg",
-        "Description":"In 1966 the quoit collapsed for a second time after an earthquake was recorded on 23rd July with an intensity of force 5 on the international scale. It was felt in all the major towns in Cornwall and there were reports of houses shaking and heavy pots and pans rattling. Crockery fell from dressers. An off-duty policeman in Falmouth thought that a mine had exploded on the beach. ",
-        "URL":"",
-        "Walk 1":"",
-        "Walk 2":"",
-        "Walk 3":"",
-        "Walk 4":"",
-        "Tags":[  
-          ""
-        ],
-        "Marker Type":"key site"
-      },
-      "geometry":{  
-        "type":"Point",
-        "coordinates":[  
-          -5.293354,
-          50.188185
-        ]
-      }
-    },
-    {  
-      "type":"Feature",
-      "properties":{  
-        "Title":"Quoit",
-        "StartDate":2014,
-        "EndDate":2015,
-        "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
-        "Image":"standing_quoit.jpg",
-        "Description":"Carwynnen quoit is a Neolithic chambered tomb. The Giant's Quoit tomb was first recorded in 1700 and is marked as 'Cromlech' on the 1839 OS map. In 1950 the monument consisted of three uprights supporting a capstone, having been re-erected after the collapse of the chamber just before 1872. The chamber collapsed again in 1966. In 2014 it was re-erected by Sustrust.",
+        "Description":"In 1966 the quoit collapsed again after an earthquake with a magnitude of force 5 was recorded on 23rd July. It was felt in all the major towns in Cornwall and there were reports of houses shaking and heavy pots and pans rattling. Crockery fell from dressers. An off-duty policeman in Falmouth thought that a mine had exploded on the beach." ,
         "URL":"",
         "Walk 1":"",
         "Walk 2":"",
@@ -149,7 +122,7 @@ var keysites = {
           "coffin_stone_1.jpg",
           "coffin_stone_interpretation.jpg"
         ],
-        "Description":"This stone was found in a test pit in 2014. At rst glance, the Cofn Stone appears to have a complex latticework of lines reminiscent of neolithic and Bronze Age lozenge designs carved into it. Close examination has led to the opinion the markings are unintentional and are the result of the stone being dragged in several different directions across rough ground.",
+        "Description":"Found in a test pit in 2014, at first glance the 'Coffin Stone' displayed complex, latticework carvings, like those on Neolithic and Bronze Age lozenges. On closer inspection, we decided these markings were not decorations but had resulted from the stone being dragged in several different directions across rough ground.",
         "URL":"",
         "Walk 1":"",
         "Walk 2":"1",
@@ -176,7 +149,7 @@ var keysites = {
         "EndDate":0,
         "Sketchfab":"",
         "Image":"pasty_stone.jpg",
-        "Description":"The 'pasty stone' was so called because it displayed neatly parallel deep grooves and had the shape and appearance of a large stone pasty! It was uncovered in 2014.",
+        "Description":"The deeply grooved 'Pasty Stone', as its name suggests, looks remarkably like a large stone pasty! It was uncovered in 2014.",
         "URL":"",
         "Walk 1":"",
         "Walk 2":"1",
@@ -203,7 +176,7 @@ var keysites = {
         "EndDate":0,
         "Sketchfab":"",
         "Image":"[shield stone 1.jpg, shield_stone_interpretation.jpg]",
-        "Description":"The 'shield stone' has interesting marks on its surface. It is likely that these lines are made by human hand. Many factors could have caused the markings, and they may not have been part of a single considered act. The stone may have been used to polish a stone axe over a number of years, or the groove marks are the result of an agricultural process.",
+        "Description":"The'Shield Stone' has interesting marks on its surface. It is likely that these lines were made by human hand, rather than the result of the stone being moved around, but no-one really knows if this is art. The Shield Stone may have been used to polish a stone axe over a number of years, or the groove marks may have come from ploughing. ",
         "URL":"",
         "Walk 1":"",
         "Walk 2":"1",
