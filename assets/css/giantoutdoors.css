@@ -357,6 +357,18 @@
   background-image: url('../img/marker-green.png');
 }
 
+.marker-icon.marker-blue{
+  background-image: url('../img/marker-blue.png');
+}
+
+.marker-icon.marker-purple{
+  background-image: url('../img/marker-purple.png');
+}
+
+.marker-icon.marker-white{
+  background-image: url('../img/marker-white.png');
+}
+
 .leaflet-panel-layers-group{
   background: transparent;
   border: none;
