@@ -16,19 +16,18 @@
 
         expo.map.addControl(expo.sidebar);
 
-
         expo.oms = new OverlappingMarkerSpiderfier(expo.map, {keepSpiderfied: true});
 
         expo.layers.satellite = L.tileLayer('http://{s}.tiles.mapbox.com/v3/paperclipmonkey.kggafd49/{z}/{x}/{y}.png', {
             attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-            maxZoom: 19
+            maxZoom: 22,
+            maxNativeZoom: 19
         }).addTo(expo.map);
 
         expo.layers.road = L.tileLayer('http://{s}.tiles.mapbox.com/v3/paperclipmonkey.kgon2gjp/{z}/{x}/{y}.png', {
             attribution: 'Road map &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'});
 
         expo.layers.old = L.tileLayer('http://nls-1.tileserver.com/os_6_inch_gb/{z}/{x}/{y}.jpg', {
-            //opacity: 1.0,
             //subdomains ['',''],
             opacity: 0.5,
             attribution: 'OS Map provided by; <a href="http://maps.nls.uk/os/6inch-england-and-wales/index.html">NLS</a>'
@@ -37,7 +36,6 @@
         expo.layers.geology = L.tileLayer.wms('http://ogc.bgs.ac.uk/cgi-bin/BGS_Bedrock_and_Superficial_Geology/wms?', {
           format: 'image/png',
           transparent: true,
-         // layers: 'BGS.50k.Bedrock',
           layers: 'GBR_BGS_625k_BA',
           attribution: "BGS",
           opacity: 0.5,
