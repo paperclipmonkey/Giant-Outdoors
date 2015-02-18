@@ -1,0 +1,63 @@
+var added = {  
+  "type":"FeatureCollection",
+  "features": [  
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Common blue butterfly",
+        "StartDate":"",
+        "EndDate":"",
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"Living up to its name, this is the commonest blue butterfly found in Britain. We recorded a sighting in the quoit field, known as the Frying Pan field, in 2014 during a quoit workshop.",
+        "URL":"",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"1",
+        "Tags":[  
+          "add",
+          "butterfly",
+          "workshop"
+        ],
+        "Marker Type":"added"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293455,
+          50.18883
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Speckled wood butterfly",
+        "StartDate":"",
+        "EndDate":"",
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"The speckled wood is widespread and usually found in woods. It was spotted in the quoit field in September 2012 during a butterfly workshop.",
+        "URL":"",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"1",
+        "Tags":[  
+          "add",
+          "butterfly",
+          "workshop"
+        ],
+        "Marker Type":"added"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293644,
+          50.189131
+        ]
+      }
+    },
+  ]
+}

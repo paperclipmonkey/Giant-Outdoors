@@ -1,0 +1,61 @@
+var memories = {  
+  "type":"FeatureCollection",
+  "features": [  
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"The Gorsedh Kernow",
+        "StartDate":1948,
+        "EndDate":1948,
+        "YouTube":"yn-lk60DmCE",
+        "Description":"Donald Thomas was born in Troon in 1936, where he grew up and was involved in village life. Sadly he passed away in 2014, not long after we recorded him for this project. He was the first person we talked to who remembered the Gorsedh at the quoit in 1948, and he shares his memories in the video. He also talks of his favourite walk, to Copper Hill, and the wonderful view. The walk takes you south east of the quoit.",
+        "URL":"",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"1",
+        "Tags":[  
+          "Memory",
+          "Elizabethans",
+          "Tudors and Religious conflict",
+          "Medieval"
+        ],
+        "Marker Type":"memory"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.796664,
+          50.188604
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Uncle Ned's Rock",
+        "StartDate":"",
+        "EndDate":"",
+        "YouTube":"E6ZCXQeLIi8",
+        "Description":"This video shows what fantastic views you can enjoy when exploring the landscape surrounding the quoit. Donald Thomas shares with us one of his favourite north-coast views and from here you can also see Carn Brea hill, home to one of the most important Neolithic sites in the country.",
+        "URL":"",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"1",
+        "Tags":[  
+          "Memory",
+          "20th century"
+        ],
+        "Marker Type":"memory"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -6.128338,
+          50.192083
+        ]
+      }
+    }
+  ]
+}
