@@ -108,10 +108,11 @@
     margin-top:60px;
   }
   #sliderholder #slider2 .ui-slider-handle{
-    width: 15px;
-    height: 38px;
+    width: 17px;
+    height: 50px;
     background: #55c3eb;
     border-radius: 10px;
+    top: -12px;
     filter: none !important;
   }
 
@@ -130,6 +131,7 @@
     margin: auto;
     background: transparent;
     width: 99%;
+    height: 30px;
   }
 
   .epochholder{
@@ -190,6 +192,10 @@
 
   .wide-popup .leaflet-popup-content{
     width: 401px!important;
+  }
+
+  .x-wide-popup .leaflet-popup-content{
+    width: 560px!important;
   }
 
   #slidertitle{
@@ -420,4 +426,8 @@ legend.leaflet-panel-layers-grouplabel{
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+* {
+  color: #663333;
 }

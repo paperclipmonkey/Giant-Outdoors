@@ -44,11 +44,33 @@
           //minNativeZoom: 13
         });
 
+        // expo.layers.archaeology = L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
+        //     //opacity: 1.0,
+        //     //subdomains ['',''],
+        //     maxZoom: 30,
+        //     minNativeZoom: 20,
+        //     maxNativeZoom: 25,
+        //     attribution: 'archaeology<a href="http://maps.nls.uk/os/6inch-england-and-wales/index.html">NLS</a>'
+        // });
+
+        expo.layers.walks = L.featureGroup();
+
         expo.layers.markers = {
           'other': L.featureGroup().addTo(expo.map),
           'find': L.featureGroup().addTo(expo.map),
           'plant': L.featureGroup(),
-          'keysite': L.featureGroup().addTo(expo.map)
+          'keysite': L.featureGroup().addTo(expo.map),
+          'memories': L.featureGroup().addTo(expo.map),
+          'added': L.featureGroup().addTo(expo.map)
+        };
+
+        expo.layers._markers = {
+          'other': L.featureGroup(),
+          'find': L.featureGroup(),
+          'plant': L.featureGroup(),
+          'keysite': L.featureGroup(),
+          'memories': L.featureGroup(),
+          'added': L.featureGroup()
         };
 
 
@@ -76,6 +98,10 @@
             name: "Road",
             layer: expo.layers.road
           }
+          // {
+          //   name: "Archaeology",
+          //   layer: expo.layers.archaeology,
+          // },
         ];
 
         var overlayLayers = [
@@ -87,23 +113,23 @@
                 layer: expo.layers.old,
                 opacity: true
               },
-              { 
-                name: "Geology",
-                layer: expo.layers.geology,
-                opacity: true
-              }
+              // { 
+              //   name: "Geology",
+              //   layer: expo.layers.geology,
+              //   opacity: true
+              // }
             ]
           },
           {
             group: "Markers",
             layers: [
               {
-                name: "Keysite",
+                name: "Key sites",
                 layer: expo.layers.markers.keysite,
-                icon: '<i class="marker-icon marker-brown"></i>'
+                icon: '<i class="marker-icon marker-white"></i>'
               },
               {
-                name: "Other",
+                name: "Other sites",
                 layer: expo.layers.markers.other,
                 icon: '<i class="marker-icon marker-orange"></i>'
               },
@@ -113,15 +139,25 @@
                 icon: '<i class="marker-icon marker-brown"></i>'
               },
               {
-                name: "Plant",
+                name: "Plants",
                 layer: expo.layers.markers.plant,
                 icon: '<i class="marker-icon marker-green"></i>'
+              },
+              {
+                name: "Added",
+                layer: expo.layers.markers.added,
+                icon: '<i class="marker-icon marker-blue"></i>'
+              },
+              {
+                name: "Memories",
+                layer: expo.layers.markers.memories,
+                icon: '<i class="marker-icon marker-purple"></i>'
               }
             ]
           }
         ];
 
-        var panelLayers = new L.Control.PanelLayers(baseLayers, overlayLayers);
+        var panelLayers = new L.Control.PanelLayers(baseLayers, overlayLayers, {collapsed: true});
         expo.map.addControl(panelLayers);
     }8
 

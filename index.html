@@ -135,7 +135,7 @@
           mapm.switchModes("dig");
         } else {//Explore
           mapm.switchModes("explore");
-          //showHideMarkers();
+          showHideMarkers();
         }
       });
 
@@ -159,7 +159,14 @@
       // );
 
       function sliderUpdater(val){
+
           var epoch = getEpochFromPercent(val, epochData);
+
+          if(epoch == window.currentEpoch){
+            return;
+          }
+
+          window.currentEpoch = epoch;
 
           $("#slidertitle .inner").html(epoch['name'] + ' ' + epoch.dateStart + ' - ' + epoch.dateEnd + " <i data-original-title class=\"fa fa-info-circle\" data-toggle=\"popover\" data-trigger=\"hover\" title=\"" + epoch.name + "\" data-content=\"" + epoch.description + "\" data-placement=\"top\"></i>");
           //$('i').popover();
@@ -194,16 +201,14 @@
     function initMap(){
       mapm.init();
       loadMarkers();
-      //showHideMarkers();
 
       mapm.oms.addListener('click', omsClickHandler);
 
       //Add walks layer
-      mapm.layers.walks = L.layerGroup();
       addWalkLayers(mapm.layers.walks);
 
       mapm.switchModes('explore');//Set up default page
-      //showHideMarkers();
+      showHideMarkers();
 
       showIntroMenuHover(0);
     }
@@ -228,7 +233,7 @@
         $("#walkholder .description").text(props.description);
         $("#walkholder .start").text(props.start);
         $("#walkholder .end").text(props.end);
-        $("#walkholder .length").text(props.length);
+        $("#walkholder .distance").text(props.distance);
         $("#walkholder .parking").text(props.parking);
         $("#walkholder .photo").attr("src", "assets/content/" + props.photo);
         $("#walkholder .difficulty").text(props.difficulty);
@@ -310,13 +315,23 @@
         var props = marker.feature.properties;
         var htmlString = "";
         var extraProps = {};
+        if(props.YouTube){
+          htmlString += "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + props.YouTube + "\" frameborder=\"0\" allowfullscreen></iframe>";
+          extraProps.className = "x-wide-popup"
+        }
         if(props.Sketchfab){
           htmlString += "<iframe width=\"400\" height=\"300\" src=\""+ props.Sketchfab + "/embed\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" onmousewheel=\"\"></iframe>\
             <p style=\"font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;\">\
             </p>";
           extraProps.className = "wide-popup"
         } else if(props.Image && props.Image != undefined){
-          htmlString += "<img class='width100' src='assets/content/" + props.Image + "'/>";
+          if(typeof props.Image === "object"){//Array of images
+            for (var i = 0; i < props.Image.length; i++) {
+              htmlString += "<img class='width100' src='assets/content/" + props.Image[i] + "'/>";
+            };
+          } else {
+            htmlString += "<img class='width100' src='assets/content/" + props.Image + "'/>";
+          }
         }
         htmlString += "<h4>" + props.Title + "</h4>" +
             "<p>" + props.Description + "</p>";
@@ -325,7 +340,7 @@
         }
         if(props.Tags){
           htmlString += "<div class=\"tags\">";
-            for (var i = props.Tags.length - 1; i >= 0; i--) {
+            for (var i = 0; i < props.Tags.length; i++) {
               htmlString += "<span>" + props.Tags[i] + "</span>";
             };
           htmlString += "</div>";
@@ -339,12 +354,6 @@
         popup.setContent(htmlString);
         popup.setLatLng(marker.getLatLng());
         mapm.map.openPopup(popup);
-
-        // layer.bindPopup(
-        //   htmlString,
-        //   extraProps
-        //   //feature.properties.popupContent
-        // );
       }
     }
 
@@ -385,51 +394,54 @@
       }
     }
 
+    function makeMarker(iconsArr, name){
+      iconsArr[name] = L.icon({
+        iconUrl: 'assets/img/marker-' + name + '.png',
+        iconRetinaUrl: 'assets/img/marker-' + name + '-2x.png',
+        shadowUrl: 'assets/img/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [0, 0]
+      });
+    }
+
     function loadMarkers(){
       //Define marker icons that can be used
       var markerIcons = {};
-      markerIcons.orange = L.icon({
-        iconUrl: 'assets/img/marker-orange.png',
-        iconRetinaUrl: 'assets/img/marker-orange-2x.png',
-        shadowUrl: 'assets/img/marker-shadow.png',
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [0, 0]
-      });
 
-      markerIcons.brown = L.icon({
-        iconUrl: 'assets/img/marker-brown.png',
-        iconRetinaUrl: 'assets/img/marker-brown-2x.png',
-        shadowUrl: 'assets/img/marker-shadow.png',
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [0, 0]
-      });
+      markerTypes = ['orange', 'brown', 'green', 'blue', 'purple', 'white'];
 
-      markerIcons.green = L.icon({
-        iconUrl: 'assets/img/marker-green.png',
-        iconRetinaUrl: 'assets/img/marker-green-2x.png',
-        shadowUrl: 'assets/img/marker-shadow.png',
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [0, 0]
-      });
+      for (var i = 0; i < markerTypes.length; i++) {
+        makeMarker(markerIcons, markerTypes[i]);
+      };
 
-      mapm.layers.markers.find.addLayer(L.geoJson(finds, {
+      mapm.layers._markers.find.addLayer(L.geoJson(finds, {
         pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: markerIcons.brown});
         }
       }));
 
-      mapm.layers.markers.other.addLayer(L.geoJson(other, {
+      mapm.layers._markers.other.addLayer(L.geoJson(other, {
         pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: markerIcons.orange});
         }
       }));
 
-      mapm.layers.markers.keysite.addLayer(L.geoJson(keysites, {
+      mapm.layers._markers.keysite.addLayer(L.geoJson(keysites, {
         pointToLayer: function (feature, latlng) {
-          return L.marker(latlng, {icon: markerIcons.brown});
+          return L.marker(latlng, {icon: markerIcons.white});
+        }
+      }));
+
+      mapm.layers._markers.added.addLayer(L.geoJson(added, {
+        pointToLayer: function (feature, latlng) {
+          return L.marker(latlng, {icon: markerIcons.blue});
+        }
+      }));
+
+      mapm.layers._markers.memories.addLayer(L.geoJson(memories, {
+        pointToLayer: function (feature, latlng) {
+          return L.marker(latlng, {icon: markerIcons.purple});
         }
       }));
 
@@ -446,13 +458,15 @@
       }
 
       //Go through all data layers and add correct data to display layers
-      for(x in mapm.layers.markers){
-        var layer = mapm.layers.markers[x];
+      for(x in mapm.layers._markers){
+        var layer = mapm.layers._markers[x];
         //Filter
-        layer.eachLayer(function(mark){
-          if(filterMarker(dates, mark)){
-            markers._layers[ma].addTo(mapm.map);
-          }
+        layer.eachLayer(function(markG){
+          markG.eachLayer(function(mark){
+            if(filterMarker(dates, mark)){
+              mapm.layers.markers[x].addLayer(mark);
+            }
+          });
         });
       }
 
@@ -468,10 +482,18 @@
 
     function filterMarker(dates, feature){
       feature = feature.feature;
-      var props = feature.properties
+      if(! feature.properties){
+        return true;
+      }
+      var props = feature.properties;
       if(typeof dates != 'object'){
         return true;
       }
+
+      if(!props.StartDate || !props.EndDate){
+        return false;
+      }
+
       if(props.StartDate <= dates[1] && dates[0] <= props.EndDate){
         return true;
       } else {
