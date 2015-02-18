@@ -283,6 +283,10 @@
     min-height: 200px;
   }
 
+  #walkholder{
+    display: none;
+  }
+
   #walkholder img{
     width: 100%;
   }
