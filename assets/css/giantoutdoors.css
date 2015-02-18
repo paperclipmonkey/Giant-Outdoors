@@ -213,44 +213,45 @@
     height: 25px;
     border: 1px solid;
     float: left;
+    color: #fff;
   }
 
   #sliderholder .epochholder div.el0{
-    background: #eee;
+    background: #919191;
   }
   #sliderholder .epochholder div.el1{
-    background: #ddd;
+    background: #898989;
   }
   #sliderholder .epochholder div.el2{
-    background: #ccc;
+    background: #7d7d7d;
   }
   #sliderholder .epochholder div.el3{
-    background: #bbb;
+    background: #787878;
   }
   #sliderholder .epochholder div.el4{
-    background: #aaa;
+    background: #747474;
   }
   #sliderholder .epochholder div.el5{
-    background: #999;
+    background: #6f6f6f;
   }
   #sliderholder .epochholder div.el6{
-    background: #888;
+    background: #686868;
   }
 
   #sliderholder .epochholder div.el7{
-    background: #777;
+    background: #636363;
   }
   #sliderholder .epochholder div.el8{
-    background: #666;
+    background: #5c5c5c;
   }
   #sliderholder .epochholder div.el9{
-    background: #555;
+    background: #555555;
   }
   #sliderholder .epochholder div.el10{
-    background: #444;
+    background: #505050;
   }
   #sliderholder .epochholder div.el11{
-    background: #333;
+    background: #4c4c4c;
   }
 
 
