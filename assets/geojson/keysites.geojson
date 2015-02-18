@@ -10,7 +10,7 @@ var keysites = {
         "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
         "Image":"standing_quoit.eps",
         "Description":"Carwynnen Quoit, the Giant's Quoit, is a Neolithic cromlech, a stone monument with a chambered tomb beneath. It was first recorded in 1700 and marked as 'cromlech' on the 1839 OS map. The quoit first collapsed around 1842, was subsequently re-erected, and we know that in 1950 the monument consisted of three uprights supporting a capstone. It collapsed again in 1966 and was re-erected by Sustrust in summer, 2014.",
-        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28406&resourceID=1020",
+        "URL":"",
         "Walk 1":"1",
         "Walk 2":"1",
         "Walk 3":"1",
@@ -37,8 +37,8 @@ var keysites = {
         "EndDate":1842,
         "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
         "Image":"fallen_quoit_1834_1967.jpg",
-        "Description":"The cromlech fell down, the late EWW Pendarves re-erected it… The tomb  beneath the cromlech does not seem to have been excavated, perhaps due to the dangerous state of the capstone, which must weigh at least 10 tons… Mr Tripp, a farmhand, discovered a long narrow pit sunk by the cromlech in the early hours of the morning. It was supposed that someone had a dream or vision of buried treasure. Reference: As related to Gladys King by Johnny Arthur (1860-1940)",
-        "URL":"http://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MCO28406&resourceID=1020",
+        "Description":"The cromlech fell down, the late EWW Pendarves re-erected it. The tomb  beneath the cromlech does not seem to have been excavated, perhaps due to the dangerous state of the capstone, which must weigh at least 10 tons. Mr Tripp, a farmhand, discovered a long narrow pit sunk by the cromlech in the early hours of the morning. It was supposed that someone had a dream or vision of buried treasure. Reference: As related to Gladys King by Johnny Arthur (1860-1940)",
+        "URL":"",
         "Walk 1":"1",
         "Walk 2":"1",
         "Walk 3":"1",
@@ -72,7 +72,6 @@ var keysites = {
         "Walk 3":"",
         "Walk 4":"",
         "Tags":[  
-          ""
         ],
         "Marker Type":"key site"
       },
@@ -92,14 +91,13 @@ var keysites = {
         "EndDate":2013,
         "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
         "Image":"fallen_quoit_1834_1967.jpg",
-        "Description":"In 1966 the quoit collapsed again after an earthquake with a magnitude of force 5 was recorded on 23rd July. It was felt in all the major towns in Cornwall and there were reports of houses shaking and heavy pots and pans rattling. Crockery fell from dressers. An off-duty policeman in Falmouth thought that a mine had exploded on the beach." ,
+        "Description":"In 1966 the quoit collapsed again after an earthquake with a magnitude of force 5 was recorded on 23rd July. It was felt in all the major towns in Cornwall and there were reports of houses shaking and heavy pots and pans rattling. Crockery fell from dressers. An off-duty policeman in Falmouth thought that a mine had exploded on the beach.",
         "URL":"",
         "Walk 1":"",
         "Walk 2":"",
         "Walk 3":"",
         "Walk 4":"",
         "Tags":[  
-          ""
         ],
         "Marker Type":"key site"
       },
@@ -129,7 +127,6 @@ var keysites = {
         "Walk 3":"1",
         "Walk 4":"",
         "Tags":[  
-          ""
         ],
         "Marker Type":"key site"
       },
@@ -156,7 +153,6 @@ var keysites = {
         "Walk 3":"1",
         "Walk 4":"",
         "Tags":[  
-          ""
         ],
         "Marker Type":"key site"
       },
@@ -171,19 +167,21 @@ var keysites = {
     {  
       "type":"Feature",
       "properties":{  
-        "Title":"Shield stone'",
+        "Title":"Shield stone",
         "StartDate":0,
         "EndDate":0,
         "Sketchfab":"",
-        "Image":"[shield stone 1.jpg, shield_stone_interpretation.jpg]",
-        "Description":"The'Shield Stone' has interesting marks on its surface. It is likely that these lines were made by human hand, rather than the result of the stone being moved around, but no-one really knows if this is art. The Shield Stone may have been used to polish a stone axe over a number of years, or the groove marks may have come from ploughing. ",
+        "Image":[
+          "shield_stone_1.jpg",
+          "shield_stone_interpretation.jpg"
+        ],
+        "Description":"The 'Shield Stone' has interesting marks on its surface. It is likely that these lines were made by human hand, rather than the result of the stone being moved around, but no-one really knows if this is art. The Shield Stone may have been used to polish a stone axe over a number of years, or the groove marks may have come from ploughing.",
         "URL":"",
         "Walk 1":"",
         "Walk 2":"1",
         "Walk 3":"1",
         "Walk 4":"",
         "Tags":[  
-          ""
         ],
         "Marker Type":"key site"
       },
