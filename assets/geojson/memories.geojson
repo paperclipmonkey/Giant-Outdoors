@@ -24,9 +24,9 @@ var memories = {
       },
       "geometry":{  
         "type":"Point",
-        "coordinates":[  
-          -5.796664,
-          50.188604
+        "coordinates":[
+          -5.291890936567412,
+          50.18860137448657
         ]
       }
     },
@@ -52,8 +52,8 @@ var memories = {
       "geometry":{  
         "type":"Point",
         "coordinates":[  
-          -6.128338,
-          50.192083
+          -5.264639650239839,
+          50.19208437903285
         ]
       }
     }
