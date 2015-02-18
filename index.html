@@ -115,16 +115,18 @@
   <script src="assets/json/dates.json"></script>
   <script src="assets/geojson/walk1.geojson"></script>
   <script src="assets/geojson/walk2.geojson"></script>
+  <script src="assets/geojson/walk3.geojson"></script>
+  <script src="assets/geojson/walk4.geojson"></script>
   <script src="assets/geojson/data.geojson"></script>
 
   <script src="assets/geojson/finds.geojson"></script>
   <script src="assets/geojson/othersites.geojson"></script>
   <script src="assets/geojson/keysites.geojson"></script>
+  <script src="assets/geojson/added.geojson"></script>
+  <script src="assets/geojson/memories.geojson"></script>
 
   <script type="text/javascript">
     $(function(){
-
-      //$('[data-toggle="popover"]').popover('show');
 
       $("#btndig, #btnexplore").click(function(){
         $(".btnswitch").addClass("btn-fill");
@@ -273,6 +275,30 @@
 
       walkLGrp.addLayer(
        L.geoJson(walk2, {
+        style: walkStyle2,
+        onEachFeature: onEachWalk
+      }));
+
+      walkLGrp.addLayer(
+       L.geoJson(walk3, {
+        style: walkStyle1,
+        onEachFeature: onEachWalk
+      }));
+
+      walkLGrp.addLayer(
+       L.geoJson(walk3, {
+        style: walkStyle2,
+        onEachFeature: onEachWalk
+      }));
+
+      walkLGrp.addLayer(
+       L.geoJson(walk4, {
+        style: walkStyle1,
+        onEachFeature: onEachWalk
+      }));
+
+      walkLGrp.addLayer(
+       L.geoJson(walk4, {
         style: walkStyle2,
         onEachFeature: onEachWalk
       }));
