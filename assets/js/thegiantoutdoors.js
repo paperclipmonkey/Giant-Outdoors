@@ -11,6 +11,14 @@
         }
       });
 
+      $("#checkboxes-photo").on('change',function(){$('.fileupload-group').toggle()});
+      $("#checkboxes-text").on('change',function(){$('.textarea-group').toggle()});
+      $(".btn-upload-add").click(function(){
+        $('#add-form').submit();
+        // $(this).addClass('active');
+        // $(this).find('.txt').text("Sending...");
+      });
+
       $("#slider2").slider({
         orientation: "horizontal",
         range: "min",
