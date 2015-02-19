@@ -48,7 +48,20 @@
 
           window.currentEpoch = epoch;
 
-          $("#slidertitle .inner").html(epoch['name'] + ' ' + epoch.dateStart + ' - ' + epoch.dateEnd + " <i data-original-title class=\"fa fa-info-circle\" data-toggle=\"popover\" data-trigger=\"hover\" title=\"" + epoch.name + "\" data-content=\"" + epoch.description + "\" data-placement=\"top\"></i>");
+          var startADBC, endADBC;
+          if(epoch.dateStart < 0){
+            startADBC = "BC";
+          } else {
+            startADBC = "AD";
+          }
+
+          if(epoch.dateEnd < 0){
+            endADBC = "BC";
+          } else {
+            endADBC = "AD";
+          }
+
+          $("#slidertitle .inner").html(epoch['name'] + ' ' + Math.abs(epoch.dateStart) + ' ' + startADBC + ' &#8212; ' + Math.abs(epoch.dateEnd) + ' ' + endADBC);//" <i data-original-title class=\"fa fa-info-circle\" data-toggle=\"popover\" data-trigger=\"hover\" title=\"" + epoch.name + "\" data-content=\"" + epoch.description + "\" data-placement=\"top\"></i>"
           //$('i').popover();
 
           var range = [epoch.dateStart, epoch.dateEnd];
