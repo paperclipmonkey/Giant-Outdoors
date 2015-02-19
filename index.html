@@ -61,11 +61,98 @@
       <div class="col-md-6 modebuttons btn-group">
               <a href="#" id="btnexplore" class="btn btn-info btnswitch" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Explore the area">Explore</a>
               <a href="#" id="btndig" class="btn btn-info btn-fill btnswitch" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Dig down through history">Dig</a>
-              <a href="mailto:example@thegiantoutdoors.org?subject=Add your story&amp;body=my history..." class="btn btn-info btn-fill" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Add your own history">Add</a>
+              <a href="#" class="btn btn-info btn-fill" data-toggle="modal" data-target="#myModal" data-placement="bottom" title="" data-original-title="Add your own history">Add</a>
       </div>
   </div>
   <div id="contentholder">
-    
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Add</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal" id="add-form" enctype="multipart/form-data" method="post" action="upload.php">
+            <fieldset>
+
+            <!-- Form Name -->
+            <p>Help us to build up a picture of the area by adding your contributions and see what other people have added.</p>
+
+            <p>You might want to tell others what you enjoyed or share a discovery you made. Once you have uploaded images or text (or both), they will appear on the map as a blue marker.</p>
+
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="textinput">Your name</label>
+              <div class="controls">
+                <input id="textinput" name="name" type="text" placeholder="John Smith" class="input-xlarge">
+                
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="textinput">Email</label>
+              <div class="controls">
+                <input id="textinput" name="email" type="text" placeholder="john@smith.com" class="input-xlarge">
+                
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="textinput">Title of entry</label>
+              <div class="controls">
+                <input id="textinput" name="title" type="text" placeholder="Quoit thoughts" class="input-xlarge">
+                
+              </div>
+            </div>
+
+            <!-- Multiple Checkboxes -->
+            <div class="control-group">
+              <label class="control-label" for="checkboxes">I would like to upload</label>
+              <div class="controls">
+                <label class="checkbox" for="checkboxes-1">
+                  <input type="checkbox" name="checkboxes" id="checkboxes-text" value="Text">
+                  Text
+                </label>
+                <label class="checkbox" for="checkboxes-0">
+                  <input type="checkbox" name="checkboxes" id="checkboxes-photo" value="Photo">
+                  Photo
+                </label>
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="control-group textarea-group">
+              <label class="control-label" for="textarea">Writing</label>
+              <div class="controls">                     
+                <textarea id="textarea" class="uploadtext" name="textarea">your story of the Quoit here</textarea>
+              </div>
+            </div>
+
+            <!-- File Button --> 
+            <div class="control-group fileupload-group">
+              <label class="control-label" for="fileUpload">Photo</label>
+              <div class="controls">
+                <input id="fileUpload" name="fileUpload" class="input-file" type="file">
+              </div>
+            </div>
+            </fieldset>
+            </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-upload-add has-spinner">
+            <span class="spinner"><i class="fa-spin fa-refresh"></i></span>
+            <span class="txt">Send</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
     <div id="mapdiv">
       <div id="sliderholder">
         <div id="slidertitle"><div class="inner"></div></div>
