@@ -2,7 +2,7 @@ function renderTimeLine(elSel, arr){
 	var yearPixel, //Width of each year in pixels
 		yearTotal,
 		xDim, //Width of el
-		padWidth = 3,
+		padWidth = 4,
 		percentageFull = 100;
 	$(elSel).html('');
 	$('.ui-slider-handle').html();//Clear for hover
