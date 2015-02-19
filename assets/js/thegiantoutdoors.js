@@ -208,36 +208,66 @@
         var props = marker.feature.properties;
         var htmlString = "";
         var extraProps = {};
-        if(props.YouTube){
-          htmlString += "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + props.YouTube + "\" frameborder=\"0\" allowfullscreen></iframe>";
-          extraProps.className = "x-wide-popup"
-        }
-        if(props.Sketchfab){
-          htmlString += "<iframe width=\"400\" height=\"300\" src=\""+ props.Sketchfab + "/embed\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" onmousewheel=\"\"></iframe>\
-            <p style=\"font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;\">\
-            </p>";
-          extraProps.className = "wide-popup"
-        } else if(props.Image && props.Image != undefined){
-          if(typeof props.Image === "object"){//Array of images
-            for (var i = 0; i < props.Image.length; i++) {
-              htmlString += "<img class='width100' src='assets/content/" + props.Image[i] + "'/>";
-            };
-          } else {
-            htmlString += "<img class='width100' src='assets/content/" + props.Image + "'/>";
+
+        if(props.Marker == "Plant"){
+          /*
+            "Species name":"Agrostis stolonifera",
+            "Common name":"Florin or Creeping Bent",
+            "Yr":2014,
+            "FullDate":"05-Jul-14",
+            "Image":"CF003267.jpg",
+            "Description":"Very common throughout Cornwall and the Isles of Scilly, Creeping Bent is found in a wide variety of damp or wet habitats including marshes, moorland, dune slacks, damp coastal grassland and in flush, or seepage, sites on cliffs. It may also be found on road verges, in gardens, at margins of arable fields, in waste places and, rarely, on the top of old mortared walls.",
+            "Recorder":"DR C.N. FRENCH",
+            "Marker":"Plant",
+            "Code":"CF412779"
+          */
+          if(props.Image && props.Image != undefined){
+            if(typeof props.Image === "object"){//Array of images
+              for (var i = 0; i < props.Image.length; i++) {
+                htmlString += "<img class='width100' src='assets/content/plants/" + props.Image[i] + "'/>";
+              };
+            } else {
+              htmlString += "<img class='width100' src='assets/content/plants/" + props.Image + "'/>";
+            }
+          }
+          htmlString += "<h4>" + props["Common name"] + "</h4>";
+          htmlString += "<h5>" + props["Species name"] + "</h5>";
+          htmlString += "<p>" + props.Description + "</p>";
+          htmlString += "<h6>Recorded " + props.Yr + "</h6>";
+
+        } else {
+          if(props.YouTube){
+            htmlString += "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + props.YouTube + "\" frameborder=\"0\" allowfullscreen></iframe>";
+            extraProps.className = "x-wide-popup"
+          }
+          if(props.Sketchfab){
+            htmlString += "<iframe width=\"400\" height=\"300\" src=\""+ props.Sketchfab + "/embed\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" onmousewheel=\"\"></iframe>\
+              <p style=\"font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;\">\
+              </p>";
+            extraProps.className = "wide-popup"
+          } else if(props.Image && props.Image != undefined){
+            if(typeof props.Image === "object"){//Array of images
+              for (var i = 0; i < props.Image.length; i++) {
+                htmlString += "<img class='width100' src='assets/content/" + props.Image[i] + "'/>";
+              };
+            } else {
+              htmlString += "<img class='width100' src='assets/content/" + props.Image + "'/>";
+            }
+          }
+          htmlString += "<h4>" + props.Title + "</h4>" +
+              "<p>" + props.Description + "</p>";
+          if(props.URL){
+            htmlString += "<a href=" + props.URL + " target=\"_BLANK\">find out more...</a>";
+          }
+          if(props.Tags){
+            htmlString += "<div class=\"tags\">";
+              for (var i = 0; i < props.Tags.length; i++) {
+                htmlString += "<span>" + props.Tags[i] + "</span>";
+              };
+            htmlString += "</div>";
           }
         }
-        htmlString += "<h4>" + props.Title + "</h4>" +
-            "<p>" + props.Description + "</p>";
-        if(props.URL){
-          htmlString += "<a href=" + props.URL + " target=\"_BLANK\">find out more...</a>";
-        }
-        if(props.Tags){
-          htmlString += "<div class=\"tags\">";
-            for (var i = 0; i < props.Tags.length; i++) {
-              htmlString += "<span>" + props.Tags[i] + "</span>";
-            };
-          htmlString += "</div>";
-        }
+        
         htmlString += "<div class=\"share\">";
         htmlString += "<a href='#' class=\"share facebook\><i class=\"button share facebook\"></i></a>";
         htmlString += "<a href='#' class=\"share twitter\><i class=\"button share twitter\"></i></a>";
@@ -335,6 +365,12 @@
       mapm.layers._markers.memories.addLayer(L.geoJson(memories, {
         pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: markerIcons.purple});
+        }
+      }));
+
+      mapm.layers._markers.plant.addLayer(L.geoJson(plants, {
+        pointToLayer: function (feature, latlng) {
+          return L.marker(latlng, {icon: markerIcons.green});
         }
       }));
 
