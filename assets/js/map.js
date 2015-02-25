@@ -14,6 +14,32 @@
             position: 'left'
         });
 
+        /* Turn off quoit icon at specified zoom level */
+        mapm.map.on('zoomend', function(e){
+          var zoomLevel = e.target.getZoom();
+          if(zoomLevel > 20){//Remove Quoit icon
+            expo.map.removeLayer(quoitMarker);
+          } else if(!mapm.map.hasLayer(quoitMarker)) {//Add Quoit icon if not already
+            expo.map.addLayer(quoitMarker);
+          }
+        });
+
+        /* Function to find lat / lng of point */
+        // function onMapClick(e) {
+        //     //gib_uni();
+        //     marker = new L.marker(e.latlng, {id:'uni', draggable:'true'});
+        //     marker.bindPopup(JSON.stringify(e.latlng)).openPopup();
+
+        //     marker.on('dragend', function(event){
+        //             var marker = event.target;
+        //             var position = marker.getLatLng();
+        //             alert(position);
+        //     });
+        //     expo.map.addLayer(marker);
+        // };
+
+        // expo.map.on('click', onMapClick);
+
         expo.map.addControl(expo.sidebar);
 
         expo.oms = new OverlappingMarkerSpiderfier(expo.map, {keepSpiderfied: true});
@@ -87,7 +113,7 @@
             // shadowAnchor: [22, 94]
         });
 
-        var m = L.marker([50.188214, -5.293300], {icon: quoitIcon}).addTo(expo.map);
+        var quoitMarker = L.marker([50.18823492598261, -5.2934097312390795], {icon: quoitIcon}).addTo(expo.map);
 
         var baseLayers = [
           {
