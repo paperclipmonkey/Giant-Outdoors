@@ -44,14 +44,14 @@
           //minNativeZoom: 13
         });
 
-        // expo.layers.archaeology = L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
-        //     //opacity: 1.0,
-        //     //subdomains ['',''],
-        //     maxZoom: 30,
-        //     minNativeZoom: 20,
-        //     maxNativeZoom: 25,
-        //     attribution: 'archaeology<a href="http://maps.nls.uk/os/6inch-england-and-wales/index.html">NLS</a>'
-        // });
+        expo.layers.archaeology = L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
+            //opacity: 1.0,
+            //subdomains ['',''],
+            maxZoom: 30,
+            minNativeZoom: 20,
+            maxNativeZoom: 25,
+            attribution: 'archaeology layer by: <a href="http://www.cornwall.gov.uk/cau">CAU</a>'
+        });
 
         expo.layers.walks = L.featureGroup();
 
