@@ -24,7 +24,7 @@ var finds = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -5.293359,
+          -5.293351,
           50.188257
         ]
       }
