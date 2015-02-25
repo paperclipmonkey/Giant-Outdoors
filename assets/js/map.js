@@ -160,7 +160,7 @@
 
         var panelLayers = new L.Control.PanelLayers(baseLayers, overlayLayers, {collapsed: true});
         expo.map.addControl(panelLayers);
-    }8
+    }
 
     expo.init = init;
 
