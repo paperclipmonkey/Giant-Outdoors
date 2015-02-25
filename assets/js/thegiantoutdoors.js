@@ -140,64 +140,71 @@
           layer.on('click', walkClicked);
       }
 
-      var walkStyle1 = {
+      var walkStyleBase = {
           color: '#f00',
           weight: 10,
-          opacity: 0.1
+          opacity: 0
       };
 
-      var walkStyle2 = {
-          color: '#f00',
-          weight: 2,
+      var walkStyleOdd = {
+          color: '#f2822f',
+          weight: 4,
+          opacity: 1,
+          dashArray: '10, 5'
+      };
+
+      var walkStyleEven = {
+          color: '#ea5994',
+          weight: 4,
           opacity: 1,
           dashArray: '10, 5'
       };
 
       walkLGrp.addLayer(
        L.geoJson(walk1, {
-        style: walkStyle1,
+        style: walkStyleBase,
         onEachFeature: onEachWalk
       }));
 
       walkLGrp.addLayer(
        L.geoJson(walk1, {
-        style: walkStyle2,
+        style: walkStyleOdd,
         onEachFeature: onEachWalk
       }));
 
       walkLGrp.addLayer(
        L.geoJson(walk2, {
-        style: walkStyle1,
+        style: walkStyleBase,
         onEachFeature: onEachWalk
       }));
 
       walkLGrp.addLayer(
        L.geoJson(walk2, {
-        style: walkStyle2,
+        style: walkStyleEven,
         onEachFeature: onEachWalk
       }));
 
       walkLGrp.addLayer(
        L.geoJson(walk3, {
-        style: walkStyle1,
+        style: walkStyleBase,
         onEachFeature: onEachWalk
       }));
 
       walkLGrp.addLayer(
        L.geoJson(walk3, {
-        style: walkStyle2,
+        style: walkStyleOdd,
         onEachFeature: onEachWalk
       }));
 
       walkLGrp.addLayer(
        L.geoJson(walk4, {
-        style: walkStyle1,
+        style: walkStyleBase,
         onEachFeature: onEachWalk
       }));
 
       walkLGrp.addLayer(
        L.geoJson(walk4, {
-        style: walkStyle2,
+        style: walkStyleEven,
         onEachFeature: onEachWalk
       }));
     }
