@@ -91,17 +91,18 @@
 
         var baseLayers = [
           {
-            name: "Satellite",
-            layer: expo.layers.satellite
-          },
-          { 
-            name: "Road",
-            layer: expo.layers.road
+            group: "Maps",
+            layers: [
+              {
+                name: "Satellite",
+                layer: expo.layers.satellite
+              },
+              { 
+                name: "Road",
+                layer: expo.layers.road
+              }
+            ]
           }
-          // {
-          //   name: "Archaeology",
-          //   layer: expo.layers.archaeology,
-          // },
         ];
 
         var overlayLayers = [
