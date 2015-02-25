@@ -48,10 +48,10 @@
             //opacity: 1.0,
             //subdomains ['',''],
             maxZoom: 30,
-            minNativeZoom: 20,
+            minZoom: 19,
             maxNativeZoom: 25,
             attribution: 'archaeology layer by: <a href="http://www.cornwall.gov.uk/cau">CAU</a>'
-        });
+        }).addTo(expo.map);
 
         expo.layers.walks = L.featureGroup();
 
@@ -112,6 +112,11 @@
               {
                 name: "Old OS",
                 layer: expo.layers.old,
+                opacity: true
+              },
+              {
+                name: "Archaeology",
+                layer: expo.layers.archaeology,
                 opacity: true
               },
               // { 
