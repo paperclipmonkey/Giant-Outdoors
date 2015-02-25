@@ -356,27 +356,27 @@
 }
 
 .marker-icon.marker-brown{
-  background-image: url('../img/marker-brown.png');
+  background-image: url('../img/marker-brown-2x.png');
 }
 
 .marker-icon.marker-orange{
-  background-image: url('../img/marker-orange.png');
+  background-image: url('../img/marker-orange-2x.png');
 }
 
 .marker-icon.marker-green{
-  background-image: url('../img/marker-green.png');
+  background-image: url('../img/marker-green-2x.png');
 }
 
 .marker-icon.marker-blue{
-  background-image: url('../img/marker-blue.png');
+  background-image: url('../img/marker-blue-2x.png');
 }
 
 .marker-icon.marker-purple{
-  background-image: url('../img/marker-purple.png');
+  background-image: url('../img/marker-purple-2x.png');
 }
 
 .marker-icon.marker-white{
-  background-image: url('../img/marker-white.png');
+  background-image: url('../img/marker-white-2x.png');
 }
 
 .leaflet-panel-layers-group{
