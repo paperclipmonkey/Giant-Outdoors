@@ -78,7 +78,7 @@
     -ms-user-select: none;
     user-select: none;
 }
-.leaflet-panel-layers-overlays .leaflet-panel-layers-item {
+.leaflet-panel-layers-item {
 	margin-bottom: 4px;
 	padding: 2px;
 	background: #fff;
@@ -93,7 +93,7 @@
 	overflow: hidden;
 	font-weight: bold;
 }
-.leaflet-panel-layers-overlays .leaflet-panel-layers-item:hover {
+.leaflet-panel-layers-item:hover {
 	border: 1px solid #888;
 	cursor: pointer;
 }
@@ -118,4 +118,9 @@
 }
 .leaflet-panel-layers-expanded .leaflet-panel-layers-overlays input {
 	display: block;
+}
+
+input.leaflet-control-layers-selector {
+	float: right;
+	margin-right: 4px;
 }
