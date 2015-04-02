@@ -101,7 +101,7 @@
 
 
         var quoitIcon = L.icon({
-            iconUrl: 'assets/img/quoit-shape.png',
+            iconUrl: 'assets/img/quoit-up.png',
             // iconRetinaUrl: 'my-icon@2x.png',
             iconSize: [75, 38],
             iconAnchor: [50, 25],
