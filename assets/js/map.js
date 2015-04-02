@@ -51,10 +51,15 @@
         }).addTo(expo.map);
 
         expo.layers.road = L.tileLayer('http://{s}.tiles.mapbox.com/v3/paperclipmonkey.kgon2gjp/{z}/{x}/{y}.png', {
-            attribution: 'Road map &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'});
+            attribution: 'Road map &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 22,
+            maxNativeZoom: 19
+          });
 
-        expo.layers.old = L.tileLayer('http://nls-1.tileserver.com/os_6_inch_gb/{z}/{x}/{y}.jpg', {
-            //subdomains ['',''],
+        expo.layers.old = L.tileLayer('http://nls-{s}.tileserver.com/os_6_inch_gb/{z}/{x}/{y}.jpg', {
+            maxZoom: 22,
+            maxNativeZoom: 19,
+            subdomains: "123",
             opacity: 0.5,
             attribution: 'OS Map provided by; <a href="http://maps.nls.uk/os/6inch-england-and-wales/index.html">NLS</a>'
         });
@@ -65,14 +70,9 @@
           layers: 'GBR_BGS_625k_BA',
           attribution: "BGS",
           opacity: 0.5,
-          //maxZoom: 13,
-          //minZoom: 13,
-          //minNativeZoom: 13
         });
 
         expo.layers.archaeology = L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
-            //opacity: 1.0,
-            //subdomains ['',''],
             maxZoom: 30,
             minZoom: 19,
             maxNativeZoom: 25,
@@ -145,11 +145,11 @@
                 layer: expo.layers.archaeology,
                 opacity: true
               },
-              // { 
-              //   name: "Geology",
-              //   layer: expo.layers.geology,
-              //   opacity: true
-              // }
+              { 
+                name: "Geology",
+                layer: expo.layers.geology,
+                opacity: true
+              }
             ]
           },
           {
