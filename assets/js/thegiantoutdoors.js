@@ -218,8 +218,8 @@
 
         if(props.Marker == "Plant"){
           /*
-            "Species name":"Agrostis stolonifera",
-            "Common name":"Florin or Creeping Bent",
+            "SpeciesName":"Agrostis stolonifera",
+            "CommonName":"Florin or Creeping Bent",
             "Yr":2014,
             "FullDate":"05-Jul-14",
             "Image":"CF003267.jpg",
@@ -237,12 +237,12 @@
               htmlString += "<img class='width100' src='assets/content/plants/" + props.Image + "'/>";
             }
           }
-          htmlString += "<h4>" + props["Common name"] + "</h4>";
-          htmlString += "<h5>" + props["Species name"] + "</h5>";
+          htmlString += "<h4>" + props["CommonName"] + "</h4>";
+          htmlString += "<h5>" + props["SpeciesName"] + "</h5>";
           htmlString += "<p>" + props.Description + "</p>";
           htmlString += "<h6>Recorded " + props.Yr + "</h6>";
 
-        } else {
+        } else {//End plant
           if(props.YouTube){
             htmlString += "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/" + props.YouTube + "\" frameborder=\"0\" allowfullscreen></iframe>";
             extraProps.className = "x-wide-popup"
@@ -267,29 +267,52 @@
             htmlString += "<a href=" + props.URL + " target=\"_BLANK\">find out more...</a>";
           }
           if(props.Tags){
-            htmlString += "<div class=\"tags\">";
+            htmlString += "<div class=\"tags " + props["Marker Type"] + "\">";
               for (var i = 0; i < props.Tags.length; i++) {
                 htmlString += "<span>" + props.Tags[i] + "</span>";
               };
             htmlString += "</div>";
           }
-        }
+        }//End not plant
         
         htmlString += "<div class=\"share\">";
-        htmlString += "<a href='#' class=\"share facebook\><i class=\"button share facebook\"></i></a>";
-        htmlString += "<a href='#' class=\"share twitter\><i class=\"button share twitter\"></i></a>";
+        htmlString += "<a href='#' class=\"share facebook\"><i class=\"button share facebook\"></i></a>";
+        htmlString += "<a href='#' class=\"share twitter\"><i class=\"button share twitter\"></i></a>";
         htmlString += "</div>";
 
         var popup = new L.popup(extraProps);
         popup.setContent(htmlString);
         popup.setLatLng(marker.getLatLng());
         mapm.map.openPopup(popup);
+
+        //Take hash and insert in to address
+        if(props.HashCode){
+          window.location.hash = props.HashCode;
+        }
       }
     }
 
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     });
+
+    /**
+    * Share to fb using URL
+    * Redirect user to Facebook share URL
+    */
+    $(document).on("click", ".share.facebook", function(e){
+      e.preventDefault();
+      window.location = "http://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location);
+    });
+
+    /**
+    * Share to Twitter using URL
+    * Redirect user to Twiter share URL
+    */
+    $(document).on("click", ".share.twitter", function(e){
+      e.preventDefault();
+      window.location = "http://www.twitter.com/share?url=" + encodeURIComponent(window.location);
+    });    
 
     $('.btn-tooltip').tooltip();
     $('.label-tooltip').tooltip();
@@ -437,7 +460,28 @@
       }
     }
 
+    function showMarkerFromId(Id){
+      //Search all markers trying to find correct Id
+      //Show correct one.
+      for(x in mapm.layers.markers){
+        var layer = mapm.layers.markers[x];
+        layer.eachLayer(function(mark){
+          if(mark.feature.properties.HashCode == Id){
+            mark.fire('click');//Opens any 
+            mark.fire('click');//opens
+          }
+        });
+      }
+
+    }
+
     $(function(){
+        if(location.hash!=""){
+          introVideo.end();
+          initMap();
+          var StrippedHash = location.hash.replace("#", "");
+          showMarkerFromId(StrippedHash);
+        }
         //Start it all off
         introVideo.onEnd(function(){
           initMap();
