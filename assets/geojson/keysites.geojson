@@ -1,6 +1,6 @@
 var keysites = {  
   "type":"FeatureCollection",
-  "features": [  
+  "features": [
     {  
       "type":"Feature",
       "properties":{  
@@ -19,7 +19,8 @@ var keysites = {
           "quoit",
           "neolithic"
         ],
-        "Marker Type":"key site"
+        "Marker Type":"key site",
+        "HashCode":"Quoit1"
       },
       "geometry":{  
         "type":"Point",
@@ -47,7 +48,8 @@ var keysites = {
           "quoit",
           "neolithic"
         ],
-        "Marker Type":"key site"
+        "Marker Type":"key site",
+        "HashCode":"Quoit2"
       },
       "geometry":{  
         "type":"Point",
@@ -73,7 +75,8 @@ var keysites = {
         "Walk 4":"",
         "Tags":[  
         ],
-        "Marker Type":"key site"
+        "Marker Type":"key site",
+        "HashCode":"Quoit3"
       },
       "geometry":{  
         "type":"Point",
@@ -99,13 +102,70 @@ var keysites = {
         "Walk 4":"",
         "Tags":[  
         ],
-        "Marker Type":"key site"
+        "Marker Type":"key site",
+        "HashCode":"Quoit4"
       },
       "geometry":{  
         "type":"Point",
         "coordinates":[  
           -5.293428003787994,
           50.18823020332182
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"We put the Cromlech back on its feet",
+        "StartDate":"",
+        "EndDate":"",
+        "YouTube":"0jMOsZPOHYg",
+        "Description":"Matt Blewett of Maga (<a href=\"http://www.magakernow.org.uk/\">the Cornish language partnership</a>) tells us about the project to restore this quoit and new footage shows the re-erected quoit in all its glory. Matt is speaking in Cornish but there are subtitles for everyone not familiar with the language.",
+        "URL":"",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"1",
+        "Tags":[  
+          "quoit",
+          "Neolithic"
+        ],
+        "Marker Type":"key site",
+        "HashCode":"Cromlech_back"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293435715138912,
+          50.18824973796116
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Experiemental archaeology",
+        "StartDate":"",
+        "EndDate":"",
+        "YouTube":"DFgzzcHz7OA",
+        "Description":"In this video, Julian Richard, broadcaster and archaeologist, talks about the workshop he and experimental archaeologists, Luke and Paul from the Cranborne Ancient Technology Centre in Dorset, held for 40 people. He remarks: \"Lifting the huge 9.8 ton capstone, using only wooden levers and a few volunteers, was an amazing experience. Now we’re even more in awe of our ancient ancestors who, we expect, did it a lot better 5,000 years ago.\"",
+        "URL":"",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"1",
+        "Tags":[  
+          "quoit",
+          "21st century"
+        ],
+        "Marker Type":"key site",
+        "HashCode":"experimental_archaeology"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293468,
+          50.188407
         ]
       }
     },
@@ -128,7 +188,8 @@ var keysites = {
         "Walk 4":"",
         "Tags":[  
         ],
-        "Marker Type":"key site"
+        "Marker Type":"key site",
+        "HashCode":"coffin_stone"
       },
       "geometry":{  
         "type":"Point",
@@ -141,7 +202,7 @@ var keysites = {
     {  
       "type":"Feature",
       "properties":{  
-        "Title":"Pasty stone'",
+        "Title":"Pasty stone",
         "StartDate":0,
         "EndDate":0,
         "Sketchfab":"",
@@ -154,7 +215,8 @@ var keysites = {
         "Walk 4":"",
         "Tags":[  
         ],
-        "Marker Type":"key site"
+        "Marker Type":"key site",
+        "HashCode":"pasty_stone"
       },
       "geometry":{  
         "type":"Point",
@@ -183,7 +245,8 @@ var keysites = {
         "Walk 4":"",
         "Tags":[  
         ],
-        "Marker Type":"key site"
+        "Marker Type":"key site",
+        "HashCode":"shield_stone"
       },
       "geometry":{  
         "type":"Point",

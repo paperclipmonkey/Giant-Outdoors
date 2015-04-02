@@ -1,6 +1,6 @@
 var added = {  
   "type":"FeatureCollection",
-  "features": [  
+  "features":[  
     {  
       "type":"Feature",
       "properties":{  
@@ -20,7 +20,8 @@ var added = {
           "butterfly",
           "workshop"
         ],
-        "Marker Type":"added"
+        "Marker Type":"added",
+        "Hashcode":"common_blue_butterfly"
       },
       "geometry":{  
         "type":"Point",
@@ -49,7 +50,8 @@ var added = {
           "butterfly",
           "workshop"
         ],
-        "Marker Type":"added"
+        "Marker Type":"added",
+        "Hashcode":"speckled_wood_butterfly"
       },
       "geometry":{  
         "type":"Point",
@@ -58,6 +60,6 @@ var added = {
           50.189131
         ]
       }
-    },
+    }
   ]
 }

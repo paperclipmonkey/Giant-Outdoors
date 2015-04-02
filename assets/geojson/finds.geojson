@@ -1,482 +1,499 @@
-var finds = {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Perforated Slate",
-        "StartDate": 1900,
-        "EndDate": 2012,
-        "Sketchfab": "",
-        "Image": "slate_disc_909.jpg",
-        "Description": "This painted slate disc with a hole in the middle was found in the upper section of the disturbed backfill, immediately under the collapsed quoit stones. Traces of white paint on one side proved it wasn't very old and we think it may have been left by a visitor, possibly as recently as the 1960s, as a kind of talisman. Finder: Tracie Haslam",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+var finds = {  
+  "type":"FeatureCollection",
+  "features":[  
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Perforated Slate",
+        "StartDate":1900,
+        "EndDate":2012,
+        "Sketchfab":"",
+        "Image":"slate_disc_909.jpg",
+        "Description":"This painted slate disc with a hole in the middle was found in the upper section of the disturbed backfill, immediately under the collapsed quoit stones. Traces of white paint on one side proved it wasn't very old and we think it may have been left by a visitor, possibly as recently as the 1960s, as a kind of talisman. Finder: Tracie Haslam",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "modern"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"perforated_slate"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293351,
           50.188257
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Halfpenny",
-        "StartDate": 1891,
-        "EndDate": 1891,
-        "Sketchfab": "",
-        "Image": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Halfpenny",
+        "StartDate":1891,
+        "EndDate":1891,
+        "Sketchfab":"",
+        "Image":[  
           "vict_halfpenny_1891_reverse_503.jpg",
           "vict_halfpenny_1891_obverse_503.jpg"
         ],
-        "Description": "Still in reasonable condition, this late-Victorian halfpenny coin was perhaps dropped or left here by a curious visitor. Finder: Josiah Haslam",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+        "Description":"Still in reasonable condition, this late-Victorian halfpenny coin was perhaps dropped or left here by a curious visitor. Finder: Josiah Haslam",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "victorian"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"halfpenny"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293358,
           50.188239
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Post-medieval pottery",
-        "StartDate": 1600,
-        "EndDate": 1700,
-        "Sketchfab": "https://sketchfab.com/models/8bdf1f8a5f694378a6b3f954754f4ca8",
-        "Image": "",
-        "Description": "Just a single rim from a pottery bowl, this has an incised pattern and was found close to the quoit. It turned out to be a piece of traditional Somerset slipware, known as Donyatt Ware, which originated in the 13th century and was produced for several hundred years. This good-quality tableware was in widespread use at the time. Finder: Tracie Hassam",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Post-medieval pottery",
+        "StartDate":1600,
+        "EndDate":1700,
+        "Sketchfab":"https://sketchfab.com/models/8bdf1f8a5f694378a6b3f954754f4ca8",
+        "Image":"",
+        "Description":"Just a single rim from a pottery bowl, this has an incised pattern and was found close to the quoit. It turned out to be a piece of traditional Somerset slipware, known as Donyatt Ware, which originated in the 13th century and was produced for several hundred years. This good-quality tableware was in widespread use at the time. Finder: Tracie Hassam",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "postmedieval"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"post-medieval_pottery"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293403,
           50.188283
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Early medieval pottery",
-        "StartDate": 500,
-        "EndDate": 600,
-        "Sketchfab": "https://sketchfab.com/models/f3433cfbede5429e91aa1c7abad843e3",
-        "Image": "",
-        "Description": "This rim from a flat ceramic platter was identified as a Gwithian-style pot. Made from fine clay and highly fired, like traditional Roman pots, this type of flat platter was used for communal eating. Sherds of Gwithian-style pottery and grass-marked pottery at Carwynnen, which date from the 5th to the 11th century, suggest there was a settlement here during this period. Finder: Chris Verran",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Early medieval pottery",
+        "StartDate":500,
+        "EndDate":600,
+        "Sketchfab":"https://sketchfab.com/models/f3433cfbede5429e91aa1c7abad843e3",
+        "Image":"",
+        "Description":"This rim from a flat ceramic platter was identified as a Gwithian-style pot. Made from fine clay and highly fired, like traditional Roman pots, this type of flat platter was used for communal eating. Sherds of Gwithian-style pottery and grass-marked pottery at Carwynnen, which date from the 5th to the 11th century, suggest there was a settlement here during this period. Finder: Chris Verran",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "earlymedieval"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"early_medieval_pottery"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.292347,
           50.187998
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Greenstone pestle",
-        "StartDate": -2500,
-        "EndDate": -2500,
-        "Sketchfab": "https://sketchfab.com/models/724b9e6243184bfe83e3d160bcbcbea7",
-        "Image": "",
-        "Description": "Perfectly intact, this greenstone pestle is a solid cylindrical implement used for grinding  hard substances into a powder. It was found embedded in the pavement near the centre of the quoit. Both ends show signs of wear. Hard Cornish greenstone, which had a local source near Camborne, was valued during the Neolithic period and axes made from it were traded as far as North Wales and Ireland. Finder: James Gossip",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Greenstone pestle",
+        "StartDate":-2500,
+        "EndDate":-2500,
+        "Sketchfab":"https://sketchfab.com/models/724b9e6243184bfe83e3d160bcbcbea7",
+        "Image":"",
+        "Description":"Perfectly intact, this greenstone pestle is a solid cylindrical implement used for grinding  hard substances into a powder. It was found embedded in the pavement near the centre of the quoit. Both ends show signs of wear. Hard Cornish greenstone, which had a local source near Camborne, was valued during the Neolithic period and axes made from it were traded as far as North Wales and Ireland. Finder: James Gossip",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "neolithic"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"greenstone_pestle"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293401,
           50.188247
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "A transverse arrowhead",
-        "StartDate": -2900,
-        "EndDate": -2600,
-        "Sketchfab": "https://sketchfab.com/models/884775f2ca984682b59e5b6eb95cd81d",
-        "Image": "",
-        "Description": "Complete and unused, this  fine arrowhead is made of high-quality black flint. The pointed head would have been attached to a wooden shaft and used for hunting. This was the only arrowhead we found, and it may well have been dropped by accident. Finder: Chris Verran",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"A transverse arrowhead",
+        "StartDate":-2900,
+        "EndDate":-2600,
+        "Sketchfab":"https://sketchfab.com/models/884775f2ca984682b59e5b6eb95cd81d",
+        "Image":"",
+        "Description":"Complete and unused, this  fine arrowhead is made of high-quality black flint. The pointed head would have been attached to a wooden shaft and used for hunting. This was the only arrowhead we found, and it may well have been dropped by accident. Finder: Chris Verran",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "lateneolithic"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"a_transverse_arrowhead"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.292347,
           50.187998
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Flint blade",
-        "StartDate": -5000,
-        "EndDate": -4000,
-        "Sketchfab": "",
-        "Image": "blade_tp11_112_top.jpg",
-        "Description": "This intact flint blade, a tool made from a well-prepared flint core, has smooth patches along both edges and shows signs it has been used. One side may have been fitted with a bone handle to form a small knife. It is Late Mesolithic or Neolithic in date. Finder: Martin Andrewes",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Flint blade",
+        "StartDate":-5000,
+        "EndDate":-4000,
+        "Sketchfab":"",
+        "Image":"blade_tp11_112_top.jpg",
+        "Description":"This intact flint blade, a tool made from a well-prepared flint core, has smooth patches along both edges and shows signs it has been used. One side may have been fitted with a bone handle to form a small knife. It is Late Mesolithic or Neolithic in date. Finder: Martin Andrewes",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "mesolithic",
           "neolithic"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"flint_blade"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.291808,
           50.188319
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Burnt flint tools",
-        "StartDate": -2500,
-        "EndDate": -2000,
-        "Sketchfab": "",
-        "Image": "burnt_flint_tool_502.jpg",
-        "Description": "A collection of flint tools, including  arrowheads, blades, knives and scrapers was unearthed from all over the main excavation area at Carwynnen. Many were snapped and burnt quite deliberately, making them useless. It is possible they were left at the quoit to mark community visits and ritual feasting events. Finder: The Carwynnen team",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Burnt flint tools",
+        "StartDate":-2500,
+        "EndDate":-2000,
+        "Sketchfab":"",
+        "Image":"burnt_flint_tool_502.jpg",
+        "Description":"A collection of flint tools, including  arrowheads, blades, knives and scrapers was unearthed from all over the main excavation area at Carwynnen. Many were snapped and burnt quite deliberately, making them useless. It is possible they were left at the quoit to mark community visits and ritual feasting events. Finder: The Carwynnen team",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "neolithic"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"burnt_flint_tools"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293359,
           50.188257
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Prehistoric pottery",
-        "StartDate": -4000,
-        "EndDate": -2900,
-        "Sketchfab": "",
-        "Image": "",
-        "Description": "A good selection of Early Neolithic pottery was found in Frying Pan Field. These small, very worn pieces are fragments of rounded bowls. Dating from the earliest history of the quoit, the bowls may have been left here as votive offerings after feasting by the various local communities in the wider locality. Finder: Suzy Sharpe",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Prehistoric pottery",
+        "StartDate":-4000,
+        "EndDate":-2900,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"A good selection of Early Neolithic pottery was found in Frying Pan Field. These small, very worn pieces are fragments of rounded bowls. Dating from the earliest history of the quoit, the bowls may have been left here as votive offerings after feasting by the various local communities in the wider locality. Finder: Suzy Sharpe",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "earlyneolithic"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"prehistoric_pottery"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293317,
           50.188249
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Late Neolithic pottery",
-        "StartDate": -2900,
-        "EndDate": -2200,
-        "Sketchfab": "",
-        "Image": "late_neolithic_pot_base_918_exterior.jpg",
-        "Description": "This Late Neolithic pottery fragment is from the base of a flat-bottomed pot. It may be related to Grooved Ware, which has a distinctive grooved decoration, and sherds of this type of pottery were found at Carwynnen. In Cornwall such pots date to about 2900 - 2200 BC and have usually been found at burial sites. Finder: Tracie Haslam. Ref: CQ12B (518) SF918",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Late Neolithic pottery",
+        "StartDate":-2900,
+        "EndDate":-2200,
+        "Sketchfab":"",
+        "Image":"late_neolithic_pot_base_918_exterior.jpg",
+        "Description":"This Late Neolithic pottery fragment is from the base of a flat-bottomed pot. It may be related to Grooved Ware, which has a distinctive grooved decoration, and sherds of this type of pottery were found at Carwynnen. In Cornwall such pots date to about 2900 - 2200 BC and have usually been found at burial sites. Finder: Tracie Haslam. Ref: CQ12B (518) SF918",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "neolithic"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"late_neolithic_pottery"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293375,
           50.188275
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Late-Prehistoric pottery",
-        "StartDate": -1000,
-        "EndDate": -600,
-        "Sketchfab": "",
-        "Image": "late_bronzeage_early_ironage_pot-rim_930.jpg",
-        "Description": "The rim and shoulder from a small, flat-bottomed bowl are from the Late Bronze and Early Iron Age period (c 1000-600 BC). The material is clay with some added quartz from the Lizard. Like other examples of pottery from a similar date found at Carwynnen, this find shows that local communities continued to visit the quoit for several thousand years. Finder: James Gossip",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Late-Prehistoric pottery",
+        "StartDate":-1000,
+        "EndDate":-600,
+        "Sketchfab":"",
+        "Image":"late_bronzeage_early_ironage_pot-rim_930.jpg",
+        "Description":"The rim and shoulder from a small, flat-bottomed bowl are from the Late Bronze and Early Iron Age period (c 1000-600 BC). The material is clay with some added quartz from the Lizard. Like other examples of pottery from a similar date found at Carwynnen, this find shows that local communities continued to visit the quoit for several thousand years. Finder: James Gossip",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "bronzeage",
           "ironage"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"late-prehistoric_pottery"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293401,
           50.188256
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Cornish Medieval coarsewares",
-        "StartDate": 1200,
-        "EndDate": 1400,
-        "Sketchfab": "",
-        "Image": "handle_medieval_coarsewares_505_sf900.jpg",
-        "Description": "A strap handle from a jug, this piece dates from the late 12th to end of the 14th century. This type of pottery, known as coarseware, was in common, everyday use in kitchens and as tableware. Finder: Pam McInally.",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Cornish Medieval coarsewares",
+        "StartDate":1200,
+        "EndDate":1400,
+        "Sketchfab":"",
+        "Image":"handle_medieval_coarsewares_505_sf900.jpg",
+        "Description":"A strap handle from a jug, this piece dates from the late 12th to end of the 14th century. This type of pottery, known as coarseware, was in common, everyday use in kitchens and as tableware. Finder: Pam McInally.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "latemedieval"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"cornish_medieval_coarsewares"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293361,
           50.188275
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Lead musket ball",
-        "StartDate": 1645,
-        "EndDate": 1648,
-        "Sketchfab": "https://sketchfab.com/models/a6d2740041a040e4b196e81d792f4d32",
-        "Image": "",
-        "Description": "This lead musket ball, 16mm diameter and weighing 29.4g, has not been fired. It would have been used in a 15-bore musket, a size of weapon commonly used throughout the Civil War. There are no records of skirmishes in the local area, but historical sources do show activities near Helston in 1645 and 1648. Finder: Keith Rundle. Ref. 100.",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Lead musket ball",
+        "StartDate":1645,
+        "EndDate":1648,
+        "Sketchfab":"https://sketchfab.com/models/a6d2740041a040e4b196e81d792f4d32",
+        "Image":"",
+        "Description":"This lead musket ball, 16mm diameter and weighing 29.4g, has not been fired. It would have been used in a 15-bore musket, a size of weapon commonly used throughout the Civil War. There are no records of skirmishes in the local area, but historical sources do show activities near Helston in 1645 and 1648. Finder: Keith Rundle. Ref. 100.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "postmedieval"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"lead_musket_ball"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.292347,
           50.187998
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Georgian drinking glasses",
-        "StartDate": 1780,
-        "EndDate": 1780,
-        "Sketchfab": "",
-        "Image": "18th_19th_drinking_glass_tp19.jpg",
-        "Description": "These two fragments of Georgian drinking glasses were found in one of the test pits in July 2012. Their presence in the field is something of a mystery: perhaps they were broken during a summer picnic held at the quoit by the Pendarves family and simply left behind. Finder: Kathryn Conder. Ref TP19.",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Georgian drinking glasses",
+        "StartDate":1780,
+        "EndDate":1780,
+        "Sketchfab":"",
+        "Image":"18th_19th_drinking_glass_tp19.jpg",
+        "Description":"These two fragments of Georgian drinking glasses were found in one of the test pits in July 2012. Their presence in the field is something of a mystery: perhaps they were broken during a summer picnic held at the quoit by the Pendarves family and simply left behind. Finder: Kathryn Conder. Ref TP19.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "georgian"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"georgian_drinking_glasses"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293404,
           50.188292
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "George II half penny",
-        "StartDate": 1720,
-        "EndDate": 1750,
-        "Sketchfab": "",
-        "Image": "george_II_halfpenny_quadrant_4.jpg",
-        "Description": "Although in fairly poor condition, this coin has enough surface detail to identify it as a George II halfpenny. Found close to the quoit in 'Quadrant 4', it was probably  dropped by a passing visitor to the monument. Finder: Tracie Haslam. Ref. none.",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"George II half penny",
+        "StartDate":1720,
+        "EndDate":1750,
+        "Sketchfab":"",
+        "Image":"george_II_halfpenny_quadrant_4.jpg",
+        "Description":"Although in fairly poor condition, this coin has enough surface detail to identify it as a George II halfpenny. Found close to the quoit in 'Quadrant 4', it was probably  dropped by a passing visitor to the monument. Finder: Tracie Haslam. Ref. none.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "georgian"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"george_ii_half_penny"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293361,
           50.188284
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Clay pipes",
-        "StartDate": 1750,
-        "EndDate": 1750,
-        "Sketchfab": "",
-        "Image": "clay_pipe_stems_and_bowls.jpg",
-        "Description": "Twenty-nine broken pieces of clay-pipe stems and nine fragments from bowls were found during the excavations in 2012. Clay pipes can be accurately dated from the shapes of their bowls and the diameters of the holes in the stems. They were made in Cornwall from the 17th century onwards, and the remains of the ovens where the pipes were fired have been discovered in Helston.  Finder: The Carwynnen Team. Ref. None.",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Clay pipes",
+        "StartDate":1750,
+        "EndDate":1750,
+        "Sketchfab":"",
+        "Image":"clay_pipe_stems_and_bowls.jpg",
+        "Description":"Twenty-nine broken pieces of clay-pipe stems and nine fragments from bowls were found during the excavations in 2012. Clay pipes can be accurately dated from the shapes of their bowls and the diameters of the holes in the stems. They were made in Cornwall from the 17th century onwards, and the remains of the ovens where the pipes were fired have been discovered in Helston.  Finder: The Carwynnen Team. Ref. None.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "find",
           "georgian"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"clay_pipes"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.293262,
           50.18826
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "Title": "Bakelite Clay pigeons",
-        "StartDate": 1922,
-        "EndDate": 2000,
-        "Sketchfab": "",
-        "Image": "",
-        "Description": "Forty-six shattered fragments of clay pigeons (disc-shaped targets launched in the air for shooting practice), made from Bakelite (a hard plastic), were found across the excavation sites. Some display the lettering MADE IN ENGLAND and the manufacturer's name, CHAMPION. Possibly the quoit was the location for the machine that fired the clay pigeons.",
-        "URL": "",
-        "Walk 1": "",
-        "Walk 2": "",
-        "Walk 3": "",
-        "Walk 4": "",
-        "Tags": [
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Bakelite Clay pigeons",
+        "StartDate":1922,
+        "EndDate":2000,
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"Forty-six shattered fragments of clay pigeons (disc-shaped targets launched in the air for shooting practice), made from Bakelite (a hard plastic), were found across the excavation sites. Some display the lettering MADE IN ENGLAND and the manufacturer's name, CHAMPION. Possibly the quoit was the location for the machine that fired the clay pigeons.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
           "Find",
           "modern"
         ],
-        "Marker Type": "find"
+        "Marker Type":"find",
+        "HashCode":"bakelite_clay_pigeons"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
           -5.29336,
           50.188266
         ]

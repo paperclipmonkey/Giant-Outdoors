@@ -1,6 +1,6 @@
-var other = {
+var other = {  
   "type":"FeatureCollection",
-  "features": [  
+  "features":[  
     {  
       "type":"Feature",
       "properties":{  
@@ -19,7 +19,8 @@ var other = {
           "othersite",
           "ironage"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"field_system_and_hut_circle_settlement"
       },
       "geometry":{  
         "type":"Point",
@@ -47,7 +48,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"treslothan_school"
       },
       "geometry":{  
         "type":"Point",
@@ -75,7 +77,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"schoolmasters_house"
       },
       "geometry":{  
         "type":"Point",
@@ -103,7 +106,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"church"
       },
       "geometry":{  
         "type":"Point",
@@ -131,7 +135,8 @@ var other = {
           "othersite",
           "medieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"cross"
       },
       "geometry":{  
         "type":"Point",
@@ -159,7 +164,8 @@ var other = {
           "othersite",
           "medieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"mausoleum"
       },
       "geometry":{  
         "type":"Point",
@@ -187,7 +193,8 @@ var other = {
           "othersite",
           "medieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"chapel"
       },
       "geometry":{  
         "type":"Point",
@@ -215,7 +222,8 @@ var other = {
           "othersite",
           "19thcentury"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"war_memorial"
       },
       "geometry":{  
         "type":"Point",
@@ -243,7 +251,8 @@ var other = {
           "othersite",
           "earlymedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"settlement"
       },
       "geometry":{  
         "type":"Point",
@@ -271,7 +280,8 @@ var other = {
           "othersite",
           "19thcentury"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"rectory"
       },
       "geometry":{  
         "type":"Point",
@@ -299,7 +309,8 @@ var other = {
           "othersite",
           "19thcentury"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"pair_of_cottages"
       },
       "geometry":{  
         "type":"Point",
@@ -327,7 +338,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"treslothan_well"
       },
       "geometry":{  
         "type":"Point",
@@ -356,7 +368,8 @@ var other = {
           "medieval",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"chingwith_settlement"
       },
       "geometry":{  
         "type":"Point",
@@ -384,7 +397,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"tolcarne_stamping_mill"
       },
       "geometry":{  
         "type":"Point",
@@ -412,7 +426,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"tolcarne_mine"
       },
       "geometry":{  
         "type":"Point",
@@ -422,7 +437,7 @@ var other = {
         ]
       }
     },
-    { 
+    {  
       "type":"Feature",
       "properties":{  
         "Title":"Iron Age Round",
@@ -440,7 +455,8 @@ var other = {
           "othersite",
           "ironage"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"iron_age_round"
       },
       "geometry":{  
         "type":"Point",
@@ -468,7 +484,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"school"
       },
       "geometry":{  
         "type":"Point",
@@ -479,7 +496,7 @@ var other = {
       }
     },
     {  
-      "type":"Feature",  
+      "type":"Feature",
       "properties":{  
         "Title":"Sunday school",
         "StartDate":1800,
@@ -496,7 +513,8 @@ var other = {
           "othersite",
           "19thcentury"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"sunday_school"
       },
       "geometry":{  
         "type":"Point",
@@ -524,7 +542,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"shaft"
       },
       "geometry":{  
         "type":"Point",
@@ -552,7 +571,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"condurrow_mine"
       },
       "geometry":{  
         "type":"Point",
@@ -580,7 +600,8 @@ var other = {
           "othersite",
           "medieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"carnemouth_settlement"
       },
       "geometry":{  
         "type":"Point",
@@ -608,7 +629,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"king_edward_mine"
       },
       "geometry":{  
         "type":"Point",
@@ -636,7 +658,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"wheal_grenville_engine_house"
       },
       "geometry":{  
         "type":"Point",
@@ -664,7 +687,8 @@ var other = {
           "othersite",
           "neolithic"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"prehistoric_artefact_scatter"
       },
       "geometry":{  
         "type":"Point",
@@ -692,7 +716,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"bolenowe_mine"
       },
       "geometry":{  
         "type":"Point",
@@ -720,7 +745,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"nonconformist_chapel"
       },
       "geometry":{  
         "type":"Point",
@@ -749,7 +775,8 @@ var other = {
           "earlymedieval",
           "medieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"troon_settlement"
       },
       "geometry":{  
         "type":"Point",
@@ -777,7 +804,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"blacksmiths_workshop"
       },
       "geometry":{  
         "type":"Point",
@@ -805,7 +833,8 @@ var other = {
           "othersite",
           "bronzeage"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"stone_circle"
       },
       "geometry":{  
         "type":"Point",
@@ -833,7 +862,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"hull"
       },
       "geometry":{  
         "type":"Point",
@@ -861,7 +891,8 @@ var other = {
           "othersite",
           "medieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"well"
       },
       "geometry":{  
         "type":"Point",
@@ -889,7 +920,8 @@ var other = {
           "othersite",
           "ironage"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"carvolth_iron_age_round"
       },
       "geometry":{  
         "type":"Point",
@@ -917,7 +949,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"blowing_house"
       },
       "geometry":{  
         "type":"Point",
@@ -945,7 +978,8 @@ var other = {
           "othersite",
           "medieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"pelue_settlement"
       },
       "geometry":{  
         "type":"Point",
@@ -973,7 +1007,8 @@ var other = {
           "othersite",
           "postmedieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"mine"
       },
       "geometry":{  
         "type":"Point",
@@ -1001,7 +1036,8 @@ var other = {
           "othersite",
           "medieval"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"carwynnen_settlement"
       },
       "geometry":{  
         "type":"Point",
@@ -1029,7 +1065,8 @@ var other = {
           "othersite",
           "ironage"
         ],
-        "Marker Type":"other site"
+        "Marker Type":"other site",
+        "HashCode":"carwynnen_field_system"
       },
       "geometry":{  
         "type":"Point",

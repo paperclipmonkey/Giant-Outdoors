@@ -17,10 +17,10 @@ var memories = {
         "Tags":[  
           "Memory",
           "Elizabethans",
-          "Tudors and Religious conflict",
           "Medieval"
         ],
-        "Marker Type":"memory"
+        "Marker Type":"memory",
+        "HashCode":"the_gorsedh_kernow"
       },
       "geometry":{  
         "type":"Point",
@@ -47,7 +47,8 @@ var memories = {
           "Memory",
           "20th century"
         ],
-        "Marker Type":"memory"
+        "Marker Type":"memory",
+        "HashCode":"uncle_neds_rock"
       },
       "geometry":{  
         "type":"Point",

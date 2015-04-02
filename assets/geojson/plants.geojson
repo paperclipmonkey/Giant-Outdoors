@@ -1,18 +1,19 @@
 var plants = {  
-    "type":"FeatureCollection",
-    "features": [  
+  "type":"FeatureCollection",
+  "features":[  
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Agrostis capillaris",
-        "Common name":"Bent-grass",
         "Yr":1995,
         "FullDate":"16-Jul-95",
         "Image":"",
         "Description":"Abundant and widespread on wall-tops, in nutrient poor permanent pastures, on moorlands, by road verges, on hedges, and in stony soils. It may also be found more rarely on woodland tracks. This grass is most common on the granite areas and is common on the Isles of Scilly.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"D72706"
+        "Code":"D72706",
+        "HashCode":"agrostis_capillaris1",
+        "SpeciesName":"Agrostis capillaris",
+        "CommonName":"Bent-grass"
       },
       "geometry":{  
         "type":"Point",
@@ -25,15 +26,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Agrostis capillaris",
-        "Common name":"Bent-grass",
         "Yr":2014,
         "FullDate":"05-Jul-14",
         "Image":"",
         "Description":"Abundant and widespread on wall-tops, in nutrient poor permanent pastures, on moorlands, by road verges, on hedges, and in stony soils. It may also be found more rarely on woodland tracks. This grass is most common on the granite areas and is common on the Isles of Scilly.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF412784"
+        "Code":"CF412784",
+        "HashCode":"agrostis_capillaris2",
+        "SpeciesName":"Agrostis capillaris",
+        "CommonName":"Bent-grass"
       },
       "geometry":{  
         "type":"Point",
@@ -46,15 +48,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Agrostis stolonifera",
-        "Common name":"Florin or Creeping Bent",
         "Yr":1995,
         "FullDate":"16-Jul-95",
         "Image":"CF003267.jpg",
         "Description":"Very common throughout Cornwall and the Isles of Scilly, Creeping Bent is found in a wide variety of damp or wet habitats including marshes, moorland, dune slacks, damp coastal grassland and in flush, or seepage, sites on cliffs. It may also be found on road verges, in gardens, at margins of arable fields, in waste places and, rarely, on the top of old mortared walls.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"D72714"
+        "Code":"D72714",
+        "HashCode":"agrostis_stolonifera1",
+        "SpeciesName":"Agrostis stolonifera",
+        "CommonName":"Florin or Creeping Bent"
       },
       "geometry":{  
         "type":"Point",
@@ -67,15 +70,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Agrostis stolonifera",
-        "Common name":"Florin or Creeping Bent",
         "Yr":2012,
         "FullDate":"28-Jul-12",
         "Image":"CF003267.jpg",
         "Description":"Very common throughout Cornwall and the Isles of Scilly, Creeping Bent is found in a wide variety of damp or wet habitats including marshes, moorland, dune slacks, damp coastal grassland and in flush, or seepage, sites on cliffs. It may also be found on road verges, in gardens, at margins of arable fields, in waste places and, rarely, on the top of old mortared walls.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF354799"
+        "Code":"CF354799",
+        "HashCode":"agrostis_stolonifera2",
+        "SpeciesName":"Agrostis stolonifera",
+        "CommonName":"Florin or Creeping Bent"
       },
       "geometry":{  
         "type":"Point",
@@ -88,15 +92,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Agrostis stolonifera",
-        "Common name":"Florin or Creeping Bent",
         "Yr":2014,
         "FullDate":"05-Jul-14",
         "Image":"CF003267.jpg",
         "Description":"Very common throughout Cornwall and the Isles of Scilly, Creeping Bent is found in a wide variety of damp or wet habitats including marshes, moorland, dune slacks, damp coastal grassland and in flush, or seepage, sites on cliffs. It may also be found on road verges, in gardens, at margins of arable fields, in waste places and, rarely, on the top of old mortared walls.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF412779"
+        "Code":"CF412779",
+        "HashCode":"agrostis_stolonifera3",
+        "SpeciesName":"Agrostis stolonifera",
+        "CommonName":"Florin or Creeping Bent"
       },
       "geometry":{  
         "type":"Point",
@@ -109,15 +114,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Agrostis stolonifera",
-        "Common name":"Florin or Creeping Bent",
         "Yr":2014,
         "FullDate":"05-Jul-14",
         "Image":"CF003267.jpg",
         "Description":"Very common throughout Cornwall and the Isles of Scilly, Creeping Bent is found in a wide variety of damp or wet habitats including marshes, moorland, dune slacks, damp coastal grassland and in flush, or seepage, sites on cliffs. It may also be found on road verges, in gardens, at margins of arable fields, in waste places and, rarely, on the top of old mortared walls.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF412802"
+        "Code":"CF412802",
+        "HashCode":"agrostis_stolonifera4",
+        "SpeciesName":"Agrostis stolonifera",
+        "CommonName":"Florin or Creeping Bent"
       },
       "geometry":{  
         "type":"Point",
@@ -130,15 +136,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Anthoxanthum odoratum",
-        "Common name":"Sweet Vernal-grass",
         "Yr":2014,
         "FullDate":"05-Jul-14",
         "Image":"CF002717.jpg",
         "Description":"A very common grass of poorer soils throughout Cornwall and the Isles of Scilly. It can be a short-lived dominant on moorlands in the spring following a fire, as the first successful pioneer species. Sweet Vernal-grass can be found in lawns, on top of hedges and banks and in unimproved grassland.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF412819"
+        "Code":"CF412819",
+        "HashCode":"anthoxanthum_odoratum",
+        "SpeciesName":"Anthoxanthum odoratum",
+        "CommonName":"Sweet Vernal-grass"
       },
       "geometry":{  
         "type":"Point",
@@ -151,15 +158,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Arrhenatherum elatius",
-        "Common name":"False Oat-grass",
         "Yr":2012,
         "FullDate":"28-Jul-12",
         "Image":"",
         "Description":"This is one of the most common and widespread roadside grasses of Cornwall but is rare on the Isles of Scilly. It grows on road verges, banks, and in Cornish Hedges. False Oat-grass also occurs in sand dunes and sometimes in coastal maritime grassland and can be a persistent weed in cultivated land. The above map shows the distribution of all records for the species.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF354793"
+        "Code":"CF354793",
+        "HashCode":"arrhenatherum_elatius",
+        "SpeciesName":"Arrhenatherum elatius",
+        "CommonName":"False Oat-grass"
       },
       "geometry":{  
         "type":"Point",
@@ -172,15 +180,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Arrhenatherum elatius var. bulbosum",
-        "Common name":"Onion Couch",
         "Yr":2014,
         "FullDate":"05-Jul-14",
         "Image":"CF476.jpg",
         "Description":"Onion Couch, with its bulbous basal internodes, is the common form of False Oat-grass in Cornwall and the Isles of Scilly, with probably over 90% of all records determined to variety level referrable to this variety. It is most readily seen late in the season after periods of dry weather, when the 'bulbs' are noticeable along the sides of Cornish Hedges.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF412808"
+        "Code":"CF412808",
+        "HashCode":"arrhenatherum_elatius_var_bulbosum",
+        "SpeciesName":"Arrhenatherum elatius var. bulbosum",
+        "CommonName":"Onion Couch"
       },
       "geometry":{  
         "type":"Point",
@@ -193,15 +202,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Asplenium adiantum-nigrum",
-        "Common name":"Black Spleenwort",
         "Yr":1997,
         "FullDate":"1997",
         "Image":"CF002465.jpg",
         "Description":"Black Spleenwort is widespread and common, except on Bodmin Moor, the Isles of Scilly and parts of north east Cornwall. It is usually found on mortared walls and in the interstices between boulders on Cornish Hedges. It is frequent along innumerable Cornish lanes.",
         "Recorder":"DR C.N. PAGE",
         "Marker":"Plant",
-        "Code":"X54589"
+        "Code":"X54589",
+        "HashCode":"asplenium_adiantum-nigrum1",
+        "SpeciesName":"Asplenium adiantum-nigrum",
+        "CommonName":"Black Spleenwort"
       },
       "geometry":{  
         "type":"Point",
@@ -214,15 +224,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Asplenium adiantum-nigrum",
-        "Common name":"Black Spleenwort",
         "Yr":2011,
         "FullDate":"15-May-11",
         "Image":"CF002466.jpg",
         "Description":"Black Spleenwort is widespread and common, except on Bodmin Moor, the Isles of Scilly and parts of north east Cornwall. It is usually found on mortared walls and in the interstices between boulders on Cornish Hedges. It is frequent along innumerable Cornish lanes.",
         "Recorder":"C.E. WILD",
         "Marker":"Plant",
-        "Code":"CF302392"
+        "Code":"CF302392",
+        "HashCode":"asplenium_adiantum-nigrum2",
+        "SpeciesName":"Asplenium adiantum-nigrum",
+        "CommonName":"Black Spleenwort"
       },
       "geometry":{  
         "type":"Point",
@@ -235,15 +246,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Athyrium filix-femina",
-        "Common name":"Lady fern",
         "Yr":2014,
         "FullDate":"05-Jul-14",
         "Image":"CF002456.jpg",
         "Description":"Lady-fern is frequent and most often seen in the damper parts of woodland, along shaded hedgerows and close to flowing water. It is noticeably absent from the dune systems and a substantial part of the western side of the Lizard Peninsula, and is much less frequent along the coastal fringe. Lady-fern does occur on the Isles of Scilly.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF412825"
+        "Code":"CF412825",
+        "HashCode":"athyrium_filix-femina1",
+        "SpeciesName":"Athyrium filix-femina",
+        "CommonName":"Lady fern"
       },
       "geometry":{  
         "type":"Point",
@@ -256,15 +268,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Athyrium filix-femina",
-        "Common name":"Lady fern",
         "Yr":1997,
         "FullDate":"1997",
         "Image":"CF002685.jpg",
         "Description":"Lady-fern is frequent and most often seen in the damper parts of woodland, along shaded hedgerows and close to flowing water. It is noticeably absent from the dune systems and a substantial part of the western side of the Lizard Peninsula, and is much less frequent along the coastal fringe. Lady-fern does occur on the Isles of Scilly.",
         "Recorder":"DR C.N. PAGE",
         "Marker":"Plant",
-        "Code":"X54593"
+        "Code":"X54593",
+        "HashCode":"athyrium_filix-femina2",
+        "SpeciesName":"Athyrium filix-femina",
+        "CommonName":"Lady fern"
       },
       "geometry":{  
         "type":"Point",
@@ -277,15 +290,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Athyrium filix-femina",
-        "Common name":"Lady fern",
         "Yr":2012,
         "FullDate":"28-Jul-12",
         "Image":"CF002456.jpg",
         "Description":"Lady-fern is frequent and most often seen in the damper parts of woodland, along shaded hedgerows and close to flowing water. It is noticeably absent from the dune systems and a substantial part of the western side of the Lizard Peninsula, and is much less frequent along the coastal fringe. Lady-fern does occur on the Isles of Scilly.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF354779"
+        "Code":"CF354779",
+        "HashCode":"athyrium_filix-femina3",
+        "SpeciesName":"Athyrium filix-femina",
+        "CommonName":"Lady fern"
       },
       "geometry":{  
         "type":"Point",
@@ -298,15 +312,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Athyrium filix-femina",
-        "Common name":"Lady fern",
         "Yr":2012,
         "FullDate":"31-Jul-12",
         "Image":"CF002685.jpg",
         "Description":"Lady-fern is frequent and most often seen in the damper parts of woodland, along shaded hedgerows and close to flowing water. It is noticeably absent from the dune systems and a substantial part of the western side of the Lizard Peninsula, and is much less frequent along the coastal fringe. Lady-fern does occur on the Isles of Scilly.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF355203"
+        "Code":"CF355203",
+        "HashCode":"athyrium_filix-femina4",
+        "SpeciesName":"Athyrium filix-femina",
+        "CommonName":"Lady fern"
       },
       "geometry":{  
         "type":"Point",
@@ -319,15 +334,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Athyrium filix-femina",
-        "Common name":"Lady fern",
         "Yr":2014,
         "FullDate":"05-Jul-14",
         "Image":"CF002685.jpg",
         "Description":"Lady-fern is frequent and most often seen in the damper parts of woodland, along shaded hedgerows and close to flowing water. It is noticeably absent from the dune systems and a substantial part of the western side of the Lizard Peninsula, and is much less frequent along the coastal fringe. Lady-fern does occur on the Isles of Scilly.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF412815"
+        "Code":"CF412815",
+        "HashCode":"athyrium_filix-femina5",
+        "SpeciesName":"Athyrium filix-femina",
+        "CommonName":"Lady fern"
       },
       "geometry":{  
         "type":"Point",
@@ -340,15 +356,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Atriplex patula",
-        "Common name":"Common Orache",
         "Yr":2009,
         "FullDate":"02-Aug-09",
         "Image":"",
         "Description":"A common horticultural and arable weed in Cornwall and the Isles of Scilly, that can often be found wherever soil has been disturbed.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF196640"
+        "Code":"CF196640",
+        "HashCode":"atriplex_patula",
+        "SpeciesName":"Atriplex patula",
+        "CommonName":"Common Orache"
       },
       "geometry":{  
         "type":"Point",
@@ -361,15 +378,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Avena sativa",
-        "Common name":"Common Oat",
         "Yr":2012,
         "FullDate":"28-Jul-12",
         "Image":"CF3509.jpg",
         "Description":"Oat has proved to be a frequent casual by roads and on waste ground in the area between Newquay and Padstow, north of the A30(T). Elsewhere it is rarely seen",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF354823"
+        "Code":"CF354823",
+        "HashCode":"avena_sativa",
+        "SpeciesName":"Avena sativa",
+        "CommonName":"Common Oat"
       },
       "geometry":{  
         "type":"Point",
@@ -382,15 +400,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Blechnum spicant",
-        "Common name":"Hard-fern",
         "Yr":1997,
         "FullDate":"1997",
         "Image":"CF531.jpg",
         "Description":"Hard-fern is very common in Cornwall except along the coastline, on the Lizard and on the Isles of Scilly. Tolerant of a high degree of shade it can be found in places that are too dark for other ferns and grows in a wide variety of habitats, including woodland, Salix carr, undercliffs, scrub, coastal and inland heaths, shaded hedgebanks, mine spoil, quarries, stream banks and crevices in the granite tors",
         "Recorder":"DR C.N. PAGE",
         "Marker":"Plant",
-        "Code":"X54594"
+        "Code":"X54594",
+        "HashCode":"blechnum_spicant1",
+        "SpeciesName":"Blechnum spicant",
+        "CommonName":"Hard-fern"
       },
       "geometry":{  
         "type":"Point",
@@ -403,15 +422,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Blechnum spicant",
-        "Common name":"Hard-fern",
         "Yr":2012,
         "FullDate":"28-Jul-12",
         "Image":"CF531.jpg",
         "Description":"Hard-fern is very common in Cornwall except along the coastline, on the Lizard and on the Isles of Scilly. Tolerant of a high degree of shade it can be found in places that are too dark for other ferns and grows in a wide variety of habitats, including woodland, Salix carr, undercliffs, scrub, coastal and inland heaths, shaded hedgebanks, mine spoil, quarries, stream banks and crevices in the granite tors",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF354777"
+        "Code":"CF354777",
+        "HashCode":"blechnum_spicant2",
+        "SpeciesName":"Blechnum spicant",
+        "CommonName":"Hard-fern"
       },
       "geometry":{  
         "type":"Point",
@@ -424,15 +444,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Brachypodium sylvaticum",
-        "Common name":"Slender False Brome, False Brome, Ribbon Grass, False Brome Grass",
         "Yr":2011,
         "FullDate":"15-May-11",
         "Image":"",
         "Description":"False Brome is a very common grass on the sides of Cornish Hedges and as ground flora in woodlands and willow scrub. It is, however, missing from the larger part of the main granite areas, but is found around the coastal fringe of the Penwith granite and is common on the Isles of Scilly.",
         "Recorder":"C.E. WILD",
         "Marker":"Plant",
-        "Code":"CF302401"
+        "Code":"CF302401",
+        "HashCode":"brachypodium_sylvaticum",
+        "SpeciesName":"Brachypodium sylvaticum",
+        "CommonName":"Slender False Brome, False Brome, Ribbon Grass, False Brome Grass"
       },
       "geometry":{  
         "type":"Point",
@@ -445,15 +466,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Bromus hordeaceus",
-        "Common name":"Soft-brome, Lop-grass, Soft Brome Grass",
         "Yr":2012,
         "FullDate":"31-Jul-12",
         "Image":"",
         "Description":"Soft-brome is very common and widespread along road verges, in cliff-top grassland and in permanent pasture fields. It is also common on the Isles of Scilly.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF355201"
+        "Code":"CF355201",
+        "HashCode":"bromus_hordeaceus1",
+        "SpeciesName":"Bromus hordeaceus",
+        "CommonName":"Soft-brome, Lop-grass, Soft Brome Grass"
       },
       "geometry":{  
         "type":"Point",
@@ -466,15 +488,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Bromus hordeaceus",
-        "Common name":"Soft-brome, Lop-grass, Soft Brome Grass",
         "Yr":2014,
         "FullDate":"05-Jul-14",
         "Image":"",
         "Description":"Soft-brome is very common and widespread along road verges, in cliff-top grassland and in permanent pasture fields. It is also common on the Isles of Scilly.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF412778"
+        "Code":"CF412778",
+        "HashCode":"bromus_hordeaceus2",
+        "SpeciesName":"Bromus hordeaceus",
+        "CommonName":"Soft-brome, Lop-grass, Soft Brome Grass"
       },
       "geometry":{  
         "type":"Point",
@@ -487,15 +510,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Bromus hordeaceus",
-        "Common name":"Soft-brome, Lop-grass, Soft Brome Grass",
         "Yr":2012,
         "FullDate":"28-Jul-12",
         "Image":"",
         "Description":"Soft-brome is very common and widespread along road verges, in cliff-top grassland and in permanent pasture fields. It is also common on the Isles of Scilly.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF354797"
+        "Code":"CF354797",
+        "HashCode":"bromus_hordeaceus3",
+        "SpeciesName":"Bromus hordeaceus",
+        "CommonName":"Soft-brome, Lop-grass, Soft Brome Grass"
       },
       "geometry":{  
         "type":"Point",
@@ -508,15 +532,16 @@ var plants = {
     {  
       "type":"Feature",
       "properties":{  
-        "Species name":"Bromus hordeaceus",
-        "Common name":"Soft-brome, Lop-grass, Soft Brome Grass",
         "Yr":2012,
         "FullDate":"31-Jul-12",
         "Image":"",
         "Description":"Soft-brome is very common and widespread along road verges, in cliff-top grassland and in permanent pasture fields. It is also common on the Isles of Scilly.",
         "Recorder":"DR C.N. FRENCH",
         "Marker":"Plant",
-        "Code":"CF355209"
+        "Code":"CF355209",
+        "HashCode":"bromus_hordeaceus4",
+        "SpeciesName":"Bromus hordeaceus",
+        "CommonName":"Soft-brome, Lop-grass, Soft Brome Grass"
       },
       "geometry":{  
         "type":"Point",
