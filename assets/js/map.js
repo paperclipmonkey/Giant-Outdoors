@@ -8,7 +8,9 @@
           expo.map.setView([50.188214, -5.293300], 18);//Set default map state
         }
 
-        L.edgeMarker().addTo(expo.map);
+        L.edgeMarker({
+          fillOpacity:0.5
+        }).addTo(expo.map);
 
         expo.sidebar = L.control.sidebar('walkholder', {
             position: 'left'
