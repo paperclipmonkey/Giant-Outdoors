@@ -24,6 +24,11 @@
           }
         });
 
+        mapm.map.on('popupclose', function(){
+          //Remove the hash from the url
+          window.location.hash = "";
+        });
+
         /* Function to find lat / lng of point */
         // function onMapClick(e) {
         //     //gib_uni();
