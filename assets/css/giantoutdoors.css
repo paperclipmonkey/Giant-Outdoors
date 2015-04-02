@@ -311,6 +311,10 @@
     min-height: 200px;
   }
 
+  .leaflet-popup-content .width100{
+    border: 1px solid #c7c8c8;
+  }
+
   #walkholder{
     display: none;
   }
@@ -511,4 +515,33 @@ legend.leaflet-panel-layers-grouplabel{
 
 .textarea-group, .fileupload-group{
   display: none;
+}
+
+.leaflet-popup-content{
+  overflow: auto;
+}
+
+.share{
+  float: right;
+}
+
+.tags{
+  float: left;
+}
+
+a.share {
+  display: block;
+  height: 25px;
+  width: 46px;
+  margin: 5px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+a.share.facebook{
+  background-image: url(../img/facebook.png);
+}
+
+a.share.twitter{
+  background-image: url(../img/twitter.png);
 }
