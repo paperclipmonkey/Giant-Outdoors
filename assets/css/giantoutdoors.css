@@ -185,9 +185,37 @@
   .tags span{
     border-radius: 7px;
     margin-right: 5px;
-    padding: 5px;
-    background: #E3D438;
-    color: #fff;
+    padding: 6px 8px;
+    background: #fff;
+    border-color: #845433;
+    border-width: 1px;
+    color: #845433;
+    border-style: solid;
+  }
+
+  .tags.other span{
+    color: #f69434;
+    border-color: #f69434;
+  }
+
+  .tags.finds span{
+    color: #845433;
+    border-color: #845433;
+  }
+
+  .tags.added span{
+    color: #42a9d1;
+    border-color: #42a9d1;
+  }
+
+  .tags.memory span{
+    color: #7d76ae;
+    border-color: #7d76ae;
+  }
+
+  .tags.plants span{
+    color: #57a622;
+    border-color: #57a622;
   }
 
   .wide-popup .leaflet-popup-content{
