@@ -6,7 +6,7 @@
 
     //Lets see if we have a file
     $fcheck = getimagesize($_FILES["fileUpload"]["tmp_name"]);
-    if($check !== false) {//File uploading happening and it's an image
+    if($fcheck !== false) {//File uploading happening and it's an image
       $imageFileType = pathinfo($_FILES["fileUpload"]["tmp_name"],PATHINFO_EXTENSION);
       $target_file = "uploads/" . $name .'.' . $imageFileType;
       move_uploaded_file($_FILES["fileUpload"]["tmp_name"], $target_file);
