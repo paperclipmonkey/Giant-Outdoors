@@ -178,19 +178,19 @@
     display: none;
   }
 
-  .tags{
-    margin: 10px 0;
-  }
-
   .tags span{
     border-radius: 7px;
     margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 6px 8px;
     background: #fff;
     border-color: #845433;
     border-width: 1px;
     color: #845433;
     border-style: solid;
+    display: block;
+    float: left;
   }
 
   .tags.other span{
