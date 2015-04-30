@@ -12,7 +12,7 @@
           fillOpacity:0.5
         }).addTo(expo.map);
 
-        expo.sidebar = L.control.sidebar('walkholder', {
+        expo.sidebar = L.control.sidebar('leftsideholder', {
             position: 'left'
         });
 
@@ -211,14 +211,14 @@
 
     expo.closePopups = function(){
         mapm.map.closePopup();
-        $("#walkholder").hide();
+        $("#leftsideholder").hide();
     }
 
 	expo.switchModes = function(mode){
         mapm.closePopups();
         //Hide all of the things
         $("#sliderholder").hide();
-        $("#walkholder").hide();
+        $("#leftsideholder").hide();
         //Hide overlays
         mapm.map.removeLayer(mapm.layers.walks);
         if(mode == "dig"){
@@ -229,7 +229,7 @@
           renderTimeLine("#sliderholder .epochholder", epochData);
           //Add dig data
         } else if (mode == "explore"){
-          //$("#walkholder").show();//Only show when clicked on
+          //$("#leftsideholder").show();//Only show when clicked on
           mapm.map.addLayer(mapm.layers.walks);
           mapm.map.setZoom(14);
           //Show walk information
