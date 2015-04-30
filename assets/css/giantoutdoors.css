@@ -550,3 +550,9 @@ a.share.facebook{
 a.share.twitter{
   background-image: url(../img/twitter.png);
 }
+
+.adddrag{
+  background: url(../img/marker-purple.png);
+  width: 25px;
+  height: 41px;
+}

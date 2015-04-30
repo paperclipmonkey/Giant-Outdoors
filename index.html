@@ -86,28 +86,43 @@
             <div class="control-group">
               <label class="control-label" for="textinput">Your name</label>
               <div class="controls">
-                <input id="textinput" name="name" type="text" placeholder="John Smith" class="input-xlarge">
+                <input id="name" name="name" type="text" placeholder="John Smith" class="input-xlarge">
                 
               </div>
             </div>
+
 
             <!-- Text input-->
             <div class="control-group">
               <label class="control-label" for="textinput">Email</label>
               <div class="controls">
-                <input id="textinput" name="email" type="text" placeholder="john@smith.com" class="input-xlarge">
+                <input id="email" name="email" type="text" placeholder="john@smith.com" class="input-xlarge">
                 
               </div>
             </div>
-
             <!-- Text input-->
             <div class="control-group">
               <label class="control-label" for="textinput">Title of entry</label>
               <div class="controls">
-                <input id="textinput" name="title" type="text" placeholder="Quoit thoughts" class="input-xlarge">
+                <input id="title" name="title" type="text" placeholder="Quoit thoughts" class="input-xlarge">
                 
               </div>
             </div>
+
+            <div class="control-group">
+              <label class="control-label" for="textinput">Memory Location</label>
+              <div class="controls">
+                <div class="adddragholder">
+                  <div id="adddrag" class="adddrag"></div>
+                  <div class="adddragdescription">Drag the marker to the best-fit location for your memory</div>
+                </div>
+                <div id="addmap" style="width:100%;height:200px;"></div>
+              </div>
+            </div>
+
+            <input type="hidden" id="lat" name="lat"/>
+            <input type="hidden" id="lng" name="lng"/>
+
 
             <!-- Multiple Checkboxes -->
             <div class="control-group">
@@ -126,9 +141,9 @@
 
             <!-- Textarea -->
             <div class="control-group textarea-group">
-              <label class="control-label" for="textarea">Writing</label>
+              <label class="control-label" for="textarea">Text</label>
               <div class="controls">                     
-                <textarea id="textarea" class="uploadtext" name="textarea">your story of the Quoit here</textarea>
+                <textarea id="textarea" class="uploadtext" placeholder="Your story of the Quoit here" name="textarea"></textarea>
               </div>
             </div>
 
@@ -190,6 +205,7 @@
   <script src="assets/js/intro.js"></script>
   <script src="assets/js/map.js"></script>
   <script src="assets/js/timeline.js"></script>
+  <script src="assets/js/add.js"></script>
 
   <script src="assets/json/dates.json"></script>
   <script src="assets/geojson/walk1.geojson"></script>
