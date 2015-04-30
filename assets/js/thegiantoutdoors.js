@@ -243,6 +243,7 @@
     }
 
     function omsClickHandler(marker) {
+      marker.setOpacity(0.6);//Slightly hide clicked markers
       //Show element
       if (marker.feature.properties) {
         var props = marker.feature.properties;
