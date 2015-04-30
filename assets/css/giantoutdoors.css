@@ -315,17 +315,25 @@
     border: 1px solid #c7c8c8;
   }
 
-  #walkholder{
+  #leftsideholder{
     display: none;
   }
 
-  #walkholder img{
+  #walkcontentholderholder{
+    display: none;
+  }
+
+  #leftsideholder img{
     width: 100%;
   }
 
-  #walkholder p{
+  #leftsideholder p{
     font-size:14px;
     font-weight: bold;
+  }
+
+  #leftsideholder .waypointsholder{
+    display: none;
   }
 
   span.infotitle {
@@ -359,6 +367,10 @@
 
   .btn:focus{
     outline: 0px auto -webkit-focus-ring-color;
+  }
+
+  #btnabout{
+    float: right;
   }
 
   .leaflet-popup-close-button{

@@ -11,6 +11,10 @@
         }
       });
 
+      $("#btnabout").click(function(){
+        showAbout("home");//show about info
+      });
+
       $("#checkboxes-photo").on('change',function(){$('.fileupload-group').toggle()});
       $("#checkboxes-text").on('change',function(){$('.textarea-group').toggle()});
       $(".btn-upload-add").click(function(){
@@ -32,6 +36,10 @@
           sliderUpdater(ui.value);
         }
       });
+
+      $('#myModal').on('shown.bs.modal', function() {
+        add.initialise();
+      })
 
       // $("#slider2").slider(
       //   'value',
@@ -116,22 +124,47 @@
       }, 2500);//2.5 seconds
     }
 
+    function showAbout(page){
+      mapm.sidebar.show();
+      $("#leftsideholder").show();
+      $('#leftsideholder').html("");//Blank HTML
+      $('#leftsideholder').load('assets/html/' + page + '.html');
+
+      $('#leftsideholder').on('click', 'a', function(e){
+        showAbout($(this).attr('href').replace('#',''));
+        return false;
+      });
+    }
+
     function addWalkLayers (walkLGrp) {
+
       function walkClicked(marker){
         var props = marker.target.feature.properties;
         mapm.sidebar.show();
-        $("#walkholder").show();
-        $("#walkholder .title").text(props.title);
-        $("#walkholder .subtitle").text(props.subtitle);
-        $("#walkholder .description").text(props.description);
-        $("#walkholder .start").text(props.start);
-        $("#walkholder .end").text(props.end);
-        $("#walkholder .distance").text(props.distance);
-        $("#walkholder .parking").text(props.parking);
-        $("#walkholder .photo").attr("src", "assets/content/" + props.photo);
-        $("#walkholder .difficulty").text(props.difficulty);
-        $("#walkholder .gpx").attr("href","assets/geojson/" + props.gpx);
-        $("#walkholder .kml").attr("href", "assets/geojson/" + props.kml);
+        $("#leftsideholder").show();
+
+        $('#leftsideholder').html("");//Blank HTML
+        $('#leftsideholder').append($('#walkcontentholder').clone());
+
+        $("#leftsideholder .title").text(props.title);
+        $("#leftsideholder .subtitle").text(props.subtitle);
+        $("#leftsideholder .description").text(props.description);
+        $("#leftsideholder .start").text(props.start);
+        $("#leftsideholder .end").text(props.end);
+        if(props.waypoints){
+          $("#leftsideholder .waypointsholder").css("display","block");
+          var i = 0;
+          while(i < props.waypoints.length){
+            $("#leftsideholder .waypoints").append($("<a class=\"waypointslink\">Waymarker</a>").attr("href", "#" + props.waypoints[i]));
+            i++;
+          }
+        }
+        $("#leftsideholder .distance").text(props.distance);
+        $("#leftsideholder .parking").text(props.parking);
+        $("#leftsideholder .photo").attr("src", "assets/content/" + props.photo);
+        $("#leftsideholder .difficulty").text(props.difficulty);
+        $("#leftsideholder .gpx").attr("href","assets/geojson/" + props.gpx);
+        $("#leftsideholder .kml").attr("href", "assets/geojson/" + props.kml);
         this.feature.properties;
       }
 
