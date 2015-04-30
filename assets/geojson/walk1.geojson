@@ -16,6 +16,7 @@ var walk1 = {
 "parking": "At the model village by the war memorial, but be aware that it can be busy on Sundays, owing to church services.",
 distance: "3.14 miles (5.1 km)",
 "photo": "walk1.jpg",
+"waypoints": ["waypoint1"],
 "kml": "walk1.kml",
 "gpx": "walk1.gpx",
 "difficulty": "Half a mile into the walk the route climbs gently uphill towards Beacon village. The ground is rough and may be muddy, so waterproof footwear is advisable. Not suitable for wheelchairs."

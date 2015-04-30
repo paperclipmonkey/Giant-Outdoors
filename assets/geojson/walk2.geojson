@@ -16,6 +16,7 @@ var walk2 = {
 "parking": "At the model village by the war memorial, but spaces may be scarce on Sunday mornings, owing to church services.",
 distance: "2.79 miles (4.49 km)",
 "photo": "walk2.jpg",
+"waypoints": ["waypoint2"],
 "kml": "walk2.kml",
 "gpx": "walk2.gpx",
 "difficulty": "This walk takes you along paths and tracks, over stiles, and across open fields. You will need stout footwear and long trousers for protection against gorse."

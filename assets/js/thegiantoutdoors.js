@@ -312,7 +312,12 @@
     $(document).on("click", ".share.twitter", function(e){
       e.preventDefault();
       window.location = "http://www.twitter.com/share?url=" + encodeURIComponent(window.location);
-    });    
+    });
+
+    $("#leftsideholder").on("click", ".waypoints a", function(e){
+      var waypointUrl = $(this).attr("href").replace("#", "");
+      showMarkerFromId(waypointUrl);
+    });
 
     $('.btn-tooltip').tooltip();
     $('.label-tooltip').tooltip();
