@@ -17,7 +17,8 @@ var memories = {
         "Tags":[  
           "Memory",
           "Elizabethans",
-          "Medieval"
+          "Tudors",
+          "Religious conflict"
         ],
         "Marker Type":"memory",
         "HashCode":"the_gorsedh_kernow"
