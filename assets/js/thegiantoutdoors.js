@@ -367,7 +367,7 @@
       //Define marker icons that can be used
       var markerIcons = {};
 
-      markerTypes = ['orange', 'brown', 'green', 'blue', 'purple', 'white'];
+      markerTypes = ['orange', 'brown', 'green', 'blue', 'purple', 'white','pink'];
 
       for (var i = 0; i < markerTypes.length; i++) {
         makeMarker(markerIcons, markerTypes[i]);
@@ -406,6 +406,12 @@
       mapm.layers._markers.plant.addLayer(L.geoJson(plants, {
         pointToLayer: function (feature, latlng) {
           return L.marker(latlng, {icon: markerIcons.green});
+        }
+      }));
+
+      mapm.layers._markers.waypoints.addLayer(L.geoJson(waypoints, {
+        pointToLayer: function (feature, latlng) {
+          return L.marker(latlng, {icon: markerIcons.pink});
         }
       }));
 
