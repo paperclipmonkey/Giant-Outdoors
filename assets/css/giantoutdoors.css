@@ -411,6 +411,11 @@
   background-image: url('../img/marker-white-2x.png');
 }
 
+.marker-icon.marker-pink{
+  background-image: url('../img/marker-pink-2x.png');
+}
+
+
 .leaflet-panel-layers-group{
   background: transparent;
   border: none;

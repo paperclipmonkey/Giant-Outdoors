@@ -1,0 +1,83 @@
+var waypoints = {  
+  "type":"FeatureCollection",
+  "features":[  
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Waymarker",
+        "Description":"At this point in the walk, you can take a diversion up the valley to St Ia's Chapel. At the side of the stream (which rises on Chycame Moor and flows through Troon, the Reens, and feeds Pendarves lake) is Reens Rock. Also known as Carrek Veryasek, the granite outcrop is said to have provided shelter for St Meriasek. The remains of St Ia's Chapel (probably 10th and 12th century), built next to the holy well, were excavated in 1962. These are on the opposite side of the stream from Reens Rock, on an ancient trackway leading to Camborne and beyond.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[
+          "waymarker",
+          "Elizabethans", 
+          "Tudors and Religious conflict",
+          "Medieval"
+        ],
+        "Marker Type":"waymarker",
+        "HashCode":"waypoint1"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.28718,  
+          50.19885
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Waymarker",
+        "Image": "walk_1_style_ss.jpg",
+        "Description":"As you reach the road, you will see a stile on the opposite side. The road can be busy at times so take care when crossing.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[
+          "waymarker"
+        ],
+        "Marker Type":"waymarker",
+        "HashCode":"waypoint2"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.290761,  
+          50.191667
+        ]
+      }
+    },
+
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Waymarker",
+        "Image": "waymarker_standingstone_walk4.jpg",
+        "Description":"As you leave Clowance estate, you will come to the main road, which can be busy, so cross carefully to the stile opposite. Climb the stile, look for a standing stone in the middle of the field, and walk straight towards it. As you approach the stone, you will see your next stile.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[
+          "waymarker"
+        ],
+        "Marker Type":"waymarker",
+        "HashCode":"waypoint3"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.305881,  
+          50.16649
+        ]
+      }
+    },
+  ]
+}
