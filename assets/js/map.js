@@ -94,7 +94,8 @@
           'plant': L.featureGroup(),
           'keysite': L.featureGroup().addTo(expo.map),
           'memories': L.featureGroup().addTo(expo.map),
-          'added': L.featureGroup().addTo(expo.map)
+          'added': L.featureGroup().addTo(expo.map),
+          'waypoints': L.featureGroup()
         };
 
         expo.layers._markers = {
@@ -103,7 +104,8 @@
           'plant': L.featureGroup(),
           'keysite': L.featureGroup(),
           'memories': L.featureGroup(),
-          'added': L.featureGroup()
+          'added': L.featureGroup(),
+          'waypoints': L.featureGroup()
         };
 
 
@@ -191,6 +193,11 @@
                 name: "Memories",
                 layer: expo.layers.markers.memories,
                 icon: '<i class="marker-icon marker-purple"></i>'
+              },
+              {
+                name: "Waypoints",
+                layer: expo.layers.markers.waypoints,
+                icon: '<i class="marker-icon marker-pink"></i>'
               }
             ]
           }
