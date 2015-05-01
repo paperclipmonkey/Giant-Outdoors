@@ -107,6 +107,8 @@
 
       //Add walks layer
       addWalkLayers(mapm.layers.walks);
+      addViewShed(mapm.layers.viscloak);
+
 
       mapm.switchModes('explore');//Set up default page
       showHideMarkers();
@@ -134,6 +136,20 @@
         showAbout($(this).attr('href').replace('#',''));
         return false;
       });
+    }
+
+    function addViewShed (viewSLGrp) {
+      var viewShedStyle = {
+          color: '#ff3030',
+          weight: 4,
+          opacity: 0.6,
+          dashArray: '1, 5'
+      };
+
+      viewSLGrp.addLayer(
+       L.geoJson(visCloak, {
+        style: viewShedStyle,
+      }));
     }
 
     function addWalkLayers (walkLGrp) {

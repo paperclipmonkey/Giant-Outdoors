@@ -87,6 +87,7 @@
         }).addTo(expo.map);
 
         expo.layers.walks = L.featureGroup();
+        expo.layers.viscloak = L.featureGroup();
 
         expo.layers.markers = {
           'other': L.featureGroup().addTo(expo.map),
@@ -157,6 +158,11 @@
               { 
                 name: "Geology",
                 layer: expo.layers.geology,
+                opacity: true
+              },
+              { 
+                name: "View Shed",
+                layer: expo.layers.viscloak,
                 opacity: true
               }
             ]
