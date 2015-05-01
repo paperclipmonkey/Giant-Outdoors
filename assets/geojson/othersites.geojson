@@ -1,7 +1,7 @@
 var other = {  
   "type":"FeatureCollection",
   "features":[  
-    {  
+      {  
       "type":"Feature",
       "properties":{  
         "Title":"Field system and hut circle settlement",
@@ -1073,6 +1073,344 @@ var other = {
         "coordinates":[  
           -5.280051,
           50.182175
+        ]
+      }
+    },
+      {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Hallegan Manor",
+        "StartDate":1200,
+        "EndDate":1200,
+        "Image":"",
+        "Description":"Records show a chapel, Park Chapel, here and the site opposite the manor was traditionally used as a cemetery. The settlement of Hallegan, spelt Helegan, first appears in 1200. In Cornish, heligen is a willow tree.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"1",
+        "Walk 4":"",
+        "Tags":[  
+          "other site",
+          "medieval"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"hallegan_manor"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.296914,
+          50.184935
+        ]
+      }
+    },
+  {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Bodrivial settlement",
+        "StartDate":1356,
+        "EndDate":1356,
+        "Image":"",
+        "Description":"Bodrivial was first recorded as a settlement in 1356. In Cornish bod means 'dwelling', and the second part of the name is probably yel, meaning 'fertile upland'. Bod implies a settlement of early medieval origin.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "other site",
+          "medieval"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"bodrivial_settlement"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.29006,
+          50.183061
+        ]
+      }
+    },
+  {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Gernick settlement",
+        "StartDate":1201,
+        "EndDate":1201,
+        "Image":"",
+        "Description":"First recorded in 1201 as Kernik, the name is Cornish. Kernyk means 'little corner’ or ‘little horn'.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"1",
+        "Walk 4":"",
+        "Tags":[  
+          "other site",
+          "medieval"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"gernick_settlement"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.307827,
+          50.180667
+        ]
+      }
+    },
+  {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Crowan settlement",
+        "StartDate":1150,
+        "EndDate":1150,
+        "Image":"crowan_church_walk_3.jpg",
+        "Description":"Crowan appears as Eggloscraven around 1150. Eglos is Cornish for 'church' and Cruenna is a Cornish saint’s name. The church of St Crewen is Norman in origin and the cross standing on a block of granite against its south wall has a story to tell. It was previously used as a stand for a nearby beehive.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"1",
+        "Walk 4":"1",
+        "Tags":[  
+          "other site",
+          "medieval"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"crowan_settlement"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.297684,
+          50.163593
+        ]
+      }
+    },
+  {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Trethannas settlement",
+        "StartDate":1302,
+        "EndDate":1302,
+        "Image":"",
+        "Description":"Records from 1302 show this settlement as Trenarthanes. Tre, in Cornish means 'estate’ or ‘farmstead'. In the tithe records for Crowan parish, the location is given the field-name 'Roundmeadow', which may indicate a prehistoric defended enclosure.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"1",
+        "Walk 4":"",
+        "Tags":[  
+          "other site",
+          "medieval"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"trethannas_settlement"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.30666,
+          50.175932
+        ]
+      }
+    },
+  {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Manor Mill",
+        "StartDate":1700,
+        "EndDate":1880,
+        "Image":"crowan_mill.jpg",
+        "Description":"This listed millhouse, which dates from the 1700s, and the mill, which is mid- to late 1800s, lie to the left of the road. From 1945 until 1962, Harry and May Davis ran a well-known pottery there. Illustration: Suzy Sharpe.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"1",
+        "Walk 4":"1",
+        "Tags":[  
+          "other site",
+          "victorian"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"manor_mill"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.299816,
+          50.162003
+        ]
+      }
+    },
+  {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"South Trenoweth railway bridge",
+        "StartDate":1887,
+        "EndDate":1964,
+        "Image":"",
+        "Description":"When you turn onto a new track, to your right you’ll see the Helston branch line, which crosses over the B road to the west of Manor Mill. The railway from Gwinear Road to Helston was opened in 1887, but closed to all traffic in 1964.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"1",
+        "Tags":[  
+          "other site",
+          "georgian",
+          "victorian"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"south_trenoweth_railway_bridge"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.303081,
+          50.158581
+        ]
+      }
+    },
+  {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Crenver Grove",
+        "StartDate":1700,
+        "EndDate":1750,
+        "Image":"crenver_grove.jpg",
+        "Description":"Straight ahead, on the other side of the road, Crenver Grove is a 35-acre woodland. Saved from development by the Dandelion Trust in 1991, the woods are managed by Sustrust as a conservation and education site. Crenver Grove’s 'school circle' featured on the cover of a book describing national outdoor learning spaces. Walk 4 takes you through these woods.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"1",
+        "Tags":[  
+          "other site",
+          "georgian"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"crenver_Grove"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.315926,
+          50.158035
+        ]
+      }
+    },
+  {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Crenver Grove shelter",
+        "StartDate":2002,
+        "EndDate":2015,
+        "Image":"crenver_shelter.jpg",
+        "Description":"Look through the trees to your right-hand side. The shelter here, made from coppiced sweet chestnut timber was built by students and volunteers and is a good spot for a picnic. Other activities taking place next to the shelter include charcoal burning, from the timber of felled invasive species, and green woodworking workshops.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"1",
+        "Walk 3":"",
+        "Walk 4":"",
+        "Tags":[  
+          "other site",
+          "21st century"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"crenver_grove_shelter"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.311108,
+          50.169166
+        ]
+      }
+    },
+  {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Sustrust office",
+        "StartDate":2002,
+        "EndDate":2015,
+        "Image":"sustrust_office.jpg",
+        "Description":"The footpath passes the grass-roofed office of Sustrust, and there is a good view of Fox Grove. Managed as a nature reserve, this 40-acre historic woodland was laid out by a student of famous landscaper, Capability Brown. The route back to Crowan follows the track running between Bold gate and Best gate. From here, you will be heading towards the front of Clowance House, where dogs must be kept on a lead.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"1",
+        "Tags":[  
+          "other site",
+          "21st century"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"sustrust_office"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.321732,
+          50.167243
+        ]
+      }
+    },
+  {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Clowance House",
+        "StartDate":1625,
+        "EndDate":1895,
+        "Image":"",
+        "Description":"At this point, you pass Clowance House (to your left), which was owned for over 500 years by the St Aubyn family. Six members were sheriffs of Cornwall. In 1837 and 1843, two fires broke out at the house, which dates back to 1615. The building was largely destroyed then subsequently remodelled. Although some claim the house is ‘Clunewic’, which features in the Domesday Book of 1086, there does not appear to be an entry for a manor of that name.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"1",
+        "Tags":[  
+          "other site",
+          "post medieval"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"clowance_House"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.313376,
+          50.167734
+        ]
+      }
+    },
+  {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Clowance Wood",
+        "StartDate":1830,
+        "EndDate":1920,
+        "Image":"",
+        "Description":"The parkland around Clowance has changed a great deal over the years, starting out as a deer park then undergoing various redesigns according to the fashions of the time. The present landscape of woodlands and sweeping picturesque views down to the lake probably owes a lot to John Nicholls, who was a landscape gardener in the style of Capability Brown. You can see that much of the woodland has been cleared for development, which has caused significant controversy.",
+        "URL":"",
+        "Walk 1":"",
+        "Walk 2":"",
+        "Walk 3":"",
+        "Walk 4":"1",
+        "Tags":[  
+          "other site",
+          "georgian",
+          "victorian"
+        ],
+        "Marker Type":"other site",
+        "HashCode":"clowance_wood"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.311611,
+          50.166309
         ]
       }
     }
