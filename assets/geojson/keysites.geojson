@@ -8,7 +8,7 @@ var keysites = {
         "StartDate":-3500,
         "EndDate":1833,
         "Sketchfab":"https://sketchfab.com/models/c54559a8309f4a0297be7e21b11dd8c6",
-        "Image":"standing_quoit.eps",
+        "Image":"",
         "Description":"Carwynnen Quoit, the Giant's Quoit, is a Neolithic cromlech, a stone monument with a chambered tomb beneath. It was first recorded in 1700 and marked as 'cromlech' on the 1839 OS map. The quoit first collapsed around 1842, was subsequently re-erected, and we know that in 1950 the monument consisted of three uprights supporting a capstone. It collapsed again in 1966 and was re-erected by Sustrust in summer, 2014.",
         "URL":"",
         "Walk 1":"1",
@@ -136,8 +136,8 @@ var keysites = {
       "geometry":{  
         "type":"Point",
         "coordinates":[  
-          -5.293435715138912,
-          50.18824973796116
+          -5.293407715138912,
+          50.18823973796116
         ]
       }
     },
