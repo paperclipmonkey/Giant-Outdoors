@@ -287,8 +287,12 @@
               htmlString += "<img class='width100' src='assets/content/plants/" + props.Image + "'/>";
             }
           }
-          htmlString += "<h4>" + props["CommonName"] + "</h4>";
-          htmlString += "<h5>" + props["SpeciesName"] + "</h5>";
+          if(props["CommonName"]){
+            htmlString += "<h4>" + props["CommonName"] + "</h4>";
+          }
+          if(props["SpeciesName"]){
+            htmlString += "<h5>" + props["SpeciesName"] + "</h5>";
+          }
           htmlString += "<p>" + props.Description + "</p>";
           htmlString += "<h6>Recorded " + props.Yr + "</h6>";
 
