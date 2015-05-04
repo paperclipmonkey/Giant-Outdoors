@@ -147,9 +147,14 @@
       };
 
       viewSLGrp.addLayer(
-       L.geoJson(visCloak, {
-        style: viewShedStyle,
+        L.geoJson(visCloak, {
+          style: viewShedStyle,
+          onEachFeature: onEachViewShed
       }));
+
+      function onEachViewShed(feature, layer) {
+        layer.bindLabel(feature.properties.title);
+      }
     }
 
     function addWalkLayers (walkLGrp) {
