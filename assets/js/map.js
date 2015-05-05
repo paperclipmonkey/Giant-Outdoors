@@ -27,25 +27,8 @@
         });
 
         mapm.map.on('popupclose', function(){
-          //Remove the hash from the url
-          window.location.hash = "";
+          window.location.hash = "";//Remove the hash from the url
         });
-
-        /* Function to find lat / lng of point */
-        // function onMapClick(e) {
-        //     //gib_uni();
-        //     marker = new L.marker(e.latlng, {id:'uni', draggable:'true'});
-        //     marker.bindPopup(JSON.stringify(e.latlng)).openPopup();
-
-        //     marker.on('dragend', function(event){
-        //             var marker = event.target;
-        //             var position = marker.getLatLng();
-        //             alert(position);
-        //     });
-        //     expo.map.addLayer(marker);
-        // };
-
-        // expo.map.on('click', onMapClick);
 
         expo.map.addControl(expo.sidebar);
 
@@ -112,15 +95,9 @@
 
         var quoitIcon = L.icon({
             iconUrl: 'assets/img/quoit-up.png',
-            // iconRetinaUrl: 'my-icon@2x.png',
             iconSize: [75, 38],
             iconAnchor: [50, 25],
             popupAnchor: [-3, -50],
-            //opacity: 1.0,
-            // shadowUrl: 'my-icon-shadow.png',
-            // shadowRetinaUrl: 'my-icon-shadow@2x.png',
-            // shadowSize: [68, 95],
-            // shadowAnchor: [22, 94]
         });
 
         var quoitMarker = L.marker([50.18823492598261, -5.2934097312390795], {icon: quoitIcon}).addTo(expo.map);
@@ -231,20 +208,15 @@
           $("#sliderholder").show();//Show timebar
           //Init timebar
           $("#slider2").slider('value', $("#slider2").slider('value'));
-          //sliderUpdater($("#slider2").slider('value'));
           renderTimeLine("#sliderholder .epochholder", epochData);
           //Add dig data
         } else if (mode == "explore"){
-          //$("#leftsideholder").show();//Only show when clicked on
           mapm.map.addLayer(mapm.layers.walks);
           mapm.map.setZoom(14);
-          //Show walk information
-          //Add walk data
         }
     };
 
     expo.layers = {};
-    
     expo.layers.current = "satellite";
 
     window.mapm = expo;
