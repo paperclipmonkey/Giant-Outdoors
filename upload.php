@@ -24,7 +24,7 @@
     // saves the json string in "formdata.txt" (in "dirdata" folder)
     // outputs error message if data cannot be saved
     if(file_put_contents('uploads/'.$name.'.json', $jsondata)){
-      echo "Thankyou for adding your data to the map. We'll be in contact soon";
+      echo "Thankyou for adding your data to the map. We'll be in contact soon <br/> <a href=\"/\">Back to map</a>";
     } else {
       http_response_code(500);
       echo 'Unable to save data in ' . $name . ".json\n";
