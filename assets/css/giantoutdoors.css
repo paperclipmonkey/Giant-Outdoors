@@ -116,6 +116,10 @@
     filter: none !important;
   }
 
+  .ui-slider-handle:focus {
+    outline: 0;
+  }
+
   .maplayerbuttons{
     float: right;
     margin-right: 5px;
