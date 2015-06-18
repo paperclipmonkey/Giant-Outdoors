@@ -58,6 +58,95 @@ var memories = {
           50.19208437903285
         ]
       }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"The Reens and St Ia Chapel",
+        "StartDate":"950",
+        "EndDate":"1200",
+        "YouTube":"ZEYOY1-TSHY",
+        "Description":"In this video shot at the woods known as the Reens, Wendy Penberthy talks about St Ia chapel. The Chapel was built near to a holy well and probably dates from the 10th and 12th centuries. Its overgrown remains lie on the wooded banks of the stream known as the Reens, and the lower walls are visible. Excavations of the chapel in 1962 uncovered these walls and doorways. The well was known as Venton Ia. Wendy laments that the next generation don't know about the Reens, the Chapel and Uncle Ned’s Rock.",
+        "URL":"",
+        "Walk 1":"1",
+        "Walk 2":"0",
+        "Walk 3":"0",
+        "Walk 4":"0",
+        "Tags":[
+          "memory",
+          "elizabethans",
+          "Tudors and religious conflict",
+          "medieval"
+        ],
+        "Marker Type":"memory",
+        "HashCode":"st_ia_chapel"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.282404,
+          50.19706
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"The Pendarves Estate",
+        "StartDate":"1700",
+        "EndDate":"1955",
+        "YouTube":"F1tVIegUzi4",
+        "Description":"Wendy Penberthy of Troon visited Pendarves House when American soldiers were billeted there during the war. She saw the grand staircase and said later, “It was a shame when that house was pulled down because it was beautiful.” After the war the interior of the house caught fire. The shell survived but to local disappointment, the house was demolished in 1955. This video offers a glimpse of the house and its grounds, and indicates how the old estate and the quoit are key to Troon and its history. The Pendarves family rose to prominence in Cornwall during the sixteenth to eighteenth centuries as local land and mine owners.",
+        "URL":"",
+        "Walk 1":"1",
+        "Walk 2":"0",
+        "Walk 3":"0",
+        "Walk 4":"0",
+        "Tags":[
+          "memory",
+          "georgian",
+          "victorian",
+          "20th century"
+        ],
+        "Marker Type":"memory",
+        "HashCode":"memory_pendarves"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.297784,
+          50.189984
+        ]
+      }
+    },
+    {  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Pendarves Street",
+        "StartDate":"1845",
+        "EndDate":"2015",
+        "YouTube":"Le1NPipMJtY",
+        "Description":"In this film, Wendy Penberthy takes us to her street in Troon - one of the most beautiful streets in the area. She shares her memory of Tea Treat in the village and emphasizses how important it is to see the water in her street coming down from the moor. Troon is in the parish of Treslothan, which was divided from the parish of Camborne in 1845. People who live here have stories and strong connections to the quoit and its old estate, the mines and the cricket club.",
+        "URL":"",
+        "Walk 1":"1",
+        "Walk 2":"0",
+        "Walk 3":"0",
+        "Walk 4":"0",
+        "Tags":[
+          "memory",
+          "victorian",
+          "20th century"
+        ],
+        "Marker Type":"memory",
+        "HashCode":"memory_pendarves_street"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.27663,
+          50.195207
+        ]
+      }
     }
   ]
 }
