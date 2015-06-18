@@ -132,7 +132,7 @@
       $('#leftsideholder').html("");//Blank HTML
       $('#leftsideholder').load('assets/html/' + page + '.html');
 
-      $('#leftsideholder').on('click', 'a', function(e){
+      $('#leftsideholder').on('click', '.internal', function(e){
         showAbout($(this).attr('href').replace('#',''));
         return false;
       });
