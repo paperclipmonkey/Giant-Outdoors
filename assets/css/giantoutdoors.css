@@ -572,3 +572,12 @@ a.share.twitter{
   width: 25px;
   height: 41px;
 }
+
+.leaflet-sidebar .back {
+  left: 20px;
+  top: 10px;
+}
+
+span.qaname {
+  font-weight: bold;
+}
