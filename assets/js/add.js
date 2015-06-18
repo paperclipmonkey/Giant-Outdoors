@@ -43,8 +43,8 @@
 		}
 
 		var myIcon = L.icon({
-		    iconUrl: 'assets/img/marker-purple.png',
-		    iconRetinaUrl: 'assets/img/marker-purple-2x.png',
+		    iconUrl: 'assets/img/marker-blue.png',
+		    iconRetinaUrl: 'assets/img/marker-blue-2x.png',
 	        shadowUrl: 'assets/img/marker-shadow.png',
 	        iconSize: [25, 41],
 	        iconAnchor: [12, 41],
