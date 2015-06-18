@@ -17,6 +17,7 @@ var walk4 = {
 distance: "3.95 miles (6.35 km)",
 "photo": "walk4.jpg",
 "waypoints": ["waypoint3"],
+"pdf": "4_summer_walk_laserprint_a3.pdf",
 "kml": "walk4.kml",
 "gpx": "walk4.gpx",
 "difficulty": "This walk takes you through fields, woods and ornamental parkland. There is a slow descent towards Crenver Grove but once through the trees, you are on a road, which turns north and climbs gently. At the top of the hill, you head east (where it can be muddy) towards Clowance Wood. "

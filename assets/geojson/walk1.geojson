@@ -17,6 +17,7 @@ var walk1 = {
 distance: "3.14 miles (5.1 km)",
 "photo": "walk1.jpg",
 "waypoints": ["waypoint1"],
+"pdf": "1_autumn_walk_laserprint_a3.pdf",
 "kml": "walk1.kml",
 "gpx": "walk1.gpx",
 "difficulty": "Half a mile into the walk the route climbs gently uphill towards Beacon village. The ground is rough and may be muddy, so waterproof footwear is advisable. Not suitable for wheelchairs."

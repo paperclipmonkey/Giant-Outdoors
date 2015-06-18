@@ -17,6 +17,7 @@ var walk2 = {
 distance: "2.79 miles (4.49 km)",
 "photo": "walk2.jpg",
 "waypoints": ["waypoint2"],
+"pdf": "2_winter_walk_laserprint_a3.pdf",
 "kml": "walk2.kml",
 "gpx": "walk2.gpx",
 "difficulty": "This walk takes you along paths and tracks, over stiles, and across open fields. You will need stout footwear and long trousers for protection against gorse."

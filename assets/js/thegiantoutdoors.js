@@ -184,6 +184,7 @@
         $("#leftsideholder .parking").text(props.parking);
         $("#leftsideholder .photo").attr("src", "assets/content/" + props.photo);
         $("#leftsideholder .difficulty").text(props.difficulty);
+        $("#leftsideholder .pdf").attr("href","assets/pdf/" + props.pdf);
         $("#leftsideholder .gpx").attr("href","assets/geojson/" + props.gpx);
         $("#leftsideholder .kml").attr("href", "assets/geojson/" + props.kml);
         this.feature.properties;
