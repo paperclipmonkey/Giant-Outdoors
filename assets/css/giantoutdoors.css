@@ -327,7 +327,7 @@
     width: 100%;
   }
 
-  #leftsideholder p{
+  #leftsideholder .description{
     font-size:14px;
     font-weight: bold;
   }
@@ -564,7 +564,7 @@ a.share.twitter{
 }
 
 .adddrag{
-  background: url(../img/marker-purple.png);
+  background: url(../img/marker-blue.png);
   width: 25px;
   height: 41px;
 }
