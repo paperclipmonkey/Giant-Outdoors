@@ -42,21 +42,19 @@ function renderTimeLine(elSel, arr){
 		percentageFull -= percentageWidth;
 	}
 
-	// var tooltip = $('<div class="slidertooltip" />').css({
-	//     position: 'absolute',
-	//     top: '-25px',
-	//     left: '-10px'
-	// }).text('Drag me').show();
-	// $(".ui-slider-handle").append(tooltip).hover(function() {
-	// }, function() {
-	//     tooltip.remove();
-	// })
+	function showDigHover(num){
+		$('.ui-slider-handle').tooltip({
+			placement: 'top',
+			title: 'Drag me'
+		}).tooltip('show');
 
-	// $('.ui-slider-handle').on('show.bs.tooltip', function () {
-	// 	$('.ui-slider-handle').tooltip('destroy');
-	// });
-	// $('.ui-slider-handle').tooltip({
-	// 	placement: 'top',
-	// 	title: 'Drag me'
-	// }).tooltip('show');
+		$(".ui-slider-handle").hover(function() {
+		}, function() {
+		    $(this).tooltip('destroy');
+		})
+
+    	$('.ui-slider-handle').tooltip('show');
+    }
+
+	showDigHover();
 }
