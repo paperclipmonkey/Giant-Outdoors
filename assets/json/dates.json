@@ -21,7 +21,7 @@ window.epochData = [
         "name": "Georgian",
         "dateStart": 1714,
         "dateEnd": 1837,
-        "description": "This period covered the reigns of Georges 1-4 .The Industrial Revolution started around 1760.  In1801 Richard Trevithick built a full-size steam road carriage. In 1777  Dolly Pentreath died, probably the last fluent, native speaker of the Cornish language, prior to its revival in 1904"
+        "description": "This period covered the reigns of Georges 1-4. The Industrial Revolution started around 1760.  In 1801 Richard Trevithick built a full-size steam road carriage. In 1777 Dolly Pentreath died, probably the last fluent, native speaker of the Cornish language, prior to its revival in 1904"
     },
     {
         "name": "Post Medieval",
