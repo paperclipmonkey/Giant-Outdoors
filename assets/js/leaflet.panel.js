@@ -97,7 +97,7 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 		var className = 'leaflet-panel-layers',
 			label, input, slider, checked;
 		
-		label = L.DomUtil.create('label', className + '-item');
+		label = L.DomUtil.create('div', className + '-item');
 		checked = this._map.hasLayer(obj.layer);
 		if (obj.overlay) {
 			input = document.createElement('input');
@@ -190,7 +190,7 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 		this._refocusOnMap();
 	},
 
-	_onSliderChange: function () {
+	_onSliderChange: function (e) {
 		var i, input, obj, opacitySlider,
 		    inputs = this._form.getElementsByClassName('leaflet-panel-layers-item'),
 		    inputsLen = inputs.length;
