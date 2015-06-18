@@ -69,8 +69,8 @@
             endADBC = "AD";
           }
 
-          $("#slidertitle .inner").html(epoch['name'] + ' ' + Math.abs(epoch.dateStart) + ' ' + startADBC + ' &#8212; ' + Math.abs(epoch.dateEnd) + ' ' + endADBC);//" <i data-original-title class=\"fa fa-info-circle\" data-toggle=\"popover\" data-trigger=\"hover\" title=\"" + epoch.name + "\" data-content=\"" + epoch.description + "\" data-placement=\"top\"></i>"
-          //$('i').popover();
+          $("#slidertitle .inner").html(epoch['name'] + ' ' + Math.abs(epoch.dateStart) + ' ' + startADBC + ' &#8212; ' + Math.abs(epoch.dateEnd) + ' ' + endADBC + " <i data-original-title class=\"fa fa-info-circle\" data-toggle=\"popover\" data-trigger=\"hover\" title=\"" + epoch.name + "\" data-content=\"" + epoch.description + "\" data-placement=\"top\"></i>");
+          $("#slidertitle .inner i").popover();
 
           var range = [epoch.dateStart, epoch.dateEnd];
           //Get epoch from lookup
