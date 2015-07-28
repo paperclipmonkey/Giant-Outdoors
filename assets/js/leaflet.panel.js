@@ -227,34 +227,34 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 			container.style.height = e.newSize.y+'px';
 		});
 
-		if (!L.Browser.touch) {
+		// if (!L.Browser.touch) {
 			L.DomEvent
 				.disableClickPropagation(container)
 				.disableScrollPropagation(container);
-		} else {
-			L.DomEvent.on(container, 'click', L.DomEvent.stopPropagation);
-		}
+		// } else {
+		// 	L.DomEvent.on(container, 'click', L.DomEvent.stopPropagation);
+		// }
 
 		var form = this._form = L.DomUtil.create('form', className + '-list');
 
 		if (this.options.collapsed) {
-			if (!L.Browser.android) {
+			// if (!L.Browser.android) {
 				L.DomEvent
 				    .on(container, 'mouseover', this._expand, this)
 				    .on(container, 'mouseout', this._collapse, this);
-			}
+			// }
 			var link = this._layersLink = L.DomUtil.create('a', className + '-toggle', container);
 			link.href = '#';
 			link.title = 'Layers';
 
-			if (L.Browser.touch) {
-				L.DomEvent
-				    .on(link, 'click', L.DomEvent.stop)
-				    .on(link, 'click', this._expand, this);
-			}
-			else {
+			// if (L.Browser.touch) {
+			// 	L.DomEvent
+			// 	    .on(link, 'click', L.DomEvent.stop)
+			// 	    .on(link, 'click', this._expand, this);
+			// }
+			// else {
 				L.DomEvent.on(link, 'focus', this._expand, this);
-			}
+			// }
 
 			this._map.on('click', this._collapse, this);
 			// TODO keyboard accessibility
