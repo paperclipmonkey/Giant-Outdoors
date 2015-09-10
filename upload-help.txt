@@ -44,7 +44,7 @@ aka:
     }
 
 You can then edit this data, replacing the fields you need to.
-Save the file and try to run the site locally. It should work, apart from the video file which requires a web server to run.
+Save the file and try to run the site locally. It should work, apart from the video file and help screens which requires a web server to run.
 Once you're happy with the new data replace the file on the webserver with your updated file.
 
 

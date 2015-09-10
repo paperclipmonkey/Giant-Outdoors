@@ -23,6 +23,10 @@
         // $(this).find('.txt').text("Sending...");
       });
 
+      $("#sliderholder").on('touchstart touchend touchmove', function(e){
+        e.stopPropagation();
+      });
+
       $("#slider2").slider({
         orientation: "horizontal",
         range: "min",
