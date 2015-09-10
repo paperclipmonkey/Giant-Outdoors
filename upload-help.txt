@@ -1,0 +1,57 @@
+Add details
+Inside the web folder there is a folder called /upload/.
+This stores all of the uploaded files from the website. Uploaded files are there right next to JSON files.
+http://www.wikiwand.com/en/JSON
+The JSON files are named by the time and date the user uploaded them. These files are just basic key->value records for each of the form elements on the page.
+By opening these files in any coding text editor (Sublime Text, Dreamweaver, NotePad++, TextEdit) it will be possible to copy the values out.
+
+- - - - - - - - - - - Adding to the website - - - - - - - - - - - - -
+To add these uploads to the website open the assets/geojson/ folder. Inside here is all of the data for the website.
+The data is categorised in to files, one for each marker type. Open up added.geojson.
+The format is the same as for the upload folder, with an array [] of objects {}, each being a point on the map.
+Start by copying one of these object and placing it below the others.
+aka:
+	,
+	{  
+      "type":"Feature",
+      "properties":{  
+        "Title":"Common blue butterfly",
+        "StartDate":"",
+        "EndDate":"",
+        "Sketchfab":"",
+        "Image":"",
+        "Description":"Living up to its name, this is the commonest blue butterfly found in Britain. We recorded a sighting in the quoit field, known as the Frying Pan field, in 2014 during a quoit workshop.",
+        "URL":"",
+        "Walk 1":"1",
+        "Walk 2":"1",
+        "Walk 3":"1",
+        "Walk 4":"1",
+        "Tags":[  
+          "add",
+          "butterfly",
+          "workshop"
+        ],
+        "Marker Type":"added",
+        "Hashcode":"common_blue_butterfly"
+      },
+      "geometry":{  
+        "type":"Point",
+        "coordinates":[  
+          -5.293455,
+          50.18883
+        ]
+      }
+    }
+
+You can then edit this data, replacing the fields you need to.
+Save the file and try to run the site locally. It should work, apart from the video file which requires a web server to run.
+Once you're happy with the new data replace the file on the webserver with your updated file.
+
+
+potential issues:
+It's important to remember that between any two objects there needs to be a comma. If the entire file doesn't load this is most likely the problem.
+
+Also, all text has to be inside double quotes, these can't be sided - no fancy quotes. Numbers should be outside of quotes: eg the coordinates.
+By saving a backup of the file before you start editing any problems you encounter can be easily rolled back.
+
+A website like http://jsonlint.com/ can help you find any errors in the code quickly.
