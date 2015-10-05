@@ -540,6 +540,7 @@ legend.leaflet-panel-layers-grouplabel{
 
 .leaflet-popup-content{
   overflow: auto;
+  overflow-y: scroll;
 }
 
 .share{

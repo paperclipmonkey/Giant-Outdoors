@@ -274,7 +274,9 @@
       if (marker.feature.properties) {
         var props = marker.feature.properties;
         var htmlString = "";
-        var extraProps = {};
+        var extraProps = {
+          "maxHeight" : $('#mapdiv').height() - 100
+        };
 
         if(props.Marker == "Plant"){
           /*
